@@ -5,6 +5,7 @@ import {createHash} from 'node:crypto';
 import {readFileSync, writeFileSync, existsSync, mkdirSync} from 'node:fs';
 import {dirname, resolve} from 'node:path';
 import {fileURLToPath} from 'node:url';
+import {motion, photoZoomExpression, dissolveCommands} from './motion.mjs';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const system = spawnSync('ffmpeg', ['-version'], {stdio: 'ignore'}).status === 0;
@@ -14,13 +15,15 @@ const run = (args) => {
   if (result.status !== 0) throw new Error(result.stderr || 'FFmpeg failed');
 };
 const m = JSON.parse(readFileSync(resolve(root, 'src/data/media-manifest.json')));
-const key = createHash('sha256').update(JSON.stringify(m)).update(readFileSync(fileURLToPath(import.meta.url))).digest('hex').slice(0,12);
+const key = createHash('sha256').update(JSON.stringify(m)).update(JSON.stringify(motion)).update(readFileSync(new URL('./motion.mjs', import.meta.url))).update(readFileSync(fileURLToPath(import.meta.url))).digest('hex').slice(0,12);
 const resumeCache = process.argv[2];
 if (resumeCache && !/^native-[a-f0-9]{12}$/.test(resumeCache)) throw new Error('Resume cache must be a native-<12 hex digits> folder name from work/');
 const work = resolve(root, 'work', resumeCache ?? `native-${key}`);
 mkdirSync(work, {recursive: true});
 mkdirSync(resolve(root, 'out'), {recursive: true});
 const shine = resolve(work, 'shine.png');
+const dissolve = resolve(work, 'dissolve.cmd');
+writeFileSync(dissolve, dissolveCommands(m.fps, m.transitionFrames));
 run(['-f', 'lavfi', '-i', "nullsrc=s=400x1440,format=rgba,geq=r=255:g=245:b=217:a='20*exp(-pow((X-W/2)/(W/5),2))'", '-frames:v', '1', '-threads', '1', shine]);
 const encode = (frames) => ['-frames:v', String(frames), '-an', '-c:v', 'libx264', '-threads', '2', '-preset', 'fast', '-crf', '16', '-pix_fmt', 'yuv420p', '-bf', '0', '-g', '120', '-r', String(m.fps), '-video_track_timescale', '15360', '-color_primaries', 'bt709', '-color_trc', 'bt709', '-colorspace', 'bt709'];
 const items = [m.intro, ...m.photos, m.outro];
@@ -35,9 +38,9 @@ for (let i = 0; i < items.length; i++) {
     run(['-threads', '2', '-i', resolve(root, 'public', item.src), '-vf', 'fps=60,scale=2560:1440:force_original_aspect_ratio=decrease:flags=lanczos,pad=2560:1440:(ow-iw)/2:(oh-ih)/2:color=0xfaf6ed,setsar=1,format=yuv420p', ...encode(n), '-force_key_frames', force, target]);
   } else {
     const photoIndex = i-1;
-    const fit = Math.min(m.width/item.width, m.height/item.height) * 0.95;
+    const fit = Math.min(m.width/item.width, m.height/item.height) * motion.zoomMin;
     const w = Math.floor(item.width*fit/2)*2, h = Math.floor(item.height*fit/2)*2;
-    const zoom = photoIndex % 2 === 0 ? `1+0.0263157894736842*on/${n-1}` : `1.0263157894736842-0.0263157894736842*on/${n-1}`;
+    const zoom = photoZoomExpression(photoIndex, n);
     const sparkles = Array.from({length: 18}, (_, j) => `drawbox=x=${(j*719+100)%m.width}:y=${(j*383+73)%m.height}:w=${j%4===0?9:3}:h=${j%4===0?9:3}:color=0xc0a56d@0.14:t=fill:enable='gt(sin(t*${0.6+(j%4)*0.13}+${j*2.4}),0.2)'`).join(',');
     const graph = `[0:v]scale=${w}:${h}:flags=lanczos,pad=2560:1440:(ow-iw)/2:(oh-ih)/2:color=0xfaf6ed,zoompan=z='${zoom}':x='(iw-iw/zoom)/2':y='(ih-ih/zoom)/2':d=${n}:s=2560x1440:fps=60,setsar=1,${sparkles}[card];[1:v]format=rgba[shine];[card][shine]overlay=x='-700+3960*t/${n/m.fps}':y=0:shortest=1:format=auto,format=yuv420p[v]`;
     run(['-threads', '1', '-i', resolve(root, 'public', item.src), '-loop', '1', '-framerate', '60', '-i', shine, '-filter_complex_threads', '1', '-filter_complex', graph, '-map', '[v]', ...encode(n), '-force_key_frames', force, target]);
@@ -55,7 +58,8 @@ for (let i = 0; i < items.length; i++) {
   segments.push(body);
   if (i < items.length-1) {
     const transition = resolve(work, `fade-${String(i).padStart(2,'0')}.mp4`);
-    const graph = `[0:v]setpts=PTS-STARTPTS,settb=1/60,fps=60[a];[1:v]setpts=PTS-STARTPTS,settb=1/60,fps=60[b];[a][b]xfade=transition=fade:duration=${m.transitionFrames/m.fps}:offset=0,format=yuv420p[v]`;
+    const commandPath = dissolve.replaceAll('\\', '/').replaceAll(':', '\\:').replaceAll("'", "'\\''");
+    const graph = `[0:v]setpts=PTS-STARTPTS,settb=1/60,fps=60[a];[1:v]setpts=PTS-STARTPTS,settb=1/60,fps=60[b];[a][b]blend@dissolve=all_mode=normal:all_opacity=1:shortest=1,sendcmd=f='${commandPath}',format=yuv420p[v]`;
     run(['-threads','1','-ss', String((n-m.transitionFrames)/m.fps), '-i', full[i], '-threads','1','-i', full[i+1], '-filter_complex_threads','1','-filter_complex', graph, '-map', '[v]', ...encode(m.transitionFrames), transition]);
     segments.push(transition);
   }

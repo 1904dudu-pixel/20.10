@@ -4,6 +4,7 @@ import {dirname, resolve} from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {createRequire} from 'node:module';
 import {createHash} from 'node:crypto';
+import {photoScale} from './motion.mjs';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const manifest = JSON.parse(readFileSync(resolve(root, 'src/data/media-manifest.json'), 'utf8'));
@@ -43,8 +44,7 @@ mkdirSync(resolve(root, 'work/qa'), {recursive: true});
 const photos = manifest.photos.map((photo, index) => {
   assert(createHash('sha256').update(readFileSync(resolve(root, 'public', photo.src))).digest('hex') === photo.sha256, `Source changed: ${photo.src}`);
   const localFrame = Math.floor(photo.durationInFrames / 2);
-  const progress = localFrame / (photo.durationInFrames - 1);
-  const scale = index % 2 === 0 ? 0.95 + progress * 0.025 : 0.975 - progress * 0.025;
+  const scale = photoScale(index, localFrame, photo.durationInFrames);
   const fit = Math.min(manifest.width / photo.width, manifest.height / photo.height) * scale;
   const w = Math.floor(photo.width * fit / 2) * 2, h = Math.floor(photo.height * fit / 2) * 2;
   const time = (photo.startFrame + localFrame) / manifest.fps;

@@ -1,6 +1,7 @@
 import {AbsoluteFill, CanvasImage, interpolate, staticFile, useCurrentFrame, useVideoConfig} from 'remotion';
 import {Sparkles} from '../components/SceneFrame';
 import type manifest from '../data/media-manifest.json';
+import {photoScale} from '../motion';
 
 type Photo = (typeof manifest.photos)[number];
 
@@ -8,8 +9,7 @@ type Photo = (typeof manifest.photos)[number];
 export const PhotoScene = ({photo, index}: {photo: Photo; index: number}) => {
   const frame = useCurrentFrame();
   const {width, height, fps} = useVideoConfig();
-  const progress = Math.max(0, Math.min(1, frame / (photo.durationInFrames - 1)));
-  const scale = index % 2 === 0 ? 0.95 + progress * 0.025 : 0.975 - progress * 0.025;
+  const scale = photoScale(index, frame, photo.durationInFrames);
   const sweep = interpolate(frame, [0.6 * fps, photo.durationInFrames - 0.6 * fps], [-55, 155], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
   return (
     <AbsoluteFill style={{background: '#faf6ed', overflow: 'hidden'}}>

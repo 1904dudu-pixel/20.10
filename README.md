@@ -70,7 +70,7 @@ Hai video nguồn không có track âm thanh; cấu hình vẫn đặt `muted` �
 
 Mỗi thiệp dài 302 hoặc 303 frame (khoảng 5,03–5,05 giây), crossfade 42 frame (0,7 giây).
 Cân bằng số frame lẻ giúp khớp nhạc, không tích lũy sai số hoặc thêm cảnh lặp ở cuối.
-Ảnh hiển thị nguyên tấm bằng `contain`; zoom luân phiên 95%–97,5%,
+Ảnh hiển thị nguyên tấm bằng `contain`; zoom in/zoom out luân phiên 94%–99%, easing smoothstep chậm ở đầu/cuối,
 giữ trọn bốn mép và toàn bộ tên, chân dung, lời chúc. Không có chữ mới đè lên ảnh.
 Ánh sáng quét và lấp lánh nhẹ, chuyển động tính theo frame.
 
@@ -92,7 +92,7 @@ AAC 320 kbps, 1440p60; kết quả vẫn ở đường dẫn `out/` nêu trên.
 Remotion Studio và `npm run render` vẫn là đường xem trước/render qua trình duyệt;
 cách vẽ ánh sáng, lấp lánh và nền của hai bộ xuất có khác biệt nhẹ.
 Các clip trung gian được cache trong `work/native-*` để chạy tiếp khi bị gián đoạn.
-Phần chuyển cảnh dùng bộ lọc crossfade tích hợp thay cho biểu thức tính từng pixel để giảm thời gian ghép.
+Phần chuyển cảnh dùng bộ trộn ảnh tích hợp và điều khiển opacity theo từng frame bằng smoothstep; đầu/cuối dịu hơn, giữ nguyên crossfade 42 frame và toàn bộ thời lượng.
 
 ## Kiểm tra
 
@@ -121,6 +121,9 @@ src/scenes/PhotoScene.tsx     Nguyên thiệp, zoom an toàn, ánh sáng
 src/scenes/MediaClips.tsx     Hai clip Intro/Outro thật
 src/scenes/Slideshow.tsx      Crossfade đủ 52 ảnh
 src/Root.tsx                 Các composition 1440p60
+src/data/motion.json         Biên độ zoom dùng chung, không đổi media/timeline
+src/motion.ts                Đường cong chuyển động trong Remotion
+scripts/motion.mjs           Cùng đường cong cho FFmpeg và kiểm tra MP4
 ```
 
 Các scene chữ và cấu hình `content.ts`/`timing.ts` của giai đoạn 1 được giữ làm tham khảo;

@@ -5,6 +5,7 @@ import {AbsoluteFill, interpolate, staticFile, useCurrentFrame, useVideoConfig} 
 import manifest from './data/media-manifest.json';
 import {OpeningClip, ClosingClip} from './scenes/MediaClips';
 import {Slideshow} from './scenes/Slideshow';
+import {easeProgress} from './motion';
 
 export const OppoVideo = () => {
   const frame = useCurrentFrame();
@@ -16,11 +17,11 @@ export const OppoVideo = () => {
         <TransitionSeries.Sequence name="Intro.mp4" durationInFrames={manifest.intro.durationInFrames} premountFor={fps}>
           <OpeningClip />
         </TransitionSeries.Sequence>
-        <TransitionSeries.Transition presentation={fade()} timing={linearTiming({durationInFrames: manifest.transitionFrames})} />
+        <TransitionSeries.Transition presentation={fade()} timing={linearTiming({durationInFrames: manifest.transitionFrames, easing: easeProgress})} />
         <TransitionSeries.Sequence name="52 ảnh nhân sự — nguyên thiết kế" durationInFrames={slideshowFrames} premountFor={fps}>
           <Slideshow />
         </TransitionSeries.Sequence>
-        <TransitionSeries.Transition presentation={fade()} timing={linearTiming({durationInFrames: manifest.transitionFrames})} />
+        <TransitionSeries.Transition presentation={fade()} timing={linearTiming({durationInFrames: manifest.transitionFrames, easing: easeProgress})} />
         <TransitionSeries.Sequence name="Outro_20-10_OPPO_Bac_Ninh.mp4" durationInFrames={manifest.outro.durationInFrames} premountFor={fps}>
           <ClosingClip />
         </TransitionSeries.Sequence>

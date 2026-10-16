@@ -1,5 +1,15 @@
 # Kết quả kiểm tra video 20/10
 
+## Cập nhật hiệu ứng theo yêu cầu
+
+Zoom luân phiên 94%–99% với easing smoothstep, hòa ảnh 42 frame với easing cùng loại.
+Giữ nguyên dữ liệu 52 ảnh, nhạc, intro/outro và 15.189 frame của timeline.
+Đã kiểm tra TypeScript/ESLint, build bundle, render đoạn thử zoom in/zoom out và chuyển cảnh;
+đối chiếu đường cong Remotion/FFmpeg trên mọi frame của 52 cảnh và kiểm tra biên zoom không cắt ảnh.
+MP4 đầy đủ của lần cập nhật hiệu ứng sẽ được kiểm tra lại tự động trong GitHub Actions.
+
+## Báo cáo MP4 đã kiểm tra trước cập nhật hiệu ứng (commit b46dea6)
+
 Bản MP4 đã được xuất và kiểm tra trong môi trường làm việc ngày 16/10/2026.
 Bản bàn giao dùng đường xuất FFmpeg từ timeline của dự án Remotion.
 
