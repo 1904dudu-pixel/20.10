@@ -34,9 +34,17 @@ def main():
  voice_checks=[]
  for s in wishes:
   st=round(s['voiceStartFrame']/60*8000);en=round(s['voiceEndFrame']/60*8000);c=float(np.corrcoef(actual[st:en].ravel(),expected[st:en].ravel())[0,1]);assert c>.98
-  voice_checks.append({'number':s['number'],'name':s['name'],'role':s['role'],'seconds':s['keptSeconds'],'audioCorrelation':c,'orientation':s['orientationNote']})
- # Decode the complete video and audio, rather than merely reading headers.
- run(['ffmpeg','-v','error','-i',p,'-map','0:v:0','-map','0:a:0','-f','null','-'])
- report={'passed':True,'file':p.name,'sha256':sha(p),'bytes':p.stat().st_size,'durationSeconds':m['totalFrames']/60,'frames':m['totalFrames'],'photoCount':52,'wishCount':16,'video':'H.264 2560x1440 60fps','audio':'AAC stereo 48000Hz 320kbps','audioCorrelation':corr,'samplePeak':peak,'framesChecked':checks,'wishes':voice_checks,'fullDecodePassed':True}
+  reference=pcm(GEN/'audio'/f'voice-{s["number"]:02}.wav',rate=8000);k=min(len(reference),en-st);margin=1600
+  present=float(np.corrcoef(actual[st+margin:st+k-margin].ravel(),reference[margin:k-margin].ravel())[0,1]);assert present>.92,(s['number'],present)
+  voice_checks.append({'normalizedVoiceCorrelation':present,'number':s['number'],'name':s['name'],'role':s['role'],'seconds':s['keptSeconds'],'audioCorrelation':c,'orientation':s['orientationNote']})
+ # Decode everything; reject unexpected black frames in the interior timeline.
+ logs=run(['ffmpeg','-hide_banner','-nostats','-v','info','-i',p,'-map','0:v:0','-map','0:a:0','-vf','blackdetect=d=0.1:pix_th=0.05:pic_th=0.99','-f','null','-'])
+ black=[{'start':float(x),'end':float(y),'duration':float(z)} for x,y,z in re.findall(r'black_start:([0-9.]+) black_end:([0-9.]+) black_duration:([0-9.]+)',logs)]
+ outro=next(s['startFrame']/60 for s in m['scenes'] if s['id']=='outro')
+ assert all(b['end']<8.4 or b['start']>outro for b in black),black
+ assert not re.search(r'Error while|Invalid data|corrupt decoded|non monotonically',logs,re.I),logs[-4000:]
+ levels=[float(np.sqrt(np.mean(actual[t*8000:(t+1)*8000]**2))) for t in range(1,int(m['totalFrames']/60)-3)]
+ assert min(levels)>.0003,min(levels)
+ report={'passed':True,'file':p.name,'sha256':sha(p),'bytes':p.stat().st_size,'durationSeconds':m['totalFrames']/60,'frames':m['totalFrames'],'photoCount':52,'wishCount':16,'video':'H.264 2560x1440 60fps','audio':'AAC stereo 48000Hz 320kbps','audioCorrelation':corr,'samplePeak':peak,'framesChecked':checks,'wishes':voice_checks,'fullDecodePassed':True,'blackIntervals':black,'minimumInteriorOneSecondRms':min(levels)}
  dump(WORK/'qa-report.json',report);print(json.dumps({k:v for k,v in report.items() if k not in ['framesChecked','wishes']},ensure_ascii=False),flush=True)
 if __name__=='__main__':main()
