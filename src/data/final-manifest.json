@@ -1,0 +1,4152 @@
+{
+  "version": "final-short-52-16-v2",
+  "title": "OPPO BẮC NINH – 20/10 | GỬI MỘT NỬA YÊU THƯƠNG",
+  "fps": 60,
+  "width": 2560,
+  "height": 1440,
+  "transitionFrames": 27,
+  "totalFrames": 33980,
+  "sources": {
+    "intro": {
+      "src": "videos/Intro.mp4",
+      "sha256": "21b78005dac02b87d2f73530a5a3c99f27cf2c0f761d5a30b10f974a1b436305",
+      "durationSeconds": 8.3
+    },
+    "outro": {
+      "src": "videos/Outro_20-10_OPPO_Bac_Ninh.mp4",
+      "sha256": "9c09127bea68e2a2dd4d28ed7f72e61d8c077380dde1878f3cf8b4a83f00928a",
+      "durationSeconds": 20.0
+    },
+    "mainMusic": {
+      "src": "music/NHẠC 20.10.mp3",
+      "sha256": "3e12b13f5c943b30651fc49b780a9b181a4930959412abe2774623ebe8ffe92e",
+      "durationSeconds": 253.152
+    },
+    "cinematic": {
+      "src": "music/abydos_music-opening-epic-logo-193120.mp3",
+      "sha256": "6e312b81154f96cbefd1896e39fac6c40e94d2d06901a825801ee49cc0625ab8",
+      "durationSeconds": 11.311
+    }
+  },
+  "photoCount": 52,
+  "wishCount": 16,
+  "photos": [
+    {
+      "src": "photos/01_BÙI THỊ HUYỀN TRANG.png",
+      "sha256": "d1b01b596230bc8af7869db47b2cb82a017605159fd00181f89da342f8fda0f3",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "src": "photos/01_HOÀNG THỊ NGÁT.png",
+      "sha256": "095ce068778c0cc60c16f2ba364bcee30bfbbc649b407a801b6c8eeb24761f22",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "src": "photos/01_HÀ THỊ LAN HƯƠNG.png",
+      "sha256": "55735e310b2d468705753dfda9babb2d10bd1f6e07b52f830c1a7c8c1dbff870",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "src": "photos/01_HÀ TỐ UYÊN.png",
+      "sha256": "8fd4183534e0b90dc47874474a36f6739b311db4b60c1b5f1b3133c0827d56ec",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "src": "photos/01_NGUYỄN THỊ HÀ VI.png",
+      "sha256": "0c21e73dd70066993ad09491ad00f219a5218e8e8fa331491637d08de50b1c40",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "src": "photos/02_BÙI THỊ MỸ LINH.png",
+      "sha256": "3a2596202bda53307794179018a773f89e8c55fcb35a3db055b545d76b2776fb",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "src": "photos/02_HOÀNG QUỲNH NHƯ.png",
+      "sha256": "4c143eda048b517e7b73b7161ea270db08789c192b2af921fcdbdada8f0eb695",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "src": "photos/02_HOÀNG THỊ NGỌC ANH.png",
+      "sha256": "416a77908b08fcc22023fcf95c3bd3bfdeb8bcfa60a4d9d9b2c6a9382e2246ec",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "src": "photos/02_NGUYỄN THỊ HẢI.png",
+      "sha256": "4e0e40731bfa99c6c6126235a60eed3525874fd7c1781e6078bb400a3a6d2478",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "src": "photos/02_NGUYỄN THỊ YẾN LINH.png",
+      "sha256": "59d44cf7d3bf88bd6eb8427f10ba2161862455141b26f9fe7bee5d2afcfd049e",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "src": "photos/03_BÙI THU THỦY.png",
+      "sha256": "96e7f5dad3b1407e00c418832b1d06a16b4b8cc6f1f591a0e21d0a323d32ed2c",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "src": "photos/03_HOÀNG THỊ LIÊN.png",
+      "sha256": "340e076c040059101d41c791aa5350c803b1dd9dc50f5a0458e1a08323aa7b08",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "src": "photos/03_HOÀNG THỊ THANH TUYỀN.png",
+      "sha256": "ba01ff6019ba927ba771ba3a02a6f183bbee618c60c0798284b50fd55da1f0ac",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "src": "photos/03_NGUYỄN THỊ HOA.png",
+      "sha256": "04ba80c22f2cbfee337b3373515998d0c403571fc4f84d961eef584f1137bc4f",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "src": "photos/03_PHẠM CHI MAI.png",
+      "sha256": "cd6f0d494af7aa56b047f4132080177b79d432f187aa6364b0465cec3aa13484",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "src": "photos/04_DƯƠNG THỊ MAI.png",
+      "sha256": "95b11dee48b7ed71a301f315857ffa20bb570130c9cbb04542f9fbb6403028fa",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "src": "photos/04_HOÀNG THỊ THẢO.png",
+      "sha256": "783bc9881c07fb62089f4f980d80e52a8528c248a06fda110743bf4a5fdb6c47",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "src": "photos/04_NGUYỄN MINH KHÁNH.png",
+      "sha256": "6036786539fc9ea65207e337a41dc8495b25b381bb1b8fc0255f2de035bfa115",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "src": "photos/04_NGUYỄN THỊ HỒNG LINH.png",
+      "sha256": "3e864bd184aa7ae03db4a38508b8917f22438fede94b20a3804285206a46fe57",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "src": "photos/04_PHẠM THỊ TRANG.png",
+      "sha256": "f5376734e1eef68530d9779595505ca5d714a46ecaa79a12926b01da109dca38",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "src": "photos/05_DƯƠNG THỊ QUYẾN.png",
+      "sha256": "dd9d86deaf06b9965478981e2c1a4b5d11f34a3c826da7fba75935a27cb42562",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "src": "photos/05_HOÀNG THỊ TRANG.png",
+      "sha256": "8d6df6f791a09c102a7061a0a6465f3c3d84b6f7f7cba841c7b447c8221a971a",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "src": "photos/05_NGUYỄN THỊ LỊCH.png",
+      "sha256": "4e0c48666969f33027bd411e64640a90781dafb6874149659e368dd71be021b3",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "src": "photos/05_NGUYỄN THỊ ÁI VÂN.png",
+      "sha256": "30526baa5d71226e23b3f659e5e2ddc0e891b5114ae2002dfaa73a566a6948b5",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "src": "photos/05_PHẠM THỊ XIÊM.png",
+      "sha256": "331e8f4f1249db1fa4ae7a51c2d7e1380b86e71d0f753375fd2e6d49cf1be576",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "src": "photos/06_LÒ THỊ NGỌC BÍCH.png",
+      "sha256": "16efc78fc72e6554f8984c727afef9e72bb8bf69fb7ca78904eeb314c026cc51",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "src": "photos/06_NGUYỄN THỊ CHIÊM.png",
+      "sha256": "2f8040691dc779bf6c1313540904ebfa8bd24b6e0b26c2dd82107f7aac818f28",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "src": "photos/06_NGUYỄN THỊ NGÂN.png",
+      "sha256": "183ca4ebde3d38ea5cccc149d13be3fb43a10fdd3d299846955e8d41b6de69c3",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "src": "photos/06_PHÙNG THỊ HỒNG.png",
+      "sha256": "4adea47079a8ceff1822d908ce3b39e2b0988d30e72909f0443432e3ffb4334e",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "src": "photos/06_ĐÀM THỊ LỆ.png",
+      "sha256": "1012c8edd2558645abab58b46e1cb9ad15c884efc09d6514b3e38d9bc9b46e72",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "src": "photos/07_LƯƠNG THỊ HƯƠNG.png",
+      "sha256": "777c8295de5b1155f9aaabb96b78482b77288ad57efe57dbde4767a7a7059471",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "src": "photos/07_NGUYỄN THỊ DIỆU NINH.png",
+      "sha256": "abadf337cc0be9600336ae4db723b9cee09a8f85f94c59e12f3b6502e51f2f66",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "src": "photos/07_NGUYỄN THỊ NGỌC.png",
+      "sha256": "77fa3b23fb8219d1f675f33b84325ec73fe74ec6fa2b035345e324f17a87a535",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "src": "photos/07_TRẦN HƯƠNG NHI.png",
+      "sha256": "0d9e913135329e1e7b84fdd824454ec864e4a238c6e1f241481d62451eeb3f1f",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "src": "photos/07_ĐÀM THỊ TÂM.png",
+      "sha256": "204e43e48332bf0d7f6fd15a85ee5577cab9d108fbc7d4b4fe49af9a4ed10f5c",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "src": "photos/08_LƯƠNG THỊ TƯƠI.png",
+      "sha256": "5f94834bc5105def85b3dc1afcf2fa2bdb2dc05cf7026e955cd21a0c9850bae7",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "src": "photos/08_NGUYỄN THỊ NGUYỆT.png",
+      "sha256": "6b52c4cc0f8131c67a2f6258ef8bc8a2e243524ae563661b2d7c16aea85e1259",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "src": "photos/08_NGUYỄN THỊ THOA BN.png",
+      "sha256": "bf37a5318de62d0e80f00110e83b91f0a9d52a5a62cadfa81a2c9008a05b8208",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "src": "photos/08_VI THU TRANG.png",
+      "sha256": "653660bc6755af5722468178578b9b6bd54cdfa60d93965239a416e7f93066cc",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "src": "photos/08_ĐÀO ÁNH TUYẾT.png",
+      "sha256": "7a866a2a3b94b457d7691164431ac7e8c910c2de7431ad0b4bb5c50ed46c036d",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "src": "photos/09_LƯU THỊ THÙY.png",
+      "sha256": "b920926766e5784cba85e8e0f342f70b2178db56c8f84e3611c3e446ac7c76b1",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "src": "photos/09_NGUYỄN THỊ THANH HẰNG.png",
+      "sha256": "4b4a0492c2867799a1a6bb40273ca1741510750c706af0be53479dde7cefb954",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "src": "photos/09_NGUYỄN THỊ THOA.png",
+      "sha256": "c5b347a1fd71ddc7fe205bc7e23e8ee1d94bcf27a6cfb458f1cbf2c3b195dfe1",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "src": "photos/09_VŨ THỊ THƯƠNG.png",
+      "sha256": "dd99481cdf157861facc4f70545e4b2491904751d376027b699b5ee56aaed347",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "src": "photos/09_ĐINH THỊ MINH PHƯỢNG.png",
+      "sha256": "7138fb02d4278ebfd2116af8f3cd5f7aa1ee43a9fd6542ead6d317dd7ff5d1b8",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "src": "photos/10_NGUYỄN HỒNG VÂN.png",
+      "sha256": "92e2496ab8873eb30116325a50265af1a2096254b141cae88111e95b94fbb83d",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "src": "photos/10_NGUYỄN THỊ THU HIẾU.png",
+      "sha256": "9d39a85c4268dad0da56a9556bbbfdf54cdf6f8f1eedc859b30eb196d326091a",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "src": "photos/10_VŨ THỊ TRANG.png",
+      "sha256": "2d594198867d11a5a400113e780c6e1448b04c9de16946b877c316b5bb4c82d6",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "src": "photos/10_ĐINH THỊ THU TRANG.png",
+      "sha256": "94e631616cba926edbb2bb21eceaa9f9ee8ac27ae08b1d41ab3e8fbc8bd7f468",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "src": "photos/NGUYỄN THỊ VUI.webp",
+      "sha256": "b8c3ec0f559e5d28513dc5a080a0ec1e0f74a127921e51263dbb33fa70945e0b",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "src": "photos/NGÔ THỊ HIỀN.png",
+      "sha256": "4b2c72e983ca99eb04649c54cb62850f5532889fa2ec88a5b23eb12f175cb725",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "src": "photos/TRẦN THỊ LINH.jpg",
+      "sha256": "50dfd74e70f963d468166d69d48a5e999d28ec1f647167a266a1a13ed244b45c",
+      "width": 1672,
+      "height": 941
+    }
+  ],
+  "wishes": [
+    {
+      "number": 1,
+      "name": "NGUYỄN CÔNG HƯNG",
+      "role": "RM",
+      "src": "videos/wishes/1. NGUYỄN CÔNG HƯNG - RM.mp4",
+      "sha256": "d5a586ef68c4c6307193ba1dbae5766e0cf699ef4f7ad3f8d62e4c6e1c1d5f3e",
+      "sourceSeconds": 30.564834,
+      "width": 1920,
+      "height": 1080,
+      "rotation": 0,
+      "displaySize": [
+        1920,
+        1080
+      ],
+      "sourceFps": "27600000/915619",
+      "sampleRate": "48000",
+      "channels": 2,
+      "trimStartSeconds": 7.18,
+      "trimEndSeconds": 25.75,
+      "removedHeadSeconds": 7.18,
+      "removedTailSeconds": 4.814834000000001,
+      "keptSeconds": 16.88181818181818,
+      "loudness": {
+        "input_i": "-28.36",
+        "input_tp": "-10.32",
+        "input_lra": "5.20",
+        "input_thresh": "-39.72",
+        "output_i": "-16.50",
+        "output_tp": "-3.00",
+        "output_lra": "2.50",
+        "output_thresh": "-27.70",
+        "normalization_type": "dynamic",
+        "target_offset": "-0.50"
+      },
+      "silenceThresholdDb": -49.72,
+      "silenceEvents": [
+        [
+          "start",
+          11.170229
+        ],
+        [
+          "end",
+          12.367437
+        ],
+        [
+          "start",
+          17.565708
+        ],
+        [
+          "end",
+          18.840521
+        ],
+        [
+          "start",
+          25.702354
+        ],
+        [
+          "end",
+          26.955042
+        ],
+        [
+          "start",
+          29.645062
+        ],
+        [
+          "end",
+          30.477104
+        ]
+      ],
+      "trimPolicy": "Reviewed complete sentence excerpt; source intervals and excluded ranges in speech-edits.json",
+      "sourceSha256": "d5a586ef68c4c6307193ba1dbae5766e0cf699ef4f7ad3f8d62e4c6e1c1d5f3e",
+      "speed": 1.1,
+      "editNote": "Giữ lời chúc, cảm ơn nỗ lực và lời chúc thành công; bỏ chào đầu và lời chúc mừng lặp ở cuối.",
+      "excludedRangesSeconds": [
+        [
+          0,
+          7.18
+        ],
+        [
+          25.75,
+          30.564834
+        ]
+      ],
+      "asrUtterances": [
+        {
+          "start": 0.7400000000000013,
+          "end": 6.88,
+          "text": " Xin chào tất cả các sĩ em sinh đẹp của Ủa Pô Băng Nình, Nhân Hệ Phụ Nữ Việt Nam 20 tháng 10."
+        },
+        {
+          "start": 7.38,
+          "end": 11.24,
+          "text": " Anh xin chúc các em đơn sinh đẹp, giãn rỡ, hạnh phúc và trần đài năng lợi."
+        },
+        {
+          "start": 11.98,
+          "end": 17.28,
+          "text": " Cảm cảm các em vì những nỗ lực, sự nhệt huyết và những đóng góc cho khu vực trong suốt thời gian qua."
+        },
+        {
+          "start": 18.380000000000003,
+          "end": 25.44,
+          "text": " Chúc các em luôn giữ tinh thần, tự tin trinh phục những mục tiêu mới và đặc biệt thật là thành công cùng với fight 10 series sắp tới."
+        },
+        {
+          "start": 26.48,
+          "end": 28.68,
+          "text": " Chúc mừng ngày phụ nữ Việt Nam 20 tháng 10."
+        },
+        {
+          "start": 28.68,
+          "end": 28.74,
+          "text": " Hẹn gặp lại!"
+        }
+      ],
+      "asrNote": "Automatic Vietnamese ASR is used to locate sentence boundaries; spelling and names in recognition are not authoritative. On-screen name and role come exclusively from the original filename.",
+      "orientationFilter": "",
+      "orientationNote": "Respect FFmpeg display matrix autorotation.",
+      "keptFrames": 1013
+    },
+    {
+      "number": 2,
+      "name": "TRẦN TUẤN HƯNG",
+      "role": "SALE LEADER",
+      "src": "videos/wishes/2. TRẦN TUẤN HƯNG - SALE LEADER.mp4",
+      "sha256": "16d7eb1ed271b50f3ecad6ed03fd0cad4db8c0d2951038b17b86bb9c513c82bc",
+      "sourceSeconds": 29.76,
+      "width": 540,
+      "height": 960,
+      "rotation": 0,
+      "displaySize": [
+        960,
+        540
+      ],
+      "sourceFps": "25/1",
+      "sampleRate": "44100",
+      "channels": 2,
+      "trimStartSeconds": 11.25,
+      "trimEndSeconds": 24.55,
+      "removedHeadSeconds": 11.25,
+      "removedTailSeconds": 5.210000000000001,
+      "keptSeconds": 13.3,
+      "loudness": {
+        "input_i": "-20.85",
+        "input_tp": "-0.73",
+        "input_lra": "6.80",
+        "input_thresh": "-31.67",
+        "output_i": "-18.57",
+        "output_tp": "-3.00",
+        "output_lra": "4.90",
+        "output_thresh": "-29.30",
+        "normalization_type": "dynamic",
+        "target_offset": "1.57"
+      },
+      "silenceThresholdDb": -41.67,
+      "silenceEvents": [],
+      "trimPolicy": "Reviewed complete sentence excerpt; source intervals and excluded ranges in speech-edits.json",
+      "sourceSha256": "16d7eb1ed271b50f3ecad6ed03fd0cad4db8c0d2951038b17b86bb9c513c82bc",
+      "speed": 1,
+      "editNote": "Giữ câu cảm ơn và lời chúc về công việc, cuộc sống; bỏ lời chào, dẫn nhập và kết lặp.",
+      "excludedRangesSeconds": [
+        [
+          0,
+          11.25
+        ],
+        [
+          24.55,
+          29.76
+        ]
+      ],
+      "asrUtterances": [
+        {
+          "start": 0.7800000000000005,
+          "end": 1.44,
+          "text": " Chào các nhà!"
+        },
+        {
+          "start": 2.34,
+          "end": 6.06,
+          "text": " Nhân ngày phút in Việt Nam, 20 tháng 10, anh xin gửi những lời chúc tốt đẹp nhất"
+        },
+        {
+          "start": 6.540000000000001,
+          "end": 8.88,
+          "text": " tới tất cả các chị em trong đại gia đình Úi Pô Vâng Ninh"
+        },
+        {
+          "start": 9.3,
+          "end": 10.94,
+          "text": " Đặc biệt là các bạn Phi Giê Thanh Yêu"
+        },
+        {
+          "start": 11.48,
+          "end": 15.66,
+          "text": " Cảmơn mọi người đã luôn nhận huyết, tận tâm và nỗ lực hết mình trong công việc"
+        },
+        {
+          "start": 16.080000000000002,
+          "end": 19.78,
+          "text": " Chúc chị em luôn xin đẹp, hạnh phúc, tự tin và tỏa sáng"
+        },
+        {
+          "start": 19.78,
+          "end": 22.04,
+          "text": " không chỉ trong công việc, mà cả trong cuộc sống"
+        },
+        {
+          "start": 22.04,
+          "end": 24.18,
+          "text": " đặc biệt từ lúc nào phải về mốc 3"
+        },
+        {
+          "start": 24.92,
+          "end": 28.98,
+          "text": " Chúc mừng ngày 10 tháng 10, mãi yêu thương và tự hào về đại gia đình Úi Pô Vâng Ninh"
+        }
+      ],
+      "asrNote": "Automatic Vietnamese ASR is used to locate sentence boundaries; spelling and names in recognition are not authoritative. On-screen name and role come exclusively from the original filename.",
+      "orientationFilter": "transpose=cclock",
+      "orientationNote": "Additional counterclockwise 90 degrees; baked sideways pixels, no metadata.",
+      "keptFrames": 798
+    },
+    {
+      "number": 3,
+      "name": "PHAN ĐÌNH QUYỀN",
+      "role": "SALE LEADER",
+      "src": "videos/wishes/3. PHAN ĐÌNH QUYỀN - SALE LEADER.mp4",
+      "sha256": "4e0b4f34f72078111310b427f17c8f9f54203d85e3988d0f6e4ca020cb17c931",
+      "sourceSeconds": 12.821011,
+      "width": 1280,
+      "height": 720,
+      "rotation": 90,
+      "displaySize": [
+        720,
+        1280
+      ],
+      "sourceFps": "34650000/1153891",
+      "sampleRate": "48000",
+      "channels": 2,
+      "trimStartSeconds": 0.4,
+      "trimEndSeconds": 12.3,
+      "removedHeadSeconds": 0.4,
+      "removedTailSeconds": 0.5210109999999997,
+      "keptSeconds": 11.9,
+      "loudness": {
+        "input_i": "-29.54",
+        "input_tp": "-13.45",
+        "input_lra": "5.70",
+        "input_thresh": "-40.57",
+        "output_i": "-17.25",
+        "output_tp": "-3.00",
+        "output_lra": "3.50",
+        "output_thresh": "-28.08",
+        "normalization_type": "dynamic",
+        "target_offset": "0.25"
+      },
+      "silenceThresholdDb": -50.57,
+      "silenceEvents": [],
+      "trimPolicy": "Reviewed complete sentence excerpt; source intervals and excluded ranges in speech-edits.json",
+      "sourceSha256": "4e0b4f34f72078111310b427f17c8f9f54203d85e3988d0f6e4ca020cb17c931",
+      "speed": 1,
+      "editNote": "Giữ trọn lời chúc; chỉ bỏ khoảng chuẩn bị ở đầu/cuối.",
+      "excludedRangesSeconds": [
+        [
+          0,
+          0.4
+        ],
+        [
+          12.3,
+          12.821011
+        ]
+      ],
+      "asrUtterances": [
+        {
+          "start": 0.6799999999999997,
+          "end": 11.94,
+          "text": " Những ngày 20 tháng 10, anh xin chúc tất cả các bạn bí duy ôp bô, chiến binh ôp bô 1 ngày 20 tháng 10, luôn luôn sinh đẹp, vui vẻ và hạnh phúc. Chúc các em luôn giữ được nhìa thuyết trong công việc."
+        }
+      ],
+      "asrNote": "Automatic Vietnamese ASR is used to locate sentence boundaries; spelling and names in recognition are not authoritative. On-screen name and role come exclusively from the original filename.",
+      "orientationFilter": "",
+      "orientationNote": "Respect FFmpeg display matrix autorotation.",
+      "keptFrames": 714
+    },
+    {
+      "number": 4,
+      "name": "NGUYỄN KINH TUẤN",
+      "role": "SALE LEADER",
+      "src": "videos/wishes/4. NGUYỄN KINH TUẤN - SALE LEADER.mp4",
+      "sha256": "8a6f930d5f4d53c1e2eb5500556706228f1307de10a0f2050f473f61cefb6b7d",
+      "sourceSeconds": 25.204,
+      "width": 1280,
+      "height": 720,
+      "rotation": 0,
+      "displaySize": [
+        1280,
+        720
+      ],
+      "sourceFps": "33885000/1129381",
+      "sampleRate": "48000",
+      "channels": 2,
+      "trimStartSeconds": 5.5,
+      "trimEndSeconds": 22.95,
+      "removedHeadSeconds": 5.5,
+      "removedTailSeconds": 2.2540000000000013,
+      "keptSeconds": 16.619047619047617,
+      "loudness": {
+        "input_i": "-37.91",
+        "input_tp": "-18.42",
+        "input_lra": "4.70",
+        "input_thresh": "-48.94",
+        "output_i": "-17.70",
+        "output_tp": "-3.00",
+        "output_lra": "2.10",
+        "output_thresh": "-28.22",
+        "normalization_type": "dynamic",
+        "target_offset": "0.70"
+      },
+      "silenceThresholdDb": -58.94,
+      "silenceEvents": [],
+      "trimPolicy": "Reviewed complete sentence excerpt; source intervals and excluded ranges in speech-edits.json",
+      "sourceSha256": "8a6f930d5f4d53c1e2eb5500556706228f1307de10a0f2050f473f61cefb6b7d",
+      "speed": 1.05,
+      "editNote": "Giữ lời chúc nhân ngày 20/10 và các câu chúc tiếp theo; bỏ tự giới thiệu, chào và thao tác kết thúc.",
+      "excludedRangesSeconds": [
+        [
+          0,
+          5.5
+        ],
+        [
+          22.95,
+          25.204
+        ]
+      ],
+      "asrUtterances": [
+        {
+          "start": 1.7600000000000016,
+          "end": 2.7,
+          "text": " Xin chào tất cả các bạn."
+        },
+        {
+          "start": 3.06,
+          "end": 5.26,
+          "text": " Anh là Tuấn Phú Trách Kênh Yên, đi khu vực Bắc Ninh."
+        },
+        {
+          "start": 5.76,
+          "end": 6.82,
+          "text": " Nhân ngày 20 tháng 10,"
+        },
+        {
+          "start": 7.22,
+          "end": 9.96,
+          "text": " anh xin hữu những lời chúc tốt đẹp nhất để toàn thể các chị em"
+        },
+        {
+          "start": 9.96,
+          "end": 11.98,
+          "text": " đang hợp biệt tại gia đình Âu Bâu."
+        },
+        {
+          "start": 12.56,
+          "end": 14.9,
+          "text": " Chúc các chị em luôn sinh đẹp, dạng người,"
+        },
+        {
+          "start": 15.42,
+          "end": 16.68,
+          "text": " thành công trên tất cả các mọi liên vực."
+        },
+        {
+          "start": 17.04,
+          "end": 20.0,
+          "text": " Và đặc biệt, luôn yêu thương, người đàn ông"
+        },
+        {
+          "start": 20.0,
+          "end": 22.64,
+          "text": " đã đang sắp đồng hành của người mình."
+        }
+      ],
+      "asrNote": "Automatic Vietnamese ASR is used to locate sentence boundaries; spelling and names in recognition are not authoritative. On-screen name and role come exclusively from the original filename.",
+      "orientationFilter": "",
+      "orientationNote": "Respect FFmpeg display matrix autorotation.",
+      "keptFrames": 998
+    },
+    {
+      "number": 5,
+      "name": "LƯU VĂN BÁCH",
+      "role": "IOT LEADER",
+      "src": "videos/wishes/5. LƯU VĂN BÁCH - IOT LEADER.mp4",
+      "sha256": "cf6222a8b87514baecf39f73680cace8ad97f59d3be417bdd30aee3695061ea3",
+      "sourceSeconds": 19.806621,
+      "width": 960,
+      "height": 544,
+      "rotation": 0,
+      "displaySize": [
+        960,
+        544
+      ],
+      "sourceFps": "297000000/9883333",
+      "sampleRate": "44100",
+      "channels": 2,
+      "trimStartSeconds": 3.95,
+      "trimEndSeconds": 19.4,
+      "removedHeadSeconds": 3.95,
+      "removedTailSeconds": 0.40662100000000123,
+      "keptSeconds": 15.45,
+      "loudness": {
+        "input_i": "-8.91",
+        "input_tp": "-0.42",
+        "input_lra": "3.70",
+        "input_thresh": "-19.77",
+        "output_i": "-17.37",
+        "output_tp": "-7.63",
+        "output_lra": "3.40",
+        "output_thresh": "-27.98",
+        "normalization_type": "dynamic",
+        "target_offset": "0.37"
+      },
+      "silenceThresholdDb": -40,
+      "silenceEvents": [
+        [
+          "start",
+          0.0
+        ],
+        [
+          "end",
+          1.202676
+        ],
+        [
+          "start",
+          3.696553
+        ],
+        [
+          "end",
+          4.54737
+        ],
+        [
+          "start",
+          14.333991
+        ],
+        [
+          "end",
+          15.03619
+        ],
+        [
+          "start",
+          19.178889
+        ],
+        [
+          "end",
+          19.829841
+        ]
+      ],
+      "trimPolicy": "Reviewed complete sentence excerpt; source intervals and excluded ranges in speech-edits.json",
+      "sourceSha256": "cf6222a8b87514baecf39f73680cace8ad97f59d3be417bdd30aee3695061ea3",
+      "speed": 1,
+      "editNote": "Giữ từ nhân dịp 20/10 đến lời chúc thành công; bỏ lời chào đầu.",
+      "excludedRangesSeconds": [
+        [
+          0,
+          3.95
+        ],
+        [
+          19.4,
+          19.806621
+        ]
+      ],
+      "asrUtterances": [
+        {
+          "start": 0.820000000000001,
+          "end": 8.42,
+          "text": " Xin chào toàn thể các bạn thuộc Ủc Mô Văn Ninh, nhân dịp ngày 20 tháng 10 cho anh xin gửi lời chúc sức khỏe"
+        },
+        {
+          "start": 8.42,
+          "end": 14.24,
+          "text": " Chúc các bạn nữ tìm vào Ủc Mô Văn Ninh luôn luôn sinh đẹp, hạnh phúc và thành công"
+        },
+        {
+          "start": 14.9,
+          "end": 19.06,
+          "text": " Chúc các bạn bởi 5.10 series thành công thực dỡ"
+        }
+      ],
+      "asrNote": "Automatic Vietnamese ASR is used to locate sentence boundaries; spelling and names in recognition are not authoritative. On-screen name and role come exclusively from the original filename.",
+      "orientationFilter": "",
+      "orientationNote": "Respect FFmpeg display matrix autorotation.",
+      "keptFrames": 927
+    },
+    {
+      "number": 6,
+      "name": "NGUYỄN THẾ DUY",
+      "role": "TRAINER",
+      "src": "videos/wishes/6. NGUYỄN THẾ DUY - TRAINER.mp4",
+      "sha256": "8e808aab3ad60b45518b627beb9c0eed9c8e22280ea633b1335d3de26797a82c",
+      "sourceSeconds": 8.846803,
+      "width": 3840,
+      "height": 2160,
+      "rotation": 0,
+      "displaySize": [
+        3840,
+        2160
+      ],
+      "sourceFps": "60/1",
+      "sampleRate": "44100",
+      "channels": 2,
+      "trimStartSeconds": 0,
+      "trimEndSeconds": 8.65,
+      "removedHeadSeconds": 0,
+      "removedTailSeconds": 0.19680299999999917,
+      "keptSeconds": 8.65,
+      "loudness": {
+        "input_i": "-30.79",
+        "input_tp": "-12.74",
+        "input_lra": "1.70",
+        "input_thresh": "-41.35",
+        "output_i": "-17.24",
+        "output_tp": "-3.00",
+        "output_lra": "0.70",
+        "output_thresh": "-27.72",
+        "normalization_type": "dynamic",
+        "target_offset": "0.24"
+      },
+      "silenceThresholdDb": -51.35,
+      "silenceEvents": [],
+      "trimPolicy": "Reviewed complete sentence excerpt; source intervals and excluded ranges in speech-edits.json",
+      "sourceSha256": "8e808aab3ad60b45518b627beb9c0eed9c8e22280ea633b1335d3de26797a82c",
+      "speed": 1,
+      "editNote": "Giữ toàn bộ lời chúc ngắn; bỏ đuôi dừng quay.",
+      "excludedRangesSeconds": [
+        [
+          0,
+          0
+        ],
+        [
+          8.65,
+          8.846803
+        ]
+      ],
+      "asrUtterances": [
+        {
+          "start": 0.0,
+          "end": 5.18,
+          "text": " Nhưng ngày 20 tháng 10, chúc các bạn luôn luôn xin đẹp, dặn dỡ và tràn đợi những năng lượng tích cực."
+        },
+        {
+          "start": 5.18,
+          "end": 8.3,
+          "text": " Đặc biệt là thành công trên thị dịch 510, phát tích!"
+        }
+      ],
+      "asrNote": "Automatic Vietnamese ASR is used to locate sentence boundaries; spelling and names in recognition are not authoritative. On-screen name and role come exclusively from the original filename.",
+      "orientationFilter": "",
+      "orientationNote": "Respect FFmpeg display matrix autorotation.",
+      "keptFrames": 519
+    },
+    {
+      "number": 7,
+      "name": "NGÔ VĂN THÁI",
+      "role": "TRAINER",
+      "src": "videos/wishes/7.NGÔ VĂN THÁI - TRAINER.mp4",
+      "sha256": "a6e111a49b317a659bf58e60c440d5dafdc3e5da0c10a295e6841ff31360f558",
+      "sourceSeconds": 7.604,
+      "width": 848,
+      "height": 480,
+      "rotation": 0,
+      "displaySize": [
+        848,
+        480
+      ],
+      "sourceFps": "8280000/332203",
+      "sampleRate": "48000",
+      "channels": 2,
+      "trimStartSeconds": 0.15,
+      "trimEndSeconds": 6.45,
+      "removedHeadSeconds": 0.15,
+      "removedTailSeconds": 1.154,
+      "keptSeconds": 6.3,
+      "loudness": {
+        "input_i": "-21.29",
+        "input_tp": "-6.03",
+        "input_lra": "2.60",
+        "input_thresh": "-32.65",
+        "output_i": "-16.93",
+        "output_tp": "-3.00",
+        "output_lra": "1.50",
+        "output_thresh": "-27.88",
+        "normalization_type": "dynamic",
+        "target_offset": "-0.07"
+      },
+      "silenceThresholdDb": -42.65,
+      "silenceEvents": [
+        [
+          "start",
+          6.600375
+        ],
+        [
+          "end",
+          7.604
+        ]
+      ],
+      "trimPolicy": "Reviewed complete sentence excerpt; source intervals and excluded ranges in speech-edits.json",
+      "sourceSha256": "a6e111a49b317a659bf58e60c440d5dafdc3e5da0c10a295e6841ff31360f558",
+      "speed": 1,
+      "editNote": "Giữ trọn lời chúc; bỏ chuẩn bị và khoảng dừng cuối.",
+      "excludedRangesSeconds": [
+        [
+          0,
+          0.15
+        ],
+        [
+          6.45,
+          7.604
+        ]
+      ],
+      "asrUtterances": [
+        {
+          "start": 0.4000000000000006,
+          "end": 5.92,
+          "text": " Nhân dịp 20 tháng 10, chúc cho toàn thể chị em nhà mình luôn sinh đẹp, dặn rỡ, vui vẻ và cho nên lựng tích cực nha!"
+        }
+      ],
+      "asrNote": "Automatic Vietnamese ASR is used to locate sentence boundaries; spelling and names in recognition are not authoritative. On-screen name and role come exclusively from the original filename.",
+      "orientationFilter": "",
+      "orientationNote": "Respect FFmpeg display matrix autorotation.",
+      "keptFrames": 378
+    },
+    {
+      "number": 8,
+      "name": "ĐÀO ĐĂNG THÙY",
+      "role": "SALE BẮC GIANG",
+      "src": "videos/wishes/8. ĐÀO ĐĂNG THÙY - SALE BẮC GIANG.mp4",
+      "sha256": "198d1d51b59e930b45ffcc61f242c2147756ea370834894e90c9998fd1002c5e",
+      "sourceSeconds": 27.886666,
+      "width": 960,
+      "height": 544,
+      "rotation": 0,
+      "displaySize": [
+        960,
+        544
+      ],
+      "sourceFps": "418500000/13943333",
+      "sampleRate": "44100",
+      "channels": 2,
+      "trimStartSeconds": 6.35,
+      "trimEndSeconds": 18.8,
+      "removedHeadSeconds": 6.35,
+      "removedTailSeconds": 9.086666000000001,
+      "keptSeconds": 12.450000000000001,
+      "loudness": {
+        "input_i": "-29.28",
+        "input_tp": "-15.19",
+        "input_lra": "3.40",
+        "input_thresh": "-39.79",
+        "output_i": "-16.69",
+        "output_tp": "-3.00",
+        "output_lra": "2.90",
+        "output_thresh": "-27.21",
+        "normalization_type": "dynamic",
+        "target_offset": "-0.31"
+      },
+      "silenceThresholdDb": -49.79,
+      "silenceEvents": [
+        [
+          "start",
+          8.73034
+        ],
+        [
+          "end",
+          9.450522
+        ],
+        [
+          "start",
+          13.952268
+        ],
+        [
+          "end",
+          14.779184
+        ]
+      ],
+      "trimPolicy": "Reviewed complete sentence excerpt; source intervals and excluded ranges in speech-edits.json",
+      "sourceSha256": "198d1d51b59e930b45ffcc61f242c2147756ea370834894e90c9998fd1002c5e",
+      "speed": 1,
+      "editNote": "Giữ lời chúc ngày ý nghĩa, xinh đẹp, thành công và hạnh phúc; bỏ chào dài và câu KPI cùng kết lặp.",
+      "excludedRangesSeconds": [
+        [
+          0,
+          6.35
+        ],
+        [
+          18.8,
+          27.886666
+        ]
+      ],
+      "asrUtterances": [
+        {
+          "start": 0.0,
+          "end": 4.14,
+          "text": " Lần đầu tiên cho em gửi lời chào và chúc sức khỏe đến sếp cùng toàn thể anh chị em Mốc Bồ của Bắc Linh"
+        },
+        {
+          "start": 4.14,
+          "end": 6.18,
+          "text": " Nhất ngày phố Lít Bền Lam 2080"
+        },
+        {
+          "start": 6.6000000000000005,
+          "end": 8.74,
+          "text": " Chúc toàn thể chị em Mốc Bồ của Bắc Linh"
+        },
+        {
+          "start": 9.26,
+          "end": 11.64,
+          "text": " Nói chung, chị em Mốc Bồ tiêm của Thùy Nội Dương"
+        },
+        {
+          "start": 11.64,
+          "end": 14.6,
+          "text": " Có một ngày 2080, tật sự đá y nghĩa"
+        },
+        {
+          "start": 14.6,
+          "end": 18.46,
+          "text": " Chúc chị em nôn nôn sinh nhẹp, thành công may mắn và nôn nội hạnh phúc"
+        },
+        {
+          "start": 19.1,
+          "end": 24.0,
+          "text": " Trong công việc chúc chị em nôn nôn đạt được KBI tốt nhất và hoàn thành mọi chỉ tiêu"
+        },
+        {
+          "start": 24.0,
+          "end": 25.62,
+          "text": " Cục tỳ cũng như khu vực giao"
+        },
+        {
+          "start": 25.62,
+          "end": 27.52,
+          "text": " Chúc mọi ngày 2080, vui vẻ"
+        }
+      ],
+      "asrNote": "Automatic Vietnamese ASR is used to locate sentence boundaries; spelling and names in recognition are not authoritative. On-screen name and role come exclusively from the original filename.",
+      "orientationFilter": "",
+      "orientationNote": "Respect FFmpeg display matrix autorotation.",
+      "keptFrames": 748
+    },
+    {
+      "number": 9,
+      "name": "LƯƠNG VĂN TUẤN",
+      "role": "SALE BẮC GIANG",
+      "src": "videos/wishes/9.LƯƠNG VĂN TUẤN - SALE BẮC GIANG.mp4",
+      "sha256": "85c10eb37fcd95a22a5ca9a3a8b31a2a735bfe85f146df498f9a7ea3bc8fafe5",
+      "sourceSeconds": 18.270708,
+      "width": 1280,
+      "height": 720,
+      "rotation": 0,
+      "displaySize": [
+        1280,
+        720
+      ],
+      "sourceFps": "8205000/273691",
+      "sampleRate": "48000",
+      "channels": 2,
+      "trimStartSeconds": 3.05,
+      "trimEndSeconds": 17.65,
+      "removedHeadSeconds": 3.05,
+      "removedTailSeconds": 0.6207080000000005,
+      "keptSeconds": 14.599999999999998,
+      "loudness": {
+        "input_i": "-15.44",
+        "input_tp": "-0.18",
+        "input_lra": "2.00",
+        "input_thresh": "-26.10",
+        "output_i": "-17.09",
+        "output_tp": "-3.00",
+        "output_lra": "1.10",
+        "output_thresh": "-27.68",
+        "normalization_type": "dynamic",
+        "target_offset": "0.09"
+      },
+      "silenceThresholdDb": -40,
+      "silenceEvents": [],
+      "trimPolicy": "Reviewed complete sentence excerpt; source intervals and excluded ranges in speech-edits.json",
+      "sourceSha256": "85c10eb37fcd95a22a5ca9a3a8b31a2a735bfe85f146df498f9a7ea3bc8fafe5",
+      "speed": 1,
+      "editNote": "Giữ lời chúc đầy đủ từ nhân dịp 20/10; bỏ lời chào hội trường.",
+      "excludedRangesSeconds": [
+        [
+          0,
+          3.05
+        ],
+        [
+          17.65,
+          18.270708
+        ]
+      ],
+      "asrUtterances": [
+        {
+          "start": 0.6199999999999997,
+          "end": 2.82,
+          "text": " Xin chào tất cả mọi người đã có mặt trong hội trường hôm nay."
+        },
+        {
+          "start": 3.28,
+          "end": 6.44,
+          "text": " Nhân dịp một ngày đặc biệt sắp tới đây, đó là ngày phụ nữ Việt Nam 20 tháng 10."
+        },
+        {
+          "start": 6.82,
+          "end": 10.74,
+          "text": " Thì cho mình xin gửi là chúc tới toàn thể các chị em phải đẹp trong tà đình Úc Pô, Băng Ninh."
+        },
+        {
+          "start": 11.28,
+          "end": 13.58,
+          "text": " Đó là luôn vui vẻ, tươi trẻ hạnh phúc vào thành công."
+        },
+        {
+          "start": 14.04,
+          "end": 17.26,
+          "text": " Chúc cho chị em một ngày 20 tháng 10 tật ý nghĩa và nhận được nhiều quà nha."
+        }
+      ],
+      "asrNote": "Automatic Vietnamese ASR is used to locate sentence boundaries; spelling and names in recognition are not authoritative. On-screen name and role come exclusively from the original filename.",
+      "orientationFilter": "",
+      "orientationNote": "Respect FFmpeg display matrix autorotation.",
+      "keptFrames": 876
+    },
+    {
+      "number": 10,
+      "name": "NGUYỄN THẠC TÙNG",
+      "role": "SALE BẮC NINH",
+      "src": "videos/wishes/10. NGUYỄN THẠC TÙNG - SALE BẮC NINH.mp4",
+      "sha256": "2cf4c21e258d8684502ecd88cc8b6b51c2d04083d7246af1ff7042ce86b3424e",
+      "sourceSeconds": 23.893333,
+      "width": 1280,
+      "height": 720,
+      "rotation": 0,
+      "displaySize": [
+        1280,
+        720
+      ],
+      "sourceFps": "716000000/23833333",
+      "sampleRate": "44100",
+      "channels": 2,
+      "trimStartSeconds": 3.3,
+      "trimEndSeconds": 16.55,
+      "removedHeadSeconds": 3.3,
+      "removedTailSeconds": 7.343332999999998,
+      "keptSeconds": 13.25,
+      "loudness": {
+        "input_i": "-38.38",
+        "input_tp": "-20.12",
+        "input_lra": "5.50",
+        "input_thresh": "-48.97",
+        "output_i": "-17.17",
+        "output_tp": "-3.00",
+        "output_lra": "1.60",
+        "output_thresh": "-27.57",
+        "normalization_type": "dynamic",
+        "target_offset": "0.17"
+      },
+      "silenceThresholdDb": -58.97,
+      "silenceEvents": [],
+      "trimPolicy": "Reviewed complete sentence excerpt; source intervals and excluded ranges in speech-edits.json",
+      "sourceSha256": "2cf4c21e258d8684502ecd88cc8b6b51c2d04083d7246af1ff7042ce86b3424e",
+      "speed": 1,
+      "editNote": "Giữ lời gửi chúc, xinh đẹp, hạnh phúc, thành công và được yêu thương; bỏ chào đầu và lời mong chúc bổ sung ở cuối.",
+      "excludedRangesSeconds": [
+        [
+          0,
+          3.3
+        ],
+        [
+          16.55,
+          23.893333
+        ]
+      ],
+      "asrUtterances": [
+        {
+          "start": 0.0,
+          "end": 3.48,
+          "text": " Xin chào các chị em, thì cũng sắp tới là tới ngày 20-80"
+        },
+        {
+          "start": 3.48,
+          "end": 7.16,
+          "text": " thì tùng xin có lời chúc tới toàn thể các chị em tại Đã Đỉnh Gâu Bộ Bất Ninh"
+        },
+        {
+          "start": 7.16,
+          "end": 9.82,
+          "text": " luôn xin đẹp, dặn rỡ, hạnh phúc và trần đầy đăng lượng"
+        },
+        {
+          "start": 9.82,
+          "end": 16.32,
+          "text": " chúc các chị em không chỉ thành công cho công việc bất phá danh số mà còn luôn được yêu thương, chân trọng và gặp thật nhiều điều may mắn trong cuộc sống"
+        },
+        {
+          "start": 16.7,
+          "end": 21.76,
+          "text": " mong rằng mỗi ngày của chị em đều là một ngày vui, luôn tự tin tỏa sáng và giữ mãi lượt cười chín môi"
+        },
+        {
+          "start": 22.62,
+          "end": 23.6,
+          "text": " chúc mừng các chị em nhé"
+        }
+      ],
+      "asrNote": "Automatic Vietnamese ASR is used to locate sentence boundaries; spelling and names in recognition are not authoritative. On-screen name and role come exclusively from the original filename.",
+      "orientationFilter": "",
+      "orientationNote": "Respect FFmpeg display matrix autorotation.",
+      "keptFrames": 795
+    },
+    {
+      "number": 11,
+      "name": "NGUYỄN THẾ ANH",
+      "role": "SALE LẠNG SƠN",
+      "src": "videos/wishes/11. NGUYỄN THẾ ANH - SALE LẠNG SƠN.mp4",
+      "sha256": "e9f2b809feb4ec152d853b8d248a78def9cb8ba81339a230f88fef8e2120c115",
+      "sourceSeconds": 23.881292,
+      "width": 1280,
+      "height": 720,
+      "rotation": 0,
+      "displaySize": [
+        1280,
+        720
+      ],
+      "sourceFps": "32175000/1073047",
+      "sampleRate": "48000",
+      "channels": 2,
+      "trimStartSeconds": 4.55,
+      "trimEndSeconds": 22.85,
+      "removedHeadSeconds": 4.55,
+      "removedTailSeconds": 1.031291999999997,
+      "keptSeconds": 16.636363636363637,
+      "loudness": {
+        "input_i": "-31.87",
+        "input_tp": "-10.48",
+        "input_lra": "4.40",
+        "input_thresh": "-43.00",
+        "output_i": "-18.24",
+        "output_tp": "-3.00",
+        "output_lra": "3.30",
+        "output_thresh": "-29.06",
+        "normalization_type": "dynamic",
+        "target_offset": "1.24"
+      },
+      "silenceThresholdDb": -53.0,
+      "silenceEvents": [],
+      "trimPolicy": "Reviewed complete sentence excerpt; source intervals and excluded ranges in speech-edits.json",
+      "sourceSha256": "e9f2b809feb4ec152d853b8d248a78def9cb8ba81339a230f88fef8e2120c115",
+      "speed": 1.1,
+      "editNote": "Giữ lời chúc gửi Admin và PG đến hết câu chúc thành công; bỏ lời chào đầu và khoảng dừng cuối.",
+      "excludedRangesSeconds": [
+        [
+          0,
+          4.55
+        ],
+        [
+          22.85,
+          23.881292
+        ]
+      ],
+      "asrUtterances": [
+        {
+          "start": 0.5800000000000001,
+          "end": 3.92,
+          "text": " Xin chào toàn thể đại gia đình Âu Pô Bắc Ninh."
+        },
+        {
+          "start": 4.76,
+          "end": 9.02,
+          "text": " Nhân ngày 20 tháng 10, Ngày Phùng Đức Việt Nam, em xin được gửi lời chúc tốt đẹp nhất"
+        },
+        {
+          "start": 9.02,
+          "end": 13.62,
+          "text": " đến các chị Admin, cùng toàn thể các bạn Pigi tại khu vực."
+        },
+        {
+          "start": 14.22,
+          "end": 22.52,
+          "text": " Chúc cho mọi người luôn sinh đẹp, hạnh phúc, luôn được chiều chuộng, tự tin và thành công."
+        }
+      ],
+      "asrNote": "Automatic Vietnamese ASR is used to locate sentence boundaries; spelling and names in recognition are not authoritative. On-screen name and role come exclusively from the original filename.",
+      "orientationFilter": "",
+      "orientationNote": "Respect FFmpeg display matrix autorotation.",
+      "keptFrames": 999
+    },
+    {
+      "number": 12,
+      "name": "NGUYỄN TRƯỜNG GIANG",
+      "role": "SALE HƯNG YÊN",
+      "src": "videos/wishes/12.NGUYỄN TRƯỜNG GIANG - SALE HƯNG YÊN.mp4",
+      "sha256": "3728327b4e847363cd682f5027a5443791f3aafa5ad4cfdac2b2128a48b872e3",
+      "sourceSeconds": 28.0,
+      "width": 1280,
+      "height": 720,
+      "rotation": 0,
+      "displaySize": [
+        1280,
+        720
+      ],
+      "sourceFps": "30/1",
+      "sampleRate": "44100",
+      "channels": 1,
+      "trimStartSeconds": 7,
+      "trimEndSeconds": 25.35,
+      "removedHeadSeconds": 7,
+      "removedTailSeconds": 2.6499999999999986,
+      "keptSeconds": 16.681818181818183,
+      "loudness": {
+        "input_i": "-21.72",
+        "input_tp": "-6.13",
+        "input_lra": "2.20",
+        "input_thresh": "-32.19",
+        "output_i": "-16.79",
+        "output_tp": "-3.00",
+        "output_lra": "1.60",
+        "output_thresh": "-27.17",
+        "normalization_type": "dynamic",
+        "target_offset": "-0.21"
+      },
+      "silenceThresholdDb": -42.19,
+      "silenceEvents": [],
+      "trimPolicy": "Reviewed complete sentence excerpt; source intervals and excluded ranges in speech-edits.json",
+      "sourceSha256": "3728327b4e847363cd682f5027a5443791f3aafa5ad4cfdac2b2128a48b872e3",
+      "speed": 1.1,
+      "editNote": "Giữ lời chúc cho chị em và gia đình, năng lượng và mục tiêu; bỏ dẫn nhập dài và câu chúc mừng lặp cuối.",
+      "excludedRangesSeconds": [
+        [
+          0,
+          7
+        ],
+        [
+          25.35,
+          28.0
+        ]
+      ],
+      "asrUtterances": [
+        {
+          "start": 0.8600000000000005,
+          "end": 2.98,
+          "text": " Xin chào mọi người. Mình đã ra ăn xíu bùa nguyên."
+        },
+        {
+          "start": 3.28,
+          "end": 6.86,
+          "text": " Thì hôm nay nhân buổi quốc số phải 10 ngày hôm nay, ngày mai cũng sẽ là ngày 20 tháng 10 rồi."
+        },
+        {
+          "start": 7.2,
+          "end": 12.22,
+          "text": " Mình xin gửi đòi chúc đến tất cả các chị em, Pigi của Băng Ninh, sẽ có một ngày 20 tháng 10."
+        },
+        {
+          "start": 12.32,
+          "end": 18.2,
+          "text": " Thật là vui vẻ, chẳng đầy niềm vui và có thật nhiều thời gian bên gia đình và những người yêu thương."
+        },
+        {
+          "start": 18.36,
+          "end": 21.26,
+          "text": " Chúc chị em luôn luôn xinh đẹp, chẳng đầy đăng lượng."
+        },
+        {
+          "start": 21.46,
+          "end": 25.12,
+          "text": " Núc nào cũng sẽ tươi cười và luôn luôn đạt từ target mà khu vực để ra."
+        },
+        {
+          "start": 25.52,
+          "end": 27.0,
+          "text": " Chúc cho chị em 20 tháng 10 vui vẻ nhé."
+        }
+      ],
+      "asrNote": "Automatic Vietnamese ASR is used to locate sentence boundaries; spelling and names in recognition are not authoritative. On-screen name and role come exclusively from the original filename.",
+      "orientationFilter": "",
+      "orientationNote": "Respect FFmpeg display matrix autorotation.",
+      "keptFrames": 1001
+    },
+    {
+      "number": 13,
+      "name": "TRIỆU VIẾT HƯỚNG",
+      "role": "SALE BẮC GIANG",
+      "src": "videos/wishes/13. TRIỆU VIẾT HƯỚNG - SALE BẮC GIANG.mp4",
+      "sha256": "ed50483b4f3298c6f457e77d256461267931c4392048068ca4739146c7d1ef6e",
+      "sourceSeconds": 33.470522,
+      "width": 1280,
+      "height": 960,
+      "rotation": 0,
+      "displaySize": [
+        1280,
+        960
+      ],
+      "sourceFps": "30/1",
+      "sampleRate": "44100",
+      "channels": 1,
+      "trimStartSeconds": 1.6,
+      "trimEndSeconds": 13.95,
+      "removedHeadSeconds": 1.6,
+      "removedTailSeconds": 19.520522000000003,
+      "keptSeconds": 12.35,
+      "loudness": {
+        "input_i": "-29.71",
+        "input_tp": "-10.16",
+        "input_lra": "20.80",
+        "input_thresh": "-41.53",
+        "output_i": "-18.29",
+        "output_tp": "-3.00",
+        "output_lra": "5.00",
+        "output_thresh": "-29.67",
+        "normalization_type": "dynamic",
+        "target_offset": "1.29"
+      },
+      "silenceThresholdDb": -51.53,
+      "silenceEvents": [],
+      "trimPolicy": "Reviewed complete sentence excerpt; source intervals and excluded ranges in speech-edits.json",
+      "sourceSha256": "ed50483b4f3298c6f457e77d256461267931c4392048068ca4739146c7d1ef6e",
+      "speed": 1,
+      "editNote": "Giữ lời chúc đại diện đội Bắc Giang, xinh đẹp, vui vẻ và thành công; bỏ phần dài về mục tiêu doanh thu, thu nhập và kết lặp.",
+      "excludedRangesSeconds": [
+        [
+          0,
+          1.6
+        ],
+        [
+          13.95,
+          33.470522
+        ]
+      ],
+      "asrUtterances": [
+        {
+          "start": 1.8400000000000007,
+          "end": 13.62,
+          "text": " Chào tất cả mọi người, nhân dịp 20 tháng 10, thay mặt tim sêu khu vực Bắc Giang, xin gửi nơi chúc tốt đẹp nhất tới tất cả chị em trong khu vực Bắc Linh, chúc chị em luôn xin đẹp, vui vẻ, thành công"
+        },
+        {
+          "start": 14.22,
+          "end": 25.46,
+          "text": " Chúc cho chị em luôn đạt được nhiều mục tiêu trong năm 2026 đạt được dành thu mốc dành thu cao nhất để được có một mức nương tốt nhất."
+        },
+        {
+          "start": 25.84,
+          "end": 29.22,
+          "text": " Chúc chị em một ngày nhiều niềm vui và vui vẻ. Xin chào."
+        }
+      ],
+      "asrNote": "Automatic Vietnamese ASR is used to locate sentence boundaries; spelling and names in recognition are not authoritative. On-screen name and role come exclusively from the original filename.",
+      "orientationFilter": "",
+      "orientationNote": "Respect FFmpeg display matrix autorotation.",
+      "keptFrames": 741
+    },
+    {
+      "number": 14,
+      "name": "VŨ THẾ DUY",
+      "role": "SALE LẠNG SƠN",
+      "src": "videos/wishes/14. VŨ THẾ DUY- SALE LẠNG SƠN.mp4",
+      "sha256": "e03a09d8d27bca158ef752ae8545670c55f4eab6e9ab5697e54f697cf4c92730",
+      "sourceSeconds": 26.966,
+      "width": 1280,
+      "height": 720,
+      "rotation": -180,
+      "displaySize": [
+        1280,
+        720
+      ],
+      "sourceFps": "30/1",
+      "sampleRate": "48000",
+      "channels": 2,
+      "trimStartSeconds": 11.8,
+      "trimEndSeconds": 25.85,
+      "removedHeadSeconds": 11.8,
+      "removedTailSeconds": 1.1159999999999997,
+      "keptSeconds": 14.05,
+      "loudness": {
+        "input_i": "-34.93",
+        "input_tp": "-17.03",
+        "input_lra": "4.00",
+        "input_thresh": "-45.74",
+        "output_i": "-17.65",
+        "output_tp": "-3.00",
+        "output_lra": "3.70",
+        "output_thresh": "-28.36",
+        "normalization_type": "dynamic",
+        "target_offset": "0.65"
+      },
+      "silenceThresholdDb": -55.74,
+      "silenceEvents": [],
+      "trimPolicy": "Reviewed complete sentence excerpt; source intervals and excluded ranges in speech-edits.json",
+      "sourceSha256": "e03a09d8d27bca158ef752ae8545670c55f4eab6e9ab5697e54f697cf4c92730",
+      "speed": 1,
+      "editNote": "Giữ câu trân trọng phụ nữ và lời chúc lạc quan, thành công, hạnh phúc; bỏ chào và lời dẫn đầu.",
+      "excludedRangesSeconds": [
+        [
+          0,
+          11.8
+        ],
+        [
+          25.85,
+          26.966
+        ]
+      ],
+      "asrUtterances": [
+        {
+          "start": 0.900000000000003,
+          "end": 4.42,
+          "text": " Xin chào tất cả mọi người. Vậy là ngày 20 tháng 10 đã đến rồi."
+        },
+        {
+          "start": 5.0000000000000036,
+          "end": 11.2,
+          "text": " Mình muốn vửi lời chúc mừng nồng nhật nhất đến tất cả những người phụ nữ xinh đẹp, thông minh và mạnh mẽ."
+        },
+        {
+          "start": 12.060000000000002,
+          "end": 17.94,
+          "text": " Các bạn chính là những đó rửa rỡ, tô điểm thêm trong cuộc sống chứa phần ý nghĩa."
+        },
+        {
+          "start": 18.92,
+          "end": 25.52,
+          "text": " Chúc các bạn luôn giữ tinh thần lạc quan, gặp hái được nhiều thành công và luôn hạnh phúc trên con đường mình đã chọn."
+        }
+      ],
+      "asrNote": "Automatic Vietnamese ASR is used to locate sentence boundaries; spelling and names in recognition are not authoritative. On-screen name and role come exclusively from the original filename.",
+      "orientationFilter": "",
+      "orientationNote": "Respect FFmpeg display matrix autorotation.",
+      "keptFrames": 843
+    },
+    {
+      "number": 15,
+      "name": "NGUYỄN VĂN LƯƠNG",
+      "role": "PB BẮC NINH",
+      "src": "videos/wishes/15. NGUYỄN VĂN LƯƠNG - PB BẮC NINH.mp4",
+      "sha256": "05dc7504762ba740c1184a8435442e405cfd9d11e0c0942629c1d682570a4ef9",
+      "sourceSeconds": 12.318708,
+      "width": 848,
+      "height": 480,
+      "rotation": 0,
+      "displaySize": [
+        848,
+        480
+      ],
+      "sourceFps": "6606000/220177",
+      "sampleRate": "48000",
+      "channels": 2,
+      "trimStartSeconds": 0,
+      "trimEndSeconds": 10.85,
+      "removedHeadSeconds": 0,
+      "removedTailSeconds": 1.4687080000000012,
+      "keptSeconds": 10.85,
+      "loudness": {
+        "input_i": "-29.00",
+        "input_tp": "-7.16",
+        "input_lra": "2.80",
+        "input_thresh": "-40.05",
+        "output_i": "-17.68",
+        "output_tp": "-3.00",
+        "output_lra": "1.70",
+        "output_thresh": "-28.40",
+        "normalization_type": "dynamic",
+        "target_offset": "0.68"
+      },
+      "silenceThresholdDb": -50.05,
+      "silenceEvents": [],
+      "trimPolicy": "Reviewed complete sentence excerpt; source intervals and excluded ranges in speech-edits.json",
+      "sourceSha256": "05dc7504762ba740c1184a8435442e405cfd9d11e0c0942629c1d682570a4ef9",
+      "speed": 1,
+      "editNote": "Giữ trọn lời chúc ngắn của nhân sự; bỏ khoảng dừng quay cuối.",
+      "excludedRangesSeconds": [
+        [
+          0,
+          0
+        ],
+        [
+          10.85,
+          12.318708
+        ]
+      ],
+      "asrUtterances": [
+        {
+          "start": 0.0,
+          "end": 8.7,
+          "text": " Em lương chúc chị em ôc bồ 20 tháng 10 vui vẻ, sinh đẹp trẻ khỏe, sinh sắn tươi tắn và hết mình bị công ty Nga, mong chị em được số như mong muốn."
+        },
+        {
+          "start": 9.260000000000002,
+          "end": 10.42,
+          "text": " 20 tháng 10 vui vẻ hả?"
+        }
+      ],
+      "asrNote": "Automatic Vietnamese ASR is used to locate sentence boundaries; spelling and names in recognition are not authoritative. On-screen name and role come exclusively from the original filename.",
+      "orientationFilter": "",
+      "orientationNote": "Respect FFmpeg display matrix autorotation.",
+      "keptFrames": 651
+    },
+    {
+      "number": 16,
+      "name": "PHẠM VĂN TÙNG",
+      "role": "PB BẮC NINH",
+      "src": "videos/wishes/16, PHẠM VĂN TÙNG - PB BẮC NINH.mp4",
+      "sha256": "f96138783002d9a0c2af262f0906d30829fe14e52bac047deef757726be9ade8",
+      "sourceSeconds": 27.648,
+      "width": 1280,
+      "height": 720,
+      "rotation": -180,
+      "displaySize": [
+        1280,
+        720
+      ],
+      "sourceFps": "24780000/825919",
+      "sampleRate": "48000",
+      "channels": 2,
+      "trimStartSeconds": 5.05,
+      "trimEndSeconds": 19.5,
+      "removedHeadSeconds": 5.05,
+      "removedTailSeconds": 8.148,
+      "keptSeconds": 14.45,
+      "loudness": {
+        "input_i": "-22.83",
+        "input_tp": "-1.96",
+        "input_lra": "3.90",
+        "input_thresh": "-32.86",
+        "output_i": "-16.54",
+        "output_tp": "-3.00",
+        "output_lra": "2.90",
+        "output_thresh": "-26.54",
+        "normalization_type": "dynamic",
+        "target_offset": "-0.46"
+      },
+      "silenceThresholdDb": -42.86,
+      "silenceEvents": [],
+      "trimPolicy": "Reviewed complete sentence excerpt; source intervals and excluded ranges in speech-edits.json",
+      "sourceSha256": "f96138783002d9a0c2af262f0906d30829fe14e52bac047deef757726be9ade8",
+      "speed": 1,
+      "editNote": "Giữ lời chúc của cả hai người xuất hiện trong video: cuộc sống, KPI, doanh số và thu nhập; bỏ chào đầu, phần bổ sung đi chơi và khẩu hiệu cuối.",
+      "excludedRangesSeconds": [
+        [
+          0,
+          5.05
+        ],
+        [
+          19.5,
+          27.648
+        ]
+      ],
+      "asrUtterances": [
+        {
+          "start": 2.4000000000000044,
+          "end": 4.52,
+          "text": " Xin chào chị em hót bồ nha"
+        },
+        {
+          "start": 5.280000000000002,
+          "end": 12.02,
+          "text": " Hôm nay là 20 tháng 10, chúc chị em hót bồ Bắc Ninh luôn sinh đẹp đạn rồi, luôn thành công trong cuộc sống"
+        },
+        {
+          "start": 12.780000000000003,
+          "end": 19.28,
+          "text": " Chúc quan đệ chị em hót bồ nhà mình luôn đặt KBI này, về số này, thu nhập cao này, thưởng cao này"
+        },
+        {
+          "start": 19.28,
+          "end": 24.36,
+          "text": " Luôn được đi Vivu đây đó khi mà thu nhập đã cao nha"
+        },
+        {
+          "start": 24.880000000000003,
+          "end": 25.9,
+          "text": " Hót bồ máy đỉnh"
+        },
+        {
+          "start": 25.9,
+          "end": 27.06,
+          "text": " Máy đỉnh luôn"
+        }
+      ],
+      "asrNote": "Automatic Vietnamese ASR is used to locate sentence boundaries; spelling and names in recognition are not authoritative. On-screen name and role come exclusively from the original filename.",
+      "orientationFilter": "",
+      "orientationNote": "Respect FFmpeg display matrix autorotation.",
+      "keptFrames": 867
+    }
+  ],
+  "photoGroups": [
+    {
+      "number": 1,
+      "startFrame": 652,
+      "endFrame": 5008
+    },
+    {
+      "number": 2,
+      "startFrame": 8735,
+      "endFrame": 13091
+    },
+    {
+      "number": 3,
+      "startFrame": 15867,
+      "endFrame": 20223
+    },
+    {
+      "number": 4,
+      "startFrame": 24098,
+      "endFrame": 28454
+    }
+  ],
+  "scenes": [
+    {
+      "kind": "video",
+      "id": "intro",
+      "durationInFrames": 498,
+      "startFrame": 0,
+      "endFrame": 498,
+      "stagedSrc": "generated/final/scenes/intro.mp4",
+      "src": "videos/Intro.mp4"
+    },
+    {
+      "kind": "graphic",
+      "id": "title",
+      "durationInFrames": 208,
+      "startFrame": 471,
+      "endFrame": 679,
+      "stagedSrc": "generated/final/scenes/title.mp4",
+      "asset": "title.png"
+    },
+    {
+      "kind": "photo",
+      "id": "photo-01",
+      "durationInFrames": 360,
+      "startFrame": 652,
+      "endFrame": 1012,
+      "stagedSrc": "generated/final/scenes/photo-01.mp4",
+      "photoNumber": 1,
+      "src": "photos/01_BÙI THỊ HUYỀN TRANG.png",
+      "sha256": "d1b01b596230bc8af7869db47b2cb82a017605159fd00181f89da342f8fda0f3",
+      "width": 1672,
+      "height": 941,
+      "clearReadingSeconds": 5.1
+    },
+    {
+      "kind": "photo",
+      "id": "photo-02",
+      "durationInFrames": 360,
+      "startFrame": 985,
+      "endFrame": 1345,
+      "stagedSrc": "generated/final/scenes/photo-02.mp4",
+      "photoNumber": 2,
+      "src": "photos/01_HOÀNG THỊ NGÁT.png",
+      "sha256": "095ce068778c0cc60c16f2ba364bcee30bfbbc649b407a801b6c8eeb24761f22",
+      "width": 1672,
+      "height": 941,
+      "clearReadingSeconds": 5.1
+    },
+    {
+      "kind": "photo",
+      "id": "photo-03",
+      "durationInFrames": 360,
+      "startFrame": 1318,
+      "endFrame": 1678,
+      "stagedSrc": "generated/final/scenes/photo-03.mp4",
+      "photoNumber": 3,
+      "src": "photos/01_HÀ THỊ LAN HƯƠNG.png",
+      "sha256": "55735e310b2d468705753dfda9babb2d10bd1f6e07b52f830c1a7c8c1dbff870",
+      "width": 1672,
+      "height": 941,
+      "clearReadingSeconds": 5.1
+    },
+    {
+      "kind": "photo",
+      "id": "photo-04",
+      "durationInFrames": 360,
+      "startFrame": 1651,
+      "endFrame": 2011,
+      "stagedSrc": "generated/final/scenes/photo-04.mp4",
+      "photoNumber": 4,
+      "src": "photos/01_HÀ TỐ UYÊN.png",
+      "sha256": "8fd4183534e0b90dc47874474a36f6739b311db4b60c1b5f1b3133c0827d56ec",
+      "width": 1672,
+      "height": 941,
+      "clearReadingSeconds": 5.1
+    },
+    {
+      "kind": "photo",
+      "id": "photo-05",
+      "durationInFrames": 360,
+      "startFrame": 1984,
+      "endFrame": 2344,
+      "stagedSrc": "generated/final/scenes/photo-05.mp4",
+      "photoNumber": 5,
+      "src": "photos/01_NGUYỄN THỊ HÀ VI.png",
+      "sha256": "0c21e73dd70066993ad09491ad00f219a5218e8e8fa331491637d08de50b1c40",
+      "width": 1672,
+      "height": 941,
+      "clearReadingSeconds": 5.1
+    },
+    {
+      "kind": "photo",
+      "id": "photo-06",
+      "durationInFrames": 360,
+      "startFrame": 2317,
+      "endFrame": 2677,
+      "stagedSrc": "generated/final/scenes/photo-06.mp4",
+      "photoNumber": 6,
+      "src": "photos/02_BÙI THỊ MỸ LINH.png",
+      "sha256": "3a2596202bda53307794179018a773f89e8c55fcb35a3db055b545d76b2776fb",
+      "width": 1672,
+      "height": 941,
+      "clearReadingSeconds": 5.1
+    },
+    {
+      "kind": "photo",
+      "id": "photo-07",
+      "durationInFrames": 360,
+      "startFrame": 2650,
+      "endFrame": 3010,
+      "stagedSrc": "generated/final/scenes/photo-07.mp4",
+      "photoNumber": 7,
+      "src": "photos/02_HOÀNG QUỲNH NHƯ.png",
+      "sha256": "4c143eda048b517e7b73b7161ea270db08789c192b2af921fcdbdada8f0eb695",
+      "width": 1672,
+      "height": 941,
+      "clearReadingSeconds": 5.1
+    },
+    {
+      "kind": "photo",
+      "id": "photo-08",
+      "durationInFrames": 360,
+      "startFrame": 2983,
+      "endFrame": 3343,
+      "stagedSrc": "generated/final/scenes/photo-08.mp4",
+      "photoNumber": 8,
+      "src": "photos/02_HOÀNG THỊ NGỌC ANH.png",
+      "sha256": "416a77908b08fcc22023fcf95c3bd3bfdeb8bcfa60a4d9d9b2c6a9382e2246ec",
+      "width": 1672,
+      "height": 941,
+      "clearReadingSeconds": 5.1
+    },
+    {
+      "kind": "photo",
+      "id": "photo-09",
+      "durationInFrames": 360,
+      "startFrame": 3316,
+      "endFrame": 3676,
+      "stagedSrc": "generated/final/scenes/photo-09.mp4",
+      "photoNumber": 9,
+      "src": "photos/02_NGUYỄN THỊ HẢI.png",
+      "sha256": "4e0e40731bfa99c6c6126235a60eed3525874fd7c1781e6078bb400a3a6d2478",
+      "width": 1672,
+      "height": 941,
+      "clearReadingSeconds": 5.1
+    },
+    {
+      "kind": "photo",
+      "id": "photo-10",
+      "durationInFrames": 360,
+      "startFrame": 3649,
+      "endFrame": 4009,
+      "stagedSrc": "generated/final/scenes/photo-10.mp4",
+      "photoNumber": 10,
+      "src": "photos/02_NGUYỄN THỊ YẾN LINH.png",
+      "sha256": "59d44cf7d3bf88bd6eb8427f10ba2161862455141b26f9fe7bee5d2afcfd049e",
+      "width": 1672,
+      "height": 941,
+      "clearReadingSeconds": 5.1
+    },
+    {
+      "kind": "photo",
+      "id": "photo-11",
+      "durationInFrames": 360,
+      "startFrame": 3982,
+      "endFrame": 4342,
+      "stagedSrc": "generated/final/scenes/photo-11.mp4",
+      "photoNumber": 11,
+      "src": "photos/03_BÙI THU THỦY.png",
+      "sha256": "96e7f5dad3b1407e00c418832b1d06a16b4b8cc6f1f591a0e21d0a323d32ed2c",
+      "width": 1672,
+      "height": 941,
+      "clearReadingSeconds": 5.1
+    },
+    {
+      "kind": "photo",
+      "id": "photo-12",
+      "durationInFrames": 360,
+      "startFrame": 4315,
+      "endFrame": 4675,
+      "stagedSrc": "generated/final/scenes/photo-12.mp4",
+      "photoNumber": 12,
+      "src": "photos/03_HOÀNG THỊ LIÊN.png",
+      "sha256": "340e076c040059101d41c791aa5350c803b1dd9dc50f5a0458e1a08323aa7b08",
+      "width": 1672,
+      "height": 941,
+      "clearReadingSeconds": 5.1
+    },
+    {
+      "kind": "photo",
+      "id": "photo-13",
+      "durationInFrames": 360,
+      "startFrame": 4648,
+      "endFrame": 5008,
+      "stagedSrc": "generated/final/scenes/photo-13.mp4",
+      "photoNumber": 13,
+      "src": "photos/03_HOÀNG THỊ THANH TUYỀN.png",
+      "sha256": "ba01ff6019ba927ba771ba3a02a6f183bbee618c60c0798284b50fd55da1f0ac",
+      "width": 1672,
+      "height": 941,
+      "clearReadingSeconds": 5.1
+    },
+    {
+      "kind": "graphic",
+      "id": "bridge-1",
+      "durationInFrames": 150,
+      "startFrame": 4981,
+      "endFrame": 5131,
+      "stagedSrc": "generated/final/scenes/bridge-1.mp4",
+      "asset": "bridge-1.png"
+    },
+    {
+      "kind": "wish",
+      "id": "wish-01",
+      "durationInFrames": 1067,
+      "startFrame": 5104,
+      "endFrame": 6171,
+      "stagedSrc": "generated/final/scenes/wish-01.mp4",
+      "number": 1,
+      "name": "NGUYỄN CÔNG HƯNG",
+      "role": "RM",
+      "src": "videos/wishes/1. NGUYỄN CÔNG HƯNG - RM.mp4",
+      "sha256": "d5a586ef68c4c6307193ba1dbae5766e0cf699ef4f7ad3f8d62e4c6e1c1d5f3e",
+      "sourceSeconds": 30.564834,
+      "width": 1920,
+      "height": 1080,
+      "rotation": 0,
+      "displaySize": [
+        1920,
+        1080
+      ],
+      "sourceFps": "27600000/915619",
+      "sampleRate": "48000",
+      "channels": 2,
+      "trimStartSeconds": 7.18,
+      "trimEndSeconds": 25.75,
+      "removedHeadSeconds": 7.18,
+      "removedTailSeconds": 4.814834000000001,
+      "keptSeconds": 16.88181818181818,
+      "loudness": {
+        "input_i": "-28.36",
+        "input_tp": "-10.32",
+        "input_lra": "5.20",
+        "input_thresh": "-39.72",
+        "output_i": "-16.50",
+        "output_tp": "-3.00",
+        "output_lra": "2.50",
+        "output_thresh": "-27.70",
+        "normalization_type": "dynamic",
+        "target_offset": "-0.50"
+      },
+      "silenceThresholdDb": -49.72,
+      "silenceEvents": [
+        [
+          "start",
+          11.170229
+        ],
+        [
+          "end",
+          12.367437
+        ],
+        [
+          "start",
+          17.565708
+        ],
+        [
+          "end",
+          18.840521
+        ],
+        [
+          "start",
+          25.702354
+        ],
+        [
+          "end",
+          26.955042
+        ],
+        [
+          "start",
+          29.645062
+        ],
+        [
+          "end",
+          30.477104
+        ]
+      ],
+      "trimPolicy": "Reviewed complete sentence excerpt; source intervals and excluded ranges in speech-edits.json",
+      "sourceSha256": "d5a586ef68c4c6307193ba1dbae5766e0cf699ef4f7ad3f8d62e4c6e1c1d5f3e",
+      "speed": 1.1,
+      "editNote": "Giữ lời chúc, cảm ơn nỗ lực và lời chúc thành công; bỏ chào đầu và lời chúc mừng lặp ở cuối.",
+      "excludedRangesSeconds": [
+        [
+          0,
+          7.18
+        ],
+        [
+          25.75,
+          30.564834
+        ]
+      ],
+      "asrUtterances": [
+        {
+          "start": 0.7400000000000013,
+          "end": 6.88,
+          "text": " Xin chào tất cả các sĩ em sinh đẹp của Ủa Pô Băng Nình, Nhân Hệ Phụ Nữ Việt Nam 20 tháng 10."
+        },
+        {
+          "start": 7.38,
+          "end": 11.24,
+          "text": " Anh xin chúc các em đơn sinh đẹp, giãn rỡ, hạnh phúc và trần đài năng lợi."
+        },
+        {
+          "start": 11.98,
+          "end": 17.28,
+          "text": " Cảm cảm các em vì những nỗ lực, sự nhệt huyết và những đóng góc cho khu vực trong suốt thời gian qua."
+        },
+        {
+          "start": 18.380000000000003,
+          "end": 25.44,
+          "text": " Chúc các em luôn giữ tinh thần, tự tin trinh phục những mục tiêu mới và đặc biệt thật là thành công cùng với fight 10 series sắp tới."
+        },
+        {
+          "start": 26.48,
+          "end": 28.68,
+          "text": " Chúc mừng ngày phụ nữ Việt Nam 20 tháng 10."
+        },
+        {
+          "start": 28.68,
+          "end": 28.74,
+          "text": " Hẹn gặp lại!"
+        }
+      ],
+      "asrNote": "Automatic Vietnamese ASR is used to locate sentence boundaries; spelling and names in recognition are not authoritative. On-screen name and role come exclusively from the original filename.",
+      "orientationFilter": "",
+      "orientationNote": "Respect FFmpeg display matrix autorotation.",
+      "keptFrames": 1013,
+      "voiceStartFrame": 5131,
+      "voiceEndFrame": 6144,
+      "lowerThirdStartSeconds": 0.75,
+      "lowerThirdEndSeconds": 4.5
+    },
+    {
+      "kind": "wish",
+      "id": "wish-02",
+      "durationInFrames": 852,
+      "startFrame": 6144,
+      "endFrame": 6996,
+      "stagedSrc": "generated/final/scenes/wish-02.mp4",
+      "number": 2,
+      "name": "TRẦN TUẤN HƯNG",
+      "role": "SALE LEADER",
+      "src": "videos/wishes/2. TRẦN TUẤN HƯNG - SALE LEADER.mp4",
+      "sha256": "16d7eb1ed271b50f3ecad6ed03fd0cad4db8c0d2951038b17b86bb9c513c82bc",
+      "sourceSeconds": 29.76,
+      "width": 540,
+      "height": 960,
+      "rotation": 0,
+      "displaySize": [
+        960,
+        540
+      ],
+      "sourceFps": "25/1",
+      "sampleRate": "44100",
+      "channels": 2,
+      "trimStartSeconds": 11.25,
+      "trimEndSeconds": 24.55,
+      "removedHeadSeconds": 11.25,
+      "removedTailSeconds": 5.210000000000001,
+      "keptSeconds": 13.3,
+      "loudness": {
+        "input_i": "-20.85",
+        "input_tp": "-0.73",
+        "input_lra": "6.80",
+        "input_thresh": "-31.67",
+        "output_i": "-18.57",
+        "output_tp": "-3.00",
+        "output_lra": "4.90",
+        "output_thresh": "-29.30",
+        "normalization_type": "dynamic",
+        "target_offset": "1.57"
+      },
+      "silenceThresholdDb": -41.67,
+      "silenceEvents": [],
+      "trimPolicy": "Reviewed complete sentence excerpt; source intervals and excluded ranges in speech-edits.json",
+      "sourceSha256": "16d7eb1ed271b50f3ecad6ed03fd0cad4db8c0d2951038b17b86bb9c513c82bc",
+      "speed": 1,
+      "editNote": "Giữ câu cảm ơn và lời chúc về công việc, cuộc sống; bỏ lời chào, dẫn nhập và kết lặp.",
+      "excludedRangesSeconds": [
+        [
+          0,
+          11.25
+        ],
+        [
+          24.55,
+          29.76
+        ]
+      ],
+      "asrUtterances": [
+        {
+          "start": 0.7800000000000005,
+          "end": 1.44,
+          "text": " Chào các nhà!"
+        },
+        {
+          "start": 2.34,
+          "end": 6.06,
+          "text": " Nhân ngày phút in Việt Nam, 20 tháng 10, anh xin gửi những lời chúc tốt đẹp nhất"
+        },
+        {
+          "start": 6.540000000000001,
+          "end": 8.88,
+          "text": " tới tất cả các chị em trong đại gia đình Úi Pô Vâng Ninh"
+        },
+        {
+          "start": 9.3,
+          "end": 10.94,
+          "text": " Đặc biệt là các bạn Phi Giê Thanh Yêu"
+        },
+        {
+          "start": 11.48,
+          "end": 15.66,
+          "text": " Cảmơn mọi người đã luôn nhận huyết, tận tâm và nỗ lực hết mình trong công việc"
+        },
+        {
+          "start": 16.080000000000002,
+          "end": 19.78,
+          "text": " Chúc chị em luôn xin đẹp, hạnh phúc, tự tin và tỏa sáng"
+        },
+        {
+          "start": 19.78,
+          "end": 22.04,
+          "text": " không chỉ trong công việc, mà cả trong cuộc sống"
+        },
+        {
+          "start": 22.04,
+          "end": 24.18,
+          "text": " đặc biệt từ lúc nào phải về mốc 3"
+        },
+        {
+          "start": 24.92,
+          "end": 28.98,
+          "text": " Chúc mừng ngày 10 tháng 10, mãi yêu thương và tự hào về đại gia đình Úi Pô Vâng Ninh"
+        }
+      ],
+      "asrNote": "Automatic Vietnamese ASR is used to locate sentence boundaries; spelling and names in recognition are not authoritative. On-screen name and role come exclusively from the original filename.",
+      "orientationFilter": "transpose=cclock",
+      "orientationNote": "Additional counterclockwise 90 degrees; baked sideways pixels, no metadata.",
+      "keptFrames": 798,
+      "voiceStartFrame": 6171,
+      "voiceEndFrame": 6969,
+      "lowerThirdStartSeconds": 0.75,
+      "lowerThirdEndSeconds": 4.5
+    },
+    {
+      "kind": "wish",
+      "id": "wish-03",
+      "durationInFrames": 768,
+      "startFrame": 6969,
+      "endFrame": 7737,
+      "stagedSrc": "generated/final/scenes/wish-03.mp4",
+      "number": 3,
+      "name": "PHAN ĐÌNH QUYỀN",
+      "role": "SALE LEADER",
+      "src": "videos/wishes/3. PHAN ĐÌNH QUYỀN - SALE LEADER.mp4",
+      "sha256": "4e0b4f34f72078111310b427f17c8f9f54203d85e3988d0f6e4ca020cb17c931",
+      "sourceSeconds": 12.821011,
+      "width": 1280,
+      "height": 720,
+      "rotation": 90,
+      "displaySize": [
+        720,
+        1280
+      ],
+      "sourceFps": "34650000/1153891",
+      "sampleRate": "48000",
+      "channels": 2,
+      "trimStartSeconds": 0.4,
+      "trimEndSeconds": 12.3,
+      "removedHeadSeconds": 0.4,
+      "removedTailSeconds": 0.5210109999999997,
+      "keptSeconds": 11.9,
+      "loudness": {
+        "input_i": "-29.54",
+        "input_tp": "-13.45",
+        "input_lra": "5.70",
+        "input_thresh": "-40.57",
+        "output_i": "-17.25",
+        "output_tp": "-3.00",
+        "output_lra": "3.50",
+        "output_thresh": "-28.08",
+        "normalization_type": "dynamic",
+        "target_offset": "0.25"
+      },
+      "silenceThresholdDb": -50.57,
+      "silenceEvents": [],
+      "trimPolicy": "Reviewed complete sentence excerpt; source intervals and excluded ranges in speech-edits.json",
+      "sourceSha256": "4e0b4f34f72078111310b427f17c8f9f54203d85e3988d0f6e4ca020cb17c931",
+      "speed": 1,
+      "editNote": "Giữ trọn lời chúc; chỉ bỏ khoảng chuẩn bị ở đầu/cuối.",
+      "excludedRangesSeconds": [
+        [
+          0,
+          0.4
+        ],
+        [
+          12.3,
+          12.821011
+        ]
+      ],
+      "asrUtterances": [
+        {
+          "start": 0.6799999999999997,
+          "end": 11.94,
+          "text": " Những ngày 20 tháng 10, anh xin chúc tất cả các bạn bí duy ôp bô, chiến binh ôp bô 1 ngày 20 tháng 10, luôn luôn sinh đẹp, vui vẻ và hạnh phúc. Chúc các em luôn giữ được nhìa thuyết trong công việc."
+        }
+      ],
+      "asrNote": "Automatic Vietnamese ASR is used to locate sentence boundaries; spelling and names in recognition are not authoritative. On-screen name and role come exclusively from the original filename.",
+      "orientationFilter": "",
+      "orientationNote": "Respect FFmpeg display matrix autorotation.",
+      "keptFrames": 714,
+      "voiceStartFrame": 6996,
+      "voiceEndFrame": 7710,
+      "lowerThirdStartSeconds": 0.75,
+      "lowerThirdEndSeconds": 4.5
+    },
+    {
+      "kind": "wish",
+      "id": "wish-04",
+      "durationInFrames": 1052,
+      "startFrame": 7710,
+      "endFrame": 8762,
+      "stagedSrc": "generated/final/scenes/wish-04.mp4",
+      "number": 4,
+      "name": "NGUYỄN KINH TUẤN",
+      "role": "SALE LEADER",
+      "src": "videos/wishes/4. NGUYỄN KINH TUẤN - SALE LEADER.mp4",
+      "sha256": "8a6f930d5f4d53c1e2eb5500556706228f1307de10a0f2050f473f61cefb6b7d",
+      "sourceSeconds": 25.204,
+      "width": 1280,
+      "height": 720,
+      "rotation": 0,
+      "displaySize": [
+        1280,
+        720
+      ],
+      "sourceFps": "33885000/1129381",
+      "sampleRate": "48000",
+      "channels": 2,
+      "trimStartSeconds": 5.5,
+      "trimEndSeconds": 22.95,
+      "removedHeadSeconds": 5.5,
+      "removedTailSeconds": 2.2540000000000013,
+      "keptSeconds": 16.619047619047617,
+      "loudness": {
+        "input_i": "-37.91",
+        "input_tp": "-18.42",
+        "input_lra": "4.70",
+        "input_thresh": "-48.94",
+        "output_i": "-17.70",
+        "output_tp": "-3.00",
+        "output_lra": "2.10",
+        "output_thresh": "-28.22",
+        "normalization_type": "dynamic",
+        "target_offset": "0.70"
+      },
+      "silenceThresholdDb": -58.94,
+      "silenceEvents": [],
+      "trimPolicy": "Reviewed complete sentence excerpt; source intervals and excluded ranges in speech-edits.json",
+      "sourceSha256": "8a6f930d5f4d53c1e2eb5500556706228f1307de10a0f2050f473f61cefb6b7d",
+      "speed": 1.05,
+      "editNote": "Giữ lời chúc nhân ngày 20/10 và các câu chúc tiếp theo; bỏ tự giới thiệu, chào và thao tác kết thúc.",
+      "excludedRangesSeconds": [
+        [
+          0,
+          5.5
+        ],
+        [
+          22.95,
+          25.204
+        ]
+      ],
+      "asrUtterances": [
+        {
+          "start": 1.7600000000000016,
+          "end": 2.7,
+          "text": " Xin chào tất cả các bạn."
+        },
+        {
+          "start": 3.06,
+          "end": 5.26,
+          "text": " Anh là Tuấn Phú Trách Kênh Yên, đi khu vực Bắc Ninh."
+        },
+        {
+          "start": 5.76,
+          "end": 6.82,
+          "text": " Nhân ngày 20 tháng 10,"
+        },
+        {
+          "start": 7.22,
+          "end": 9.96,
+          "text": " anh xin hữu những lời chúc tốt đẹp nhất để toàn thể các chị em"
+        },
+        {
+          "start": 9.96,
+          "end": 11.98,
+          "text": " đang hợp biệt tại gia đình Âu Bâu."
+        },
+        {
+          "start": 12.56,
+          "end": 14.9,
+          "text": " Chúc các chị em luôn sinh đẹp, dạng người,"
+        },
+        {
+          "start": 15.42,
+          "end": 16.68,
+          "text": " thành công trên tất cả các mọi liên vực."
+        },
+        {
+          "start": 17.04,
+          "end": 20.0,
+          "text": " Và đặc biệt, luôn yêu thương, người đàn ông"
+        },
+        {
+          "start": 20.0,
+          "end": 22.64,
+          "text": " đã đang sắp đồng hành của người mình."
+        }
+      ],
+      "asrNote": "Automatic Vietnamese ASR is used to locate sentence boundaries; spelling and names in recognition are not authoritative. On-screen name and role come exclusively from the original filename.",
+      "orientationFilter": "",
+      "orientationNote": "Respect FFmpeg display matrix autorotation.",
+      "keptFrames": 998,
+      "voiceStartFrame": 7737,
+      "voiceEndFrame": 8735,
+      "lowerThirdStartSeconds": 0.75,
+      "lowerThirdEndSeconds": 4.5
+    },
+    {
+      "kind": "photo",
+      "id": "photo-14",
+      "durationInFrames": 360,
+      "startFrame": 8735,
+      "endFrame": 9095,
+      "stagedSrc": "generated/final/scenes/photo-14.mp4",
+      "photoNumber": 14,
+      "src": "photos/03_NGUYỄN THỊ HOA.png",
+      "sha256": "04ba80c22f2cbfee337b3373515998d0c403571fc4f84d961eef584f1137bc4f",
+      "width": 1672,
+      "height": 941,
+      "clearReadingSeconds": 5.1
+    },
+    {
+      "kind": "photo",
+      "id": "photo-15",
+      "durationInFrames": 360,
+      "startFrame": 9068,
+      "endFrame": 9428,
+      "stagedSrc": "generated/final/scenes/photo-15.mp4",
+      "photoNumber": 15,
+      "src": "photos/03_PHẠM CHI MAI.png",
+      "sha256": "cd6f0d494af7aa56b047f4132080177b79d432f187aa6364b0465cec3aa13484",
+      "width": 1672,
+      "height": 941,
+      "clearReadingSeconds": 5.1
+    },
+    {
+      "kind": "photo",
+      "id": "photo-16",
+      "durationInFrames": 360,
+      "startFrame": 9401,
+      "endFrame": 9761,
+      "stagedSrc": "generated/final/scenes/photo-16.mp4",
+      "photoNumber": 16,
+      "src": "photos/04_DƯƠNG THỊ MAI.png",
+      "sha256": "95b11dee48b7ed71a301f315857ffa20bb570130c9cbb04542f9fbb6403028fa",
+      "width": 1672,
+      "height": 941,
+      "clearReadingSeconds": 5.1
+    },
+    {
+      "kind": "photo",
+      "id": "photo-17",
+      "durationInFrames": 360,
+      "startFrame": 9734,
+      "endFrame": 10094,
+      "stagedSrc": "generated/final/scenes/photo-17.mp4",
+      "photoNumber": 17,
+      "src": "photos/04_HOÀNG THỊ THẢO.png",
+      "sha256": "783bc9881c07fb62089f4f980d80e52a8528c248a06fda110743bf4a5fdb6c47",
+      "width": 1672,
+      "height": 941,
+      "clearReadingSeconds": 5.1
+    },
+    {
+      "kind": "photo",
+      "id": "photo-18",
+      "durationInFrames": 360,
+      "startFrame": 10067,
+      "endFrame": 10427,
+      "stagedSrc": "generated/final/scenes/photo-18.mp4",
+      "photoNumber": 18,
+      "src": "photos/04_NGUYỄN MINH KHÁNH.png",
+      "sha256": "6036786539fc9ea65207e337a41dc8495b25b381bb1b8fc0255f2de035bfa115",
+      "width": 1672,
+      "height": 941,
+      "clearReadingSeconds": 5.1
+    },
+    {
+      "kind": "photo",
+      "id": "photo-19",
+      "durationInFrames": 360,
+      "startFrame": 10400,
+      "endFrame": 10760,
+      "stagedSrc": "generated/final/scenes/photo-19.mp4",
+      "photoNumber": 19,
+      "src": "photos/04_NGUYỄN THỊ HỒNG LINH.png",
+      "sha256": "3e864bd184aa7ae03db4a38508b8917f22438fede94b20a3804285206a46fe57",
+      "width": 1672,
+      "height": 941,
+      "clearReadingSeconds": 5.1
+    },
+    {
+      "kind": "photo",
+      "id": "photo-20",
+      "durationInFrames": 360,
+      "startFrame": 10733,
+      "endFrame": 11093,
+      "stagedSrc": "generated/final/scenes/photo-20.mp4",
+      "photoNumber": 20,
+      "src": "photos/04_PHẠM THỊ TRANG.png",
+      "sha256": "f5376734e1eef68530d9779595505ca5d714a46ecaa79a12926b01da109dca38",
+      "width": 1672,
+      "height": 941,
+      "clearReadingSeconds": 5.1
+    },
+    {
+      "kind": "photo",
+      "id": "photo-21",
+      "durationInFrames": 360,
+      "startFrame": 11066,
+      "endFrame": 11426,
+      "stagedSrc": "generated/final/scenes/photo-21.mp4",
+      "photoNumber": 21,
+      "src": "photos/05_DƯƠNG THỊ QUYẾN.png",
+      "sha256": "dd9d86deaf06b9965478981e2c1a4b5d11f34a3c826da7fba75935a27cb42562",
+      "width": 1672,
+      "height": 941,
+      "clearReadingSeconds": 5.1
+    },
+    {
+      "kind": "photo",
+      "id": "photo-22",
+      "durationInFrames": 360,
+      "startFrame": 11399,
+      "endFrame": 11759,
+      "stagedSrc": "generated/final/scenes/photo-22.mp4",
+      "photoNumber": 22,
+      "src": "photos/05_HOÀNG THỊ TRANG.png",
+      "sha256": "8d6df6f791a09c102a7061a0a6465f3c3d84b6f7f7cba841c7b447c8221a971a",
+      "width": 1672,
+      "height": 941,
+      "clearReadingSeconds": 5.1
+    },
+    {
+      "kind": "photo",
+      "id": "photo-23",
+      "durationInFrames": 360,
+      "startFrame": 11732,
+      "endFrame": 12092,
+      "stagedSrc": "generated/final/scenes/photo-23.mp4",
+      "photoNumber": 23,
+      "src": "photos/05_NGUYỄN THỊ LỊCH.png",
+      "sha256": "4e0c48666969f33027bd411e64640a90781dafb6874149659e368dd71be021b3",
+      "width": 1672,
+      "height": 941,
+      "clearReadingSeconds": 5.1
+    },
+    {
+      "kind": "photo",
+      "id": "photo-24",
+      "durationInFrames": 360,
+      "startFrame": 12065,
+      "endFrame": 12425,
+      "stagedSrc": "generated/final/scenes/photo-24.mp4",
+      "photoNumber": 24,
+      "src": "photos/05_NGUYỄN THỊ ÁI VÂN.png",
+      "sha256": "30526baa5d71226e23b3f659e5e2ddc0e891b5114ae2002dfaa73a566a6948b5",
+      "width": 1672,
+      "height": 941,
+      "clearReadingSeconds": 5.1
+    },
+    {
+      "kind": "photo",
+      "id": "photo-25",
+      "durationInFrames": 360,
+      "startFrame": 12398,
+      "endFrame": 12758,
+      "stagedSrc": "generated/final/scenes/photo-25.mp4",
+      "photoNumber": 25,
+      "src": "photos/05_PHẠM THỊ XIÊM.png",
+      "sha256": "331e8f4f1249db1fa4ae7a51c2d7e1380b86e71d0f753375fd2e6d49cf1be576",
+      "width": 1672,
+      "height": 941,
+      "clearReadingSeconds": 5.1
+    },
+    {
+      "kind": "photo",
+      "id": "photo-26",
+      "durationInFrames": 360,
+      "startFrame": 12731,
+      "endFrame": 13091,
+      "stagedSrc": "generated/final/scenes/photo-26.mp4",
+      "photoNumber": 26,
+      "src": "photos/06_LÒ THỊ NGỌC BÍCH.png",
+      "sha256": "16efc78fc72e6554f8984c727afef9e72bb8bf69fb7ca78904eeb314c026cc51",
+      "width": 1672,
+      "height": 941,
+      "clearReadingSeconds": 5.1
+    },
+    {
+      "kind": "graphic",
+      "id": "bridge-2",
+      "durationInFrames": 150,
+      "startFrame": 13064,
+      "endFrame": 13214,
+      "stagedSrc": "generated/final/scenes/bridge-2.mp4",
+      "asset": "bridge-2.png"
+    },
+    {
+      "kind": "wish",
+      "id": "wish-05",
+      "durationInFrames": 981,
+      "startFrame": 13187,
+      "endFrame": 14168,
+      "stagedSrc": "generated/final/scenes/wish-05.mp4",
+      "number": 5,
+      "name": "LƯU VĂN BÁCH",
+      "role": "IOT LEADER",
+      "src": "videos/wishes/5. LƯU VĂN BÁCH - IOT LEADER.mp4",
+      "sha256": "cf6222a8b87514baecf39f73680cace8ad97f59d3be417bdd30aee3695061ea3",
+      "sourceSeconds": 19.806621,
+      "width": 960,
+      "height": 544,
+      "rotation": 0,
+      "displaySize": [
+        960,
+        544
+      ],
+      "sourceFps": "297000000/9883333",
+      "sampleRate": "44100",
+      "channels": 2,
+      "trimStartSeconds": 3.95,
+      "trimEndSeconds": 19.4,
+      "removedHeadSeconds": 3.95,
+      "removedTailSeconds": 0.40662100000000123,
+      "keptSeconds": 15.45,
+      "loudness": {
+        "input_i": "-8.91",
+        "input_tp": "-0.42",
+        "input_lra": "3.70",
+        "input_thresh": "-19.77",
+        "output_i": "-17.37",
+        "output_tp": "-7.63",
+        "output_lra": "3.40",
+        "output_thresh": "-27.98",
+        "normalization_type": "dynamic",
+        "target_offset": "0.37"
+      },
+      "silenceThresholdDb": -40,
+      "silenceEvents": [
+        [
+          "start",
+          0.0
+        ],
+        [
+          "end",
+          1.202676
+        ],
+        [
+          "start",
+          3.696553
+        ],
+        [
+          "end",
+          4.54737
+        ],
+        [
+          "start",
+          14.333991
+        ],
+        [
+          "end",
+          15.03619
+        ],
+        [
+          "start",
+          19.178889
+        ],
+        [
+          "end",
+          19.829841
+        ]
+      ],
+      "trimPolicy": "Reviewed complete sentence excerpt; source intervals and excluded ranges in speech-edits.json",
+      "sourceSha256": "cf6222a8b87514baecf39f73680cace8ad97f59d3be417bdd30aee3695061ea3",
+      "speed": 1,
+      "editNote": "Giữ từ nhân dịp 20/10 đến lời chúc thành công; bỏ lời chào đầu.",
+      "excludedRangesSeconds": [
+        [
+          0,
+          3.95
+        ],
+        [
+          19.4,
+          19.806621
+        ]
+      ],
+      "asrUtterances": [
+        {
+          "start": 0.820000000000001,
+          "end": 8.42,
+          "text": " Xin chào toàn thể các bạn thuộc Ủc Mô Văn Ninh, nhân dịp ngày 20 tháng 10 cho anh xin gửi lời chúc sức khỏe"
+        },
+        {
+          "start": 8.42,
+          "end": 14.24,
+          "text": " Chúc các bạn nữ tìm vào Ủc Mô Văn Ninh luôn luôn sinh đẹp, hạnh phúc và thành công"
+        },
+        {
+          "start": 14.9,
+          "end": 19.06,
+          "text": " Chúc các bạn bởi 5.10 series thành công thực dỡ"
+        }
+      ],
+      "asrNote": "Automatic Vietnamese ASR is used to locate sentence boundaries; spelling and names in recognition are not authoritative. On-screen name and role come exclusively from the original filename.",
+      "orientationFilter": "",
+      "orientationNote": "Respect FFmpeg display matrix autorotation.",
+      "keptFrames": 927,
+      "voiceStartFrame": 13214,
+      "voiceEndFrame": 14141,
+      "lowerThirdStartSeconds": 0.75,
+      "lowerThirdEndSeconds": 4.5
+    },
+    {
+      "kind": "wish",
+      "id": "wish-06",
+      "durationInFrames": 573,
+      "startFrame": 14141,
+      "endFrame": 14714,
+      "stagedSrc": "generated/final/scenes/wish-06.mp4",
+      "number": 6,
+      "name": "NGUYỄN THẾ DUY",
+      "role": "TRAINER",
+      "src": "videos/wishes/6. NGUYỄN THẾ DUY - TRAINER.mp4",
+      "sha256": "8e808aab3ad60b45518b627beb9c0eed9c8e22280ea633b1335d3de26797a82c",
+      "sourceSeconds": 8.846803,
+      "width": 3840,
+      "height": 2160,
+      "rotation": 0,
+      "displaySize": [
+        3840,
+        2160
+      ],
+      "sourceFps": "60/1",
+      "sampleRate": "44100",
+      "channels": 2,
+      "trimStartSeconds": 0,
+      "trimEndSeconds": 8.65,
+      "removedHeadSeconds": 0,
+      "removedTailSeconds": 0.19680299999999917,
+      "keptSeconds": 8.65,
+      "loudness": {
+        "input_i": "-30.79",
+        "input_tp": "-12.74",
+        "input_lra": "1.70",
+        "input_thresh": "-41.35",
+        "output_i": "-17.24",
+        "output_tp": "-3.00",
+        "output_lra": "0.70",
+        "output_thresh": "-27.72",
+        "normalization_type": "dynamic",
+        "target_offset": "0.24"
+      },
+      "silenceThresholdDb": -51.35,
+      "silenceEvents": [],
+      "trimPolicy": "Reviewed complete sentence excerpt; source intervals and excluded ranges in speech-edits.json",
+      "sourceSha256": "8e808aab3ad60b45518b627beb9c0eed9c8e22280ea633b1335d3de26797a82c",
+      "speed": 1,
+      "editNote": "Giữ toàn bộ lời chúc ngắn; bỏ đuôi dừng quay.",
+      "excludedRangesSeconds": [
+        [
+          0,
+          0
+        ],
+        [
+          8.65,
+          8.846803
+        ]
+      ],
+      "asrUtterances": [
+        {
+          "start": 0.0,
+          "end": 5.18,
+          "text": " Nhưng ngày 20 tháng 10, chúc các bạn luôn luôn xin đẹp, dặn dỡ và tràn đợi những năng lượng tích cực."
+        },
+        {
+          "start": 5.18,
+          "end": 8.3,
+          "text": " Đặc biệt là thành công trên thị dịch 510, phát tích!"
+        }
+      ],
+      "asrNote": "Automatic Vietnamese ASR is used to locate sentence boundaries; spelling and names in recognition are not authoritative. On-screen name and role come exclusively from the original filename.",
+      "orientationFilter": "",
+      "orientationNote": "Respect FFmpeg display matrix autorotation.",
+      "keptFrames": 519,
+      "voiceStartFrame": 14168,
+      "voiceEndFrame": 14687,
+      "lowerThirdStartSeconds": 0.75,
+      "lowerThirdEndSeconds": 4.5
+    },
+    {
+      "kind": "wish",
+      "id": "wish-07",
+      "durationInFrames": 432,
+      "startFrame": 14687,
+      "endFrame": 15119,
+      "stagedSrc": "generated/final/scenes/wish-07.mp4",
+      "number": 7,
+      "name": "NGÔ VĂN THÁI",
+      "role": "TRAINER",
+      "src": "videos/wishes/7.NGÔ VĂN THÁI - TRAINER.mp4",
+      "sha256": "a6e111a49b317a659bf58e60c440d5dafdc3e5da0c10a295e6841ff31360f558",
+      "sourceSeconds": 7.604,
+      "width": 848,
+      "height": 480,
+      "rotation": 0,
+      "displaySize": [
+        848,
+        480
+      ],
+      "sourceFps": "8280000/332203",
+      "sampleRate": "48000",
+      "channels": 2,
+      "trimStartSeconds": 0.15,
+      "trimEndSeconds": 6.45,
+      "removedHeadSeconds": 0.15,
+      "removedTailSeconds": 1.154,
+      "keptSeconds": 6.3,
+      "loudness": {
+        "input_i": "-21.29",
+        "input_tp": "-6.03",
+        "input_lra": "2.60",
+        "input_thresh": "-32.65",
+        "output_i": "-16.93",
+        "output_tp": "-3.00",
+        "output_lra": "1.50",
+        "output_thresh": "-27.88",
+        "normalization_type": "dynamic",
+        "target_offset": "-0.07"
+      },
+      "silenceThresholdDb": -42.65,
+      "silenceEvents": [
+        [
+          "start",
+          6.600375
+        ],
+        [
+          "end",
+          7.604
+        ]
+      ],
+      "trimPolicy": "Reviewed complete sentence excerpt; source intervals and excluded ranges in speech-edits.json",
+      "sourceSha256": "a6e111a49b317a659bf58e60c440d5dafdc3e5da0c10a295e6841ff31360f558",
+      "speed": 1,
+      "editNote": "Giữ trọn lời chúc; bỏ chuẩn bị và khoảng dừng cuối.",
+      "excludedRangesSeconds": [
+        [
+          0,
+          0.15
+        ],
+        [
+          6.45,
+          7.604
+        ]
+      ],
+      "asrUtterances": [
+        {
+          "start": 0.4000000000000006,
+          "end": 5.92,
+          "text": " Nhân dịp 20 tháng 10, chúc cho toàn thể chị em nhà mình luôn sinh đẹp, dặn rỡ, vui vẻ và cho nên lựng tích cực nha!"
+        }
+      ],
+      "asrNote": "Automatic Vietnamese ASR is used to locate sentence boundaries; spelling and names in recognition are not authoritative. On-screen name and role come exclusively from the original filename.",
+      "orientationFilter": "",
+      "orientationNote": "Respect FFmpeg display matrix autorotation.",
+      "keptFrames": 378,
+      "voiceStartFrame": 14714,
+      "voiceEndFrame": 15092,
+      "lowerThirdStartSeconds": 0.75,
+      "lowerThirdEndSeconds": 4.5
+    },
+    {
+      "kind": "wish",
+      "id": "wish-08",
+      "durationInFrames": 802,
+      "startFrame": 15092,
+      "endFrame": 15894,
+      "stagedSrc": "generated/final/scenes/wish-08.mp4",
+      "number": 8,
+      "name": "ĐÀO ĐĂNG THÙY",
+      "role": "SALE BẮC GIANG",
+      "src": "videos/wishes/8. ĐÀO ĐĂNG THÙY - SALE BẮC GIANG.mp4",
+      "sha256": "198d1d51b59e930b45ffcc61f242c2147756ea370834894e90c9998fd1002c5e",
+      "sourceSeconds": 27.886666,
+      "width": 960,
+      "height": 544,
+      "rotation": 0,
+      "displaySize": [
+        960,
+        544
+      ],
+      "sourceFps": "418500000/13943333",
+      "sampleRate": "44100",
+      "channels": 2,
+      "trimStartSeconds": 6.35,
+      "trimEndSeconds": 18.8,
+      "removedHeadSeconds": 6.35,
+      "removedTailSeconds": 9.086666000000001,
+      "keptSeconds": 12.450000000000001,
+      "loudness": {
+        "input_i": "-29.28",
+        "input_tp": "-15.19",
+        "input_lra": "3.40",
+        "input_thresh": "-39.79",
+        "output_i": "-16.69",
+        "output_tp": "-3.00",
+        "output_lra": "2.90",
+        "output_thresh": "-27.21",
+        "normalization_type": "dynamic",
+        "target_offset": "-0.31"
+      },
+      "silenceThresholdDb": -49.79,
+      "silenceEvents": [
+        [
+          "start",
+          8.73034
+        ],
+        [
+          "end",
+          9.450522
+        ],
+        [
+          "start",
+          13.952268
+        ],
+        [
+          "end",
+          14.779184
+        ]
+      ],
+      "trimPolicy": "Reviewed complete sentence excerpt; source intervals and excluded ranges in speech-edits.json",
+      "sourceSha256": "198d1d51b59e930b45ffcc61f242c2147756ea370834894e90c9998fd1002c5e",
+      "speed": 1,
+      "editNote": "Giữ lời chúc ngày ý nghĩa, xinh đẹp, thành công và hạnh phúc; bỏ chào dài và câu KPI cùng kết lặp.",
+      "excludedRangesSeconds": [
+        [
+          0,
+          6.35
+        ],
+        [
+          18.8,
+          27.886666
+        ]
+      ],
+      "asrUtterances": [
+        {
+          "start": 0.0,
+          "end": 4.14,
+          "text": " Lần đầu tiên cho em gửi lời chào và chúc sức khỏe đến sếp cùng toàn thể anh chị em Mốc Bồ của Bắc Linh"
+        },
+        {
+          "start": 4.14,
+          "end": 6.18,
+          "text": " Nhất ngày phố Lít Bền Lam 2080"
+        },
+        {
+          "start": 6.6000000000000005,
+          "end": 8.74,
+          "text": " Chúc toàn thể chị em Mốc Bồ của Bắc Linh"
+        },
+        {
+          "start": 9.26,
+          "end": 11.64,
+          "text": " Nói chung, chị em Mốc Bồ tiêm của Thùy Nội Dương"
+        },
+        {
+          "start": 11.64,
+          "end": 14.6,
+          "text": " Có một ngày 2080, tật sự đá y nghĩa"
+        },
+        {
+          "start": 14.6,
+          "end": 18.46,
+          "text": " Chúc chị em nôn nôn sinh nhẹp, thành công may mắn và nôn nội hạnh phúc"
+        },
+        {
+          "start": 19.1,
+          "end": 24.0,
+          "text": " Trong công việc chúc chị em nôn nôn đạt được KBI tốt nhất và hoàn thành mọi chỉ tiêu"
+        },
+        {
+          "start": 24.0,
+          "end": 25.62,
+          "text": " Cục tỳ cũng như khu vực giao"
+        },
+        {
+          "start": 25.62,
+          "end": 27.52,
+          "text": " Chúc mọi ngày 2080, vui vẻ"
+        }
+      ],
+      "asrNote": "Automatic Vietnamese ASR is used to locate sentence boundaries; spelling and names in recognition are not authoritative. On-screen name and role come exclusively from the original filename.",
+      "orientationFilter": "",
+      "orientationNote": "Respect FFmpeg display matrix autorotation.",
+      "keptFrames": 748,
+      "voiceStartFrame": 15119,
+      "voiceEndFrame": 15867,
+      "lowerThirdStartSeconds": 0.75,
+      "lowerThirdEndSeconds": 4.5
+    },
+    {
+      "kind": "photo",
+      "id": "photo-27",
+      "durationInFrames": 360,
+      "startFrame": 15867,
+      "endFrame": 16227,
+      "stagedSrc": "generated/final/scenes/photo-27.mp4",
+      "photoNumber": 27,
+      "src": "photos/06_NGUYỄN THỊ CHIÊM.png",
+      "sha256": "2f8040691dc779bf6c1313540904ebfa8bd24b6e0b26c2dd82107f7aac818f28",
+      "width": 1672,
+      "height": 941,
+      "clearReadingSeconds": 5.1
+    },
+    {
+      "kind": "photo",
+      "id": "photo-28",
+      "durationInFrames": 360,
+      "startFrame": 16200,
+      "endFrame": 16560,
+      "stagedSrc": "generated/final/scenes/photo-28.mp4",
+      "photoNumber": 28,
+      "src": "photos/06_NGUYỄN THỊ NGÂN.png",
+      "sha256": "183ca4ebde3d38ea5cccc149d13be3fb43a10fdd3d299846955e8d41b6de69c3",
+      "width": 1672,
+      "height": 941,
+      "clearReadingSeconds": 5.1
+    },
+    {
+      "kind": "photo",
+      "id": "photo-29",
+      "durationInFrames": 360,
+      "startFrame": 16533,
+      "endFrame": 16893,
+      "stagedSrc": "generated/final/scenes/photo-29.mp4",
+      "photoNumber": 29,
+      "src": "photos/06_PHÙNG THỊ HỒNG.png",
+      "sha256": "4adea47079a8ceff1822d908ce3b39e2b0988d30e72909f0443432e3ffb4334e",
+      "width": 1672,
+      "height": 941,
+      "clearReadingSeconds": 5.1
+    },
+    {
+      "kind": "photo",
+      "id": "photo-30",
+      "durationInFrames": 360,
+      "startFrame": 16866,
+      "endFrame": 17226,
+      "stagedSrc": "generated/final/scenes/photo-30.mp4",
+      "photoNumber": 30,
+      "src": "photos/06_ĐÀM THỊ LỆ.png",
+      "sha256": "1012c8edd2558645abab58b46e1cb9ad15c884efc09d6514b3e38d9bc9b46e72",
+      "width": 1672,
+      "height": 941,
+      "clearReadingSeconds": 5.1
+    },
+    {
+      "kind": "photo",
+      "id": "photo-31",
+      "durationInFrames": 360,
+      "startFrame": 17199,
+      "endFrame": 17559,
+      "stagedSrc": "generated/final/scenes/photo-31.mp4",
+      "photoNumber": 31,
+      "src": "photos/07_LƯƠNG THỊ HƯƠNG.png",
+      "sha256": "777c8295de5b1155f9aaabb96b78482b77288ad57efe57dbde4767a7a7059471",
+      "width": 1672,
+      "height": 941,
+      "clearReadingSeconds": 5.1
+    },
+    {
+      "kind": "photo",
+      "id": "photo-32",
+      "durationInFrames": 360,
+      "startFrame": 17532,
+      "endFrame": 17892,
+      "stagedSrc": "generated/final/scenes/photo-32.mp4",
+      "photoNumber": 32,
+      "src": "photos/07_NGUYỄN THỊ DIỆU NINH.png",
+      "sha256": "abadf337cc0be9600336ae4db723b9cee09a8f85f94c59e12f3b6502e51f2f66",
+      "width": 1672,
+      "height": 941,
+      "clearReadingSeconds": 5.1
+    },
+    {
+      "kind": "photo",
+      "id": "photo-33",
+      "durationInFrames": 360,
+      "startFrame": 17865,
+      "endFrame": 18225,
+      "stagedSrc": "generated/final/scenes/photo-33.mp4",
+      "photoNumber": 33,
+      "src": "photos/07_NGUYỄN THỊ NGỌC.png",
+      "sha256": "77fa3b23fb8219d1f675f33b84325ec73fe74ec6fa2b035345e324f17a87a535",
+      "width": 1672,
+      "height": 941,
+      "clearReadingSeconds": 5.1
+    },
+    {
+      "kind": "photo",
+      "id": "photo-34",
+      "durationInFrames": 360,
+      "startFrame": 18198,
+      "endFrame": 18558,
+      "stagedSrc": "generated/final/scenes/photo-34.mp4",
+      "photoNumber": 34,
+      "src": "photos/07_TRẦN HƯƠNG NHI.png",
+      "sha256": "0d9e913135329e1e7b84fdd824454ec864e4a238c6e1f241481d62451eeb3f1f",
+      "width": 1672,
+      "height": 941,
+      "clearReadingSeconds": 5.1
+    },
+    {
+      "kind": "photo",
+      "id": "photo-35",
+      "durationInFrames": 360,
+      "startFrame": 18531,
+      "endFrame": 18891,
+      "stagedSrc": "generated/final/scenes/photo-35.mp4",
+      "photoNumber": 35,
+      "src": "photos/07_ĐÀM THỊ TÂM.png",
+      "sha256": "204e43e48332bf0d7f6fd15a85ee5577cab9d108fbc7d4b4fe49af9a4ed10f5c",
+      "width": 1672,
+      "height": 941,
+      "clearReadingSeconds": 5.1
+    },
+    {
+      "kind": "photo",
+      "id": "photo-36",
+      "durationInFrames": 360,
+      "startFrame": 18864,
+      "endFrame": 19224,
+      "stagedSrc": "generated/final/scenes/photo-36.mp4",
+      "photoNumber": 36,
+      "src": "photos/08_LƯƠNG THỊ TƯƠI.png",
+      "sha256": "5f94834bc5105def85b3dc1afcf2fa2bdb2dc05cf7026e955cd21a0c9850bae7",
+      "width": 1672,
+      "height": 941,
+      "clearReadingSeconds": 5.1
+    },
+    {
+      "kind": "photo",
+      "id": "photo-37",
+      "durationInFrames": 360,
+      "startFrame": 19197,
+      "endFrame": 19557,
+      "stagedSrc": "generated/final/scenes/photo-37.mp4",
+      "photoNumber": 37,
+      "src": "photos/08_NGUYỄN THỊ NGUYỆT.png",
+      "sha256": "6b52c4cc0f8131c67a2f6258ef8bc8a2e243524ae563661b2d7c16aea85e1259",
+      "width": 1672,
+      "height": 941,
+      "clearReadingSeconds": 5.1
+    },
+    {
+      "kind": "photo",
+      "id": "photo-38",
+      "durationInFrames": 360,
+      "startFrame": 19530,
+      "endFrame": 19890,
+      "stagedSrc": "generated/final/scenes/photo-38.mp4",
+      "photoNumber": 38,
+      "src": "photos/08_NGUYỄN THỊ THOA BN.png",
+      "sha256": "bf37a5318de62d0e80f00110e83b91f0a9d52a5a62cadfa81a2c9008a05b8208",
+      "width": 1672,
+      "height": 941,
+      "clearReadingSeconds": 5.1
+    },
+    {
+      "kind": "photo",
+      "id": "photo-39",
+      "durationInFrames": 360,
+      "startFrame": 19863,
+      "endFrame": 20223,
+      "stagedSrc": "generated/final/scenes/photo-39.mp4",
+      "photoNumber": 39,
+      "src": "photos/08_VI THU TRANG.png",
+      "sha256": "653660bc6755af5722468178578b9b6bd54cdfa60d93965239a416e7f93066cc",
+      "width": 1672,
+      "height": 941,
+      "clearReadingSeconds": 5.1
+    },
+    {
+      "kind": "graphic",
+      "id": "bridge-3",
+      "durationInFrames": 150,
+      "startFrame": 20196,
+      "endFrame": 20346,
+      "stagedSrc": "generated/final/scenes/bridge-3.mp4",
+      "asset": "bridge-3.png"
+    },
+    {
+      "kind": "wish",
+      "id": "wish-09",
+      "durationInFrames": 930,
+      "startFrame": 20319,
+      "endFrame": 21249,
+      "stagedSrc": "generated/final/scenes/wish-09.mp4",
+      "number": 9,
+      "name": "LƯƠNG VĂN TUẤN",
+      "role": "SALE BẮC GIANG",
+      "src": "videos/wishes/9.LƯƠNG VĂN TUẤN - SALE BẮC GIANG.mp4",
+      "sha256": "85c10eb37fcd95a22a5ca9a3a8b31a2a735bfe85f146df498f9a7ea3bc8fafe5",
+      "sourceSeconds": 18.270708,
+      "width": 1280,
+      "height": 720,
+      "rotation": 0,
+      "displaySize": [
+        1280,
+        720
+      ],
+      "sourceFps": "8205000/273691",
+      "sampleRate": "48000",
+      "channels": 2,
+      "trimStartSeconds": 3.05,
+      "trimEndSeconds": 17.65,
+      "removedHeadSeconds": 3.05,
+      "removedTailSeconds": 0.6207080000000005,
+      "keptSeconds": 14.599999999999998,
+      "loudness": {
+        "input_i": "-15.44",
+        "input_tp": "-0.18",
+        "input_lra": "2.00",
+        "input_thresh": "-26.10",
+        "output_i": "-17.09",
+        "output_tp": "-3.00",
+        "output_lra": "1.10",
+        "output_thresh": "-27.68",
+        "normalization_type": "dynamic",
+        "target_offset": "0.09"
+      },
+      "silenceThresholdDb": -40,
+      "silenceEvents": [],
+      "trimPolicy": "Reviewed complete sentence excerpt; source intervals and excluded ranges in speech-edits.json",
+      "sourceSha256": "85c10eb37fcd95a22a5ca9a3a8b31a2a735bfe85f146df498f9a7ea3bc8fafe5",
+      "speed": 1,
+      "editNote": "Giữ lời chúc đầy đủ từ nhân dịp 20/10; bỏ lời chào hội trường.",
+      "excludedRangesSeconds": [
+        [
+          0,
+          3.05
+        ],
+        [
+          17.65,
+          18.270708
+        ]
+      ],
+      "asrUtterances": [
+        {
+          "start": 0.6199999999999997,
+          "end": 2.82,
+          "text": " Xin chào tất cả mọi người đã có mặt trong hội trường hôm nay."
+        },
+        {
+          "start": 3.28,
+          "end": 6.44,
+          "text": " Nhân dịp một ngày đặc biệt sắp tới đây, đó là ngày phụ nữ Việt Nam 20 tháng 10."
+        },
+        {
+          "start": 6.82,
+          "end": 10.74,
+          "text": " Thì cho mình xin gửi là chúc tới toàn thể các chị em phải đẹp trong tà đình Úc Pô, Băng Ninh."
+        },
+        {
+          "start": 11.28,
+          "end": 13.58,
+          "text": " Đó là luôn vui vẻ, tươi trẻ hạnh phúc vào thành công."
+        },
+        {
+          "start": 14.04,
+          "end": 17.26,
+          "text": " Chúc cho chị em một ngày 20 tháng 10 tật ý nghĩa và nhận được nhiều quà nha."
+        }
+      ],
+      "asrNote": "Automatic Vietnamese ASR is used to locate sentence boundaries; spelling and names in recognition are not authoritative. On-screen name and role come exclusively from the original filename.",
+      "orientationFilter": "",
+      "orientationNote": "Respect FFmpeg display matrix autorotation.",
+      "keptFrames": 876,
+      "voiceStartFrame": 20346,
+      "voiceEndFrame": 21222,
+      "lowerThirdStartSeconds": 0.75,
+      "lowerThirdEndSeconds": 4.5
+    },
+    {
+      "kind": "wish",
+      "id": "wish-10",
+      "durationInFrames": 849,
+      "startFrame": 21222,
+      "endFrame": 22071,
+      "stagedSrc": "generated/final/scenes/wish-10.mp4",
+      "number": 10,
+      "name": "NGUYỄN THẠC TÙNG",
+      "role": "SALE BẮC NINH",
+      "src": "videos/wishes/10. NGUYỄN THẠC TÙNG - SALE BẮC NINH.mp4",
+      "sha256": "2cf4c21e258d8684502ecd88cc8b6b51c2d04083d7246af1ff7042ce86b3424e",
+      "sourceSeconds": 23.893333,
+      "width": 1280,
+      "height": 720,
+      "rotation": 0,
+      "displaySize": [
+        1280,
+        720
+      ],
+      "sourceFps": "716000000/23833333",
+      "sampleRate": "44100",
+      "channels": 2,
+      "trimStartSeconds": 3.3,
+      "trimEndSeconds": 16.55,
+      "removedHeadSeconds": 3.3,
+      "removedTailSeconds": 7.343332999999998,
+      "keptSeconds": 13.25,
+      "loudness": {
+        "input_i": "-38.38",
+        "input_tp": "-20.12",
+        "input_lra": "5.50",
+        "input_thresh": "-48.97",
+        "output_i": "-17.17",
+        "output_tp": "-3.00",
+        "output_lra": "1.60",
+        "output_thresh": "-27.57",
+        "normalization_type": "dynamic",
+        "target_offset": "0.17"
+      },
+      "silenceThresholdDb": -58.97,
+      "silenceEvents": [],
+      "trimPolicy": "Reviewed complete sentence excerpt; source intervals and excluded ranges in speech-edits.json",
+      "sourceSha256": "2cf4c21e258d8684502ecd88cc8b6b51c2d04083d7246af1ff7042ce86b3424e",
+      "speed": 1,
+      "editNote": "Giữ lời gửi chúc, xinh đẹp, hạnh phúc, thành công và được yêu thương; bỏ chào đầu và lời mong chúc bổ sung ở cuối.",
+      "excludedRangesSeconds": [
+        [
+          0,
+          3.3
+        ],
+        [
+          16.55,
+          23.893333
+        ]
+      ],
+      "asrUtterances": [
+        {
+          "start": 0.0,
+          "end": 3.48,
+          "text": " Xin chào các chị em, thì cũng sắp tới là tới ngày 20-80"
+        },
+        {
+          "start": 3.48,
+          "end": 7.16,
+          "text": " thì tùng xin có lời chúc tới toàn thể các chị em tại Đã Đỉnh Gâu Bộ Bất Ninh"
+        },
+        {
+          "start": 7.16,
+          "end": 9.82,
+          "text": " luôn xin đẹp, dặn rỡ, hạnh phúc và trần đầy đăng lượng"
+        },
+        {
+          "start": 9.82,
+          "end": 16.32,
+          "text": " chúc các chị em không chỉ thành công cho công việc bất phá danh số mà còn luôn được yêu thương, chân trọng và gặp thật nhiều điều may mắn trong cuộc sống"
+        },
+        {
+          "start": 16.7,
+          "end": 21.76,
+          "text": " mong rằng mỗi ngày của chị em đều là một ngày vui, luôn tự tin tỏa sáng và giữ mãi lượt cười chín môi"
+        },
+        {
+          "start": 22.62,
+          "end": 23.6,
+          "text": " chúc mừng các chị em nhé"
+        }
+      ],
+      "asrNote": "Automatic Vietnamese ASR is used to locate sentence boundaries; spelling and names in recognition are not authoritative. On-screen name and role come exclusively from the original filename.",
+      "orientationFilter": "",
+      "orientationNote": "Respect FFmpeg display matrix autorotation.",
+      "keptFrames": 795,
+      "voiceStartFrame": 21249,
+      "voiceEndFrame": 22044,
+      "lowerThirdStartSeconds": 0.75,
+      "lowerThirdEndSeconds": 4.5
+    },
+    {
+      "kind": "wish",
+      "id": "wish-11",
+      "durationInFrames": 1053,
+      "startFrame": 22044,
+      "endFrame": 23097,
+      "stagedSrc": "generated/final/scenes/wish-11.mp4",
+      "number": 11,
+      "name": "NGUYỄN THẾ ANH",
+      "role": "SALE LẠNG SƠN",
+      "src": "videos/wishes/11. NGUYỄN THẾ ANH - SALE LẠNG SƠN.mp4",
+      "sha256": "e9f2b809feb4ec152d853b8d248a78def9cb8ba81339a230f88fef8e2120c115",
+      "sourceSeconds": 23.881292,
+      "width": 1280,
+      "height": 720,
+      "rotation": 0,
+      "displaySize": [
+        1280,
+        720
+      ],
+      "sourceFps": "32175000/1073047",
+      "sampleRate": "48000",
+      "channels": 2,
+      "trimStartSeconds": 4.55,
+      "trimEndSeconds": 22.85,
+      "removedHeadSeconds": 4.55,
+      "removedTailSeconds": 1.031291999999997,
+      "keptSeconds": 16.636363636363637,
+      "loudness": {
+        "input_i": "-31.87",
+        "input_tp": "-10.48",
+        "input_lra": "4.40",
+        "input_thresh": "-43.00",
+        "output_i": "-18.24",
+        "output_tp": "-3.00",
+        "output_lra": "3.30",
+        "output_thresh": "-29.06",
+        "normalization_type": "dynamic",
+        "target_offset": "1.24"
+      },
+      "silenceThresholdDb": -53.0,
+      "silenceEvents": [],
+      "trimPolicy": "Reviewed complete sentence excerpt; source intervals and excluded ranges in speech-edits.json",
+      "sourceSha256": "e9f2b809feb4ec152d853b8d248a78def9cb8ba81339a230f88fef8e2120c115",
+      "speed": 1.1,
+      "editNote": "Giữ lời chúc gửi Admin và PG đến hết câu chúc thành công; bỏ lời chào đầu và khoảng dừng cuối.",
+      "excludedRangesSeconds": [
+        [
+          0,
+          4.55
+        ],
+        [
+          22.85,
+          23.881292
+        ]
+      ],
+      "asrUtterances": [
+        {
+          "start": 0.5800000000000001,
+          "end": 3.92,
+          "text": " Xin chào toàn thể đại gia đình Âu Pô Bắc Ninh."
+        },
+        {
+          "start": 4.76,
+          "end": 9.02,
+          "text": " Nhân ngày 20 tháng 10, Ngày Phùng Đức Việt Nam, em xin được gửi lời chúc tốt đẹp nhất"
+        },
+        {
+          "start": 9.02,
+          "end": 13.62,
+          "text": " đến các chị Admin, cùng toàn thể các bạn Pigi tại khu vực."
+        },
+        {
+          "start": 14.22,
+          "end": 22.52,
+          "text": " Chúc cho mọi người luôn sinh đẹp, hạnh phúc, luôn được chiều chuộng, tự tin và thành công."
+        }
+      ],
+      "asrNote": "Automatic Vietnamese ASR is used to locate sentence boundaries; spelling and names in recognition are not authoritative. On-screen name and role come exclusively from the original filename.",
+      "orientationFilter": "",
+      "orientationNote": "Respect FFmpeg display matrix autorotation.",
+      "keptFrames": 999,
+      "voiceStartFrame": 22071,
+      "voiceEndFrame": 23070,
+      "lowerThirdStartSeconds": 0.75,
+      "lowerThirdEndSeconds": 4.5
+    },
+    {
+      "kind": "wish",
+      "id": "wish-12",
+      "durationInFrames": 1055,
+      "startFrame": 23070,
+      "endFrame": 24125,
+      "stagedSrc": "generated/final/scenes/wish-12.mp4",
+      "number": 12,
+      "name": "NGUYỄN TRƯỜNG GIANG",
+      "role": "SALE HƯNG YÊN",
+      "src": "videos/wishes/12.NGUYỄN TRƯỜNG GIANG - SALE HƯNG YÊN.mp4",
+      "sha256": "3728327b4e847363cd682f5027a5443791f3aafa5ad4cfdac2b2128a48b872e3",
+      "sourceSeconds": 28.0,
+      "width": 1280,
+      "height": 720,
+      "rotation": 0,
+      "displaySize": [
+        1280,
+        720
+      ],
+      "sourceFps": "30/1",
+      "sampleRate": "44100",
+      "channels": 1,
+      "trimStartSeconds": 7,
+      "trimEndSeconds": 25.35,
+      "removedHeadSeconds": 7,
+      "removedTailSeconds": 2.6499999999999986,
+      "keptSeconds": 16.681818181818183,
+      "loudness": {
+        "input_i": "-21.72",
+        "input_tp": "-6.13",
+        "input_lra": "2.20",
+        "input_thresh": "-32.19",
+        "output_i": "-16.79",
+        "output_tp": "-3.00",
+        "output_lra": "1.60",
+        "output_thresh": "-27.17",
+        "normalization_type": "dynamic",
+        "target_offset": "-0.21"
+      },
+      "silenceThresholdDb": -42.19,
+      "silenceEvents": [],
+      "trimPolicy": "Reviewed complete sentence excerpt; source intervals and excluded ranges in speech-edits.json",
+      "sourceSha256": "3728327b4e847363cd682f5027a5443791f3aafa5ad4cfdac2b2128a48b872e3",
+      "speed": 1.1,
+      "editNote": "Giữ lời chúc cho chị em và gia đình, năng lượng và mục tiêu; bỏ dẫn nhập dài và câu chúc mừng lặp cuối.",
+      "excludedRangesSeconds": [
+        [
+          0,
+          7
+        ],
+        [
+          25.35,
+          28.0
+        ]
+      ],
+      "asrUtterances": [
+        {
+          "start": 0.8600000000000005,
+          "end": 2.98,
+          "text": " Xin chào mọi người. Mình đã ra ăn xíu bùa nguyên."
+        },
+        {
+          "start": 3.28,
+          "end": 6.86,
+          "text": " Thì hôm nay nhân buổi quốc số phải 10 ngày hôm nay, ngày mai cũng sẽ là ngày 20 tháng 10 rồi."
+        },
+        {
+          "start": 7.2,
+          "end": 12.22,
+          "text": " Mình xin gửi đòi chúc đến tất cả các chị em, Pigi của Băng Ninh, sẽ có một ngày 20 tháng 10."
+        },
+        {
+          "start": 12.32,
+          "end": 18.2,
+          "text": " Thật là vui vẻ, chẳng đầy niềm vui và có thật nhiều thời gian bên gia đình và những người yêu thương."
+        },
+        {
+          "start": 18.36,
+          "end": 21.26,
+          "text": " Chúc chị em luôn luôn xinh đẹp, chẳng đầy đăng lượng."
+        },
+        {
+          "start": 21.46,
+          "end": 25.12,
+          "text": " Núc nào cũng sẽ tươi cười và luôn luôn đạt từ target mà khu vực để ra."
+        },
+        {
+          "start": 25.52,
+          "end": 27.0,
+          "text": " Chúc cho chị em 20 tháng 10 vui vẻ nhé."
+        }
+      ],
+      "asrNote": "Automatic Vietnamese ASR is used to locate sentence boundaries; spelling and names in recognition are not authoritative. On-screen name and role come exclusively from the original filename.",
+      "orientationFilter": "",
+      "orientationNote": "Respect FFmpeg display matrix autorotation.",
+      "keptFrames": 1001,
+      "voiceStartFrame": 23097,
+      "voiceEndFrame": 24098,
+      "lowerThirdStartSeconds": 0.75,
+      "lowerThirdEndSeconds": 4.5
+    },
+    {
+      "kind": "photo",
+      "id": "photo-40",
+      "durationInFrames": 360,
+      "startFrame": 24098,
+      "endFrame": 24458,
+      "stagedSrc": "generated/final/scenes/photo-40.mp4",
+      "photoNumber": 40,
+      "src": "photos/08_ĐÀO ÁNH TUYẾT.png",
+      "sha256": "7a866a2a3b94b457d7691164431ac7e8c910c2de7431ad0b4bb5c50ed46c036d",
+      "width": 1672,
+      "height": 941,
+      "clearReadingSeconds": 5.1
+    },
+    {
+      "kind": "photo",
+      "id": "photo-41",
+      "durationInFrames": 360,
+      "startFrame": 24431,
+      "endFrame": 24791,
+      "stagedSrc": "generated/final/scenes/photo-41.mp4",
+      "photoNumber": 41,
+      "src": "photos/09_LƯU THỊ THÙY.png",
+      "sha256": "b920926766e5784cba85e8e0f342f70b2178db56c8f84e3611c3e446ac7c76b1",
+      "width": 1672,
+      "height": 941,
+      "clearReadingSeconds": 5.1
+    },
+    {
+      "kind": "photo",
+      "id": "photo-42",
+      "durationInFrames": 360,
+      "startFrame": 24764,
+      "endFrame": 25124,
+      "stagedSrc": "generated/final/scenes/photo-42.mp4",
+      "photoNumber": 42,
+      "src": "photos/09_NGUYỄN THỊ THANH HẰNG.png",
+      "sha256": "4b4a0492c2867799a1a6bb40273ca1741510750c706af0be53479dde7cefb954",
+      "width": 1672,
+      "height": 941,
+      "clearReadingSeconds": 5.1
+    },
+    {
+      "kind": "photo",
+      "id": "photo-43",
+      "durationInFrames": 360,
+      "startFrame": 25097,
+      "endFrame": 25457,
+      "stagedSrc": "generated/final/scenes/photo-43.mp4",
+      "photoNumber": 43,
+      "src": "photos/09_NGUYỄN THỊ THOA.png",
+      "sha256": "c5b347a1fd71ddc7fe205bc7e23e8ee1d94bcf27a6cfb458f1cbf2c3b195dfe1",
+      "width": 1672,
+      "height": 941,
+      "clearReadingSeconds": 5.1
+    },
+    {
+      "kind": "photo",
+      "id": "photo-44",
+      "durationInFrames": 360,
+      "startFrame": 25430,
+      "endFrame": 25790,
+      "stagedSrc": "generated/final/scenes/photo-44.mp4",
+      "photoNumber": 44,
+      "src": "photos/09_VŨ THỊ THƯƠNG.png",
+      "sha256": "dd99481cdf157861facc4f70545e4b2491904751d376027b699b5ee56aaed347",
+      "width": 1672,
+      "height": 941,
+      "clearReadingSeconds": 5.1
+    },
+    {
+      "kind": "photo",
+      "id": "photo-45",
+      "durationInFrames": 360,
+      "startFrame": 25763,
+      "endFrame": 26123,
+      "stagedSrc": "generated/final/scenes/photo-45.mp4",
+      "photoNumber": 45,
+      "src": "photos/09_ĐINH THỊ MINH PHƯỢNG.png",
+      "sha256": "7138fb02d4278ebfd2116af8f3cd5f7aa1ee43a9fd6542ead6d317dd7ff5d1b8",
+      "width": 1672,
+      "height": 941,
+      "clearReadingSeconds": 5.1
+    },
+    {
+      "kind": "photo",
+      "id": "photo-46",
+      "durationInFrames": 360,
+      "startFrame": 26096,
+      "endFrame": 26456,
+      "stagedSrc": "generated/final/scenes/photo-46.mp4",
+      "photoNumber": 46,
+      "src": "photos/10_NGUYỄN HỒNG VÂN.png",
+      "sha256": "92e2496ab8873eb30116325a50265af1a2096254b141cae88111e95b94fbb83d",
+      "width": 1672,
+      "height": 941,
+      "clearReadingSeconds": 5.1
+    },
+    {
+      "kind": "photo",
+      "id": "photo-47",
+      "durationInFrames": 360,
+      "startFrame": 26429,
+      "endFrame": 26789,
+      "stagedSrc": "generated/final/scenes/photo-47.mp4",
+      "photoNumber": 47,
+      "src": "photos/10_NGUYỄN THỊ THU HIẾU.png",
+      "sha256": "9d39a85c4268dad0da56a9556bbbfdf54cdf6f8f1eedc859b30eb196d326091a",
+      "width": 1672,
+      "height": 941,
+      "clearReadingSeconds": 5.1
+    },
+    {
+      "kind": "photo",
+      "id": "photo-48",
+      "durationInFrames": 360,
+      "startFrame": 26762,
+      "endFrame": 27122,
+      "stagedSrc": "generated/final/scenes/photo-48.mp4",
+      "photoNumber": 48,
+      "src": "photos/10_VŨ THỊ TRANG.png",
+      "sha256": "2d594198867d11a5a400113e780c6e1448b04c9de16946b877c316b5bb4c82d6",
+      "width": 1672,
+      "height": 941,
+      "clearReadingSeconds": 5.1
+    },
+    {
+      "kind": "photo",
+      "id": "photo-49",
+      "durationInFrames": 360,
+      "startFrame": 27095,
+      "endFrame": 27455,
+      "stagedSrc": "generated/final/scenes/photo-49.mp4",
+      "photoNumber": 49,
+      "src": "photos/10_ĐINH THỊ THU TRANG.png",
+      "sha256": "94e631616cba926edbb2bb21eceaa9f9ee8ac27ae08b1d41ab3e8fbc8bd7f468",
+      "width": 1672,
+      "height": 941,
+      "clearReadingSeconds": 5.1
+    },
+    {
+      "kind": "photo",
+      "id": "photo-50",
+      "durationInFrames": 360,
+      "startFrame": 27428,
+      "endFrame": 27788,
+      "stagedSrc": "generated/final/scenes/photo-50.mp4",
+      "photoNumber": 50,
+      "src": "photos/NGUYỄN THỊ VUI.webp",
+      "sha256": "b8c3ec0f559e5d28513dc5a080a0ec1e0f74a127921e51263dbb33fa70945e0b",
+      "width": 1672,
+      "height": 941,
+      "clearReadingSeconds": 5.1
+    },
+    {
+      "kind": "photo",
+      "id": "photo-51",
+      "durationInFrames": 360,
+      "startFrame": 27761,
+      "endFrame": 28121,
+      "stagedSrc": "generated/final/scenes/photo-51.mp4",
+      "photoNumber": 51,
+      "src": "photos/NGÔ THỊ HIỀN.png",
+      "sha256": "4b2c72e983ca99eb04649c54cb62850f5532889fa2ec88a5b23eb12f175cb725",
+      "width": 1672,
+      "height": 941,
+      "clearReadingSeconds": 5.1
+    },
+    {
+      "kind": "photo",
+      "id": "photo-52",
+      "durationInFrames": 360,
+      "startFrame": 28094,
+      "endFrame": 28454,
+      "stagedSrc": "generated/final/scenes/photo-52.mp4",
+      "photoNumber": 52,
+      "src": "photos/TRẦN THỊ LINH.jpg",
+      "sha256": "50dfd74e70f963d468166d69d48a5e999d28ec1f647167a266a1a13ed244b45c",
+      "width": 1672,
+      "height": 941,
+      "clearReadingSeconds": 5.1
+    },
+    {
+      "kind": "graphic",
+      "id": "bridge-4",
+      "durationInFrames": 150,
+      "startFrame": 28427,
+      "endFrame": 28577,
+      "stagedSrc": "generated/final/scenes/bridge-4.mp4",
+      "asset": "bridge-4.png"
+    },
+    {
+      "kind": "wish",
+      "id": "wish-13",
+      "durationInFrames": 795,
+      "startFrame": 28550,
+      "endFrame": 29345,
+      "stagedSrc": "generated/final/scenes/wish-13.mp4",
+      "number": 13,
+      "name": "TRIỆU VIẾT HƯỚNG",
+      "role": "SALE BẮC GIANG",
+      "src": "videos/wishes/13. TRIỆU VIẾT HƯỚNG - SALE BẮC GIANG.mp4",
+      "sha256": "ed50483b4f3298c6f457e77d256461267931c4392048068ca4739146c7d1ef6e",
+      "sourceSeconds": 33.470522,
+      "width": 1280,
+      "height": 960,
+      "rotation": 0,
+      "displaySize": [
+        1280,
+        960
+      ],
+      "sourceFps": "30/1",
+      "sampleRate": "44100",
+      "channels": 1,
+      "trimStartSeconds": 1.6,
+      "trimEndSeconds": 13.95,
+      "removedHeadSeconds": 1.6,
+      "removedTailSeconds": 19.520522000000003,
+      "keptSeconds": 12.35,
+      "loudness": {
+        "input_i": "-29.71",
+        "input_tp": "-10.16",
+        "input_lra": "20.80",
+        "input_thresh": "-41.53",
+        "output_i": "-18.29",
+        "output_tp": "-3.00",
+        "output_lra": "5.00",
+        "output_thresh": "-29.67",
+        "normalization_type": "dynamic",
+        "target_offset": "1.29"
+      },
+      "silenceThresholdDb": -51.53,
+      "silenceEvents": [],
+      "trimPolicy": "Reviewed complete sentence excerpt; source intervals and excluded ranges in speech-edits.json",
+      "sourceSha256": "ed50483b4f3298c6f457e77d256461267931c4392048068ca4739146c7d1ef6e",
+      "speed": 1,
+      "editNote": "Giữ lời chúc đại diện đội Bắc Giang, xinh đẹp, vui vẻ và thành công; bỏ phần dài về mục tiêu doanh thu, thu nhập và kết lặp.",
+      "excludedRangesSeconds": [
+        [
+          0,
+          1.6
+        ],
+        [
+          13.95,
+          33.470522
+        ]
+      ],
+      "asrUtterances": [
+        {
+          "start": 1.8400000000000007,
+          "end": 13.62,
+          "text": " Chào tất cả mọi người, nhân dịp 20 tháng 10, thay mặt tim sêu khu vực Bắc Giang, xin gửi nơi chúc tốt đẹp nhất tới tất cả chị em trong khu vực Bắc Linh, chúc chị em luôn xin đẹp, vui vẻ, thành công"
+        },
+        {
+          "start": 14.22,
+          "end": 25.46,
+          "text": " Chúc cho chị em luôn đạt được nhiều mục tiêu trong năm 2026 đạt được dành thu mốc dành thu cao nhất để được có một mức nương tốt nhất."
+        },
+        {
+          "start": 25.84,
+          "end": 29.22,
+          "text": " Chúc chị em một ngày nhiều niềm vui và vui vẻ. Xin chào."
+        }
+      ],
+      "asrNote": "Automatic Vietnamese ASR is used to locate sentence boundaries; spelling and names in recognition are not authoritative. On-screen name and role come exclusively from the original filename.",
+      "orientationFilter": "",
+      "orientationNote": "Respect FFmpeg display matrix autorotation.",
+      "keptFrames": 741,
+      "voiceStartFrame": 28577,
+      "voiceEndFrame": 29318,
+      "lowerThirdStartSeconds": 0.75,
+      "lowerThirdEndSeconds": 4.5
+    },
+    {
+      "kind": "wish",
+      "id": "wish-14",
+      "durationInFrames": 897,
+      "startFrame": 29318,
+      "endFrame": 30215,
+      "stagedSrc": "generated/final/scenes/wish-14.mp4",
+      "number": 14,
+      "name": "VŨ THẾ DUY",
+      "role": "SALE LẠNG SƠN",
+      "src": "videos/wishes/14. VŨ THẾ DUY- SALE LẠNG SƠN.mp4",
+      "sha256": "e03a09d8d27bca158ef752ae8545670c55f4eab6e9ab5697e54f697cf4c92730",
+      "sourceSeconds": 26.966,
+      "width": 1280,
+      "height": 720,
+      "rotation": -180,
+      "displaySize": [
+        1280,
+        720
+      ],
+      "sourceFps": "30/1",
+      "sampleRate": "48000",
+      "channels": 2,
+      "trimStartSeconds": 11.8,
+      "trimEndSeconds": 25.85,
+      "removedHeadSeconds": 11.8,
+      "removedTailSeconds": 1.1159999999999997,
+      "keptSeconds": 14.05,
+      "loudness": {
+        "input_i": "-34.93",
+        "input_tp": "-17.03",
+        "input_lra": "4.00",
+        "input_thresh": "-45.74",
+        "output_i": "-17.65",
+        "output_tp": "-3.00",
+        "output_lra": "3.70",
+        "output_thresh": "-28.36",
+        "normalization_type": "dynamic",
+        "target_offset": "0.65"
+      },
+      "silenceThresholdDb": -55.74,
+      "silenceEvents": [],
+      "trimPolicy": "Reviewed complete sentence excerpt; source intervals and excluded ranges in speech-edits.json",
+      "sourceSha256": "e03a09d8d27bca158ef752ae8545670c55f4eab6e9ab5697e54f697cf4c92730",
+      "speed": 1,
+      "editNote": "Giữ câu trân trọng phụ nữ và lời chúc lạc quan, thành công, hạnh phúc; bỏ chào và lời dẫn đầu.",
+      "excludedRangesSeconds": [
+        [
+          0,
+          11.8
+        ],
+        [
+          25.85,
+          26.966
+        ]
+      ],
+      "asrUtterances": [
+        {
+          "start": 0.900000000000003,
+          "end": 4.42,
+          "text": " Xin chào tất cả mọi người. Vậy là ngày 20 tháng 10 đã đến rồi."
+        },
+        {
+          "start": 5.0000000000000036,
+          "end": 11.2,
+          "text": " Mình muốn vửi lời chúc mừng nồng nhật nhất đến tất cả những người phụ nữ xinh đẹp, thông minh và mạnh mẽ."
+        },
+        {
+          "start": 12.060000000000002,
+          "end": 17.94,
+          "text": " Các bạn chính là những đó rửa rỡ, tô điểm thêm trong cuộc sống chứa phần ý nghĩa."
+        },
+        {
+          "start": 18.92,
+          "end": 25.52,
+          "text": " Chúc các bạn luôn giữ tinh thần lạc quan, gặp hái được nhiều thành công và luôn hạnh phúc trên con đường mình đã chọn."
+        }
+      ],
+      "asrNote": "Automatic Vietnamese ASR is used to locate sentence boundaries; spelling and names in recognition are not authoritative. On-screen name and role come exclusively from the original filename.",
+      "orientationFilter": "",
+      "orientationNote": "Respect FFmpeg display matrix autorotation.",
+      "keptFrames": 843,
+      "voiceStartFrame": 29345,
+      "voiceEndFrame": 30188,
+      "lowerThirdStartSeconds": 0.75,
+      "lowerThirdEndSeconds": 4.5
+    },
+    {
+      "kind": "wish",
+      "id": "wish-15",
+      "durationInFrames": 705,
+      "startFrame": 30188,
+      "endFrame": 30893,
+      "stagedSrc": "generated/final/scenes/wish-15.mp4",
+      "number": 15,
+      "name": "NGUYỄN VĂN LƯƠNG",
+      "role": "PB BẮC NINH",
+      "src": "videos/wishes/15. NGUYỄN VĂN LƯƠNG - PB BẮC NINH.mp4",
+      "sha256": "05dc7504762ba740c1184a8435442e405cfd9d11e0c0942629c1d682570a4ef9",
+      "sourceSeconds": 12.318708,
+      "width": 848,
+      "height": 480,
+      "rotation": 0,
+      "displaySize": [
+        848,
+        480
+      ],
+      "sourceFps": "6606000/220177",
+      "sampleRate": "48000",
+      "channels": 2,
+      "trimStartSeconds": 0,
+      "trimEndSeconds": 10.85,
+      "removedHeadSeconds": 0,
+      "removedTailSeconds": 1.4687080000000012,
+      "keptSeconds": 10.85,
+      "loudness": {
+        "input_i": "-29.00",
+        "input_tp": "-7.16",
+        "input_lra": "2.80",
+        "input_thresh": "-40.05",
+        "output_i": "-17.68",
+        "output_tp": "-3.00",
+        "output_lra": "1.70",
+        "output_thresh": "-28.40",
+        "normalization_type": "dynamic",
+        "target_offset": "0.68"
+      },
+      "silenceThresholdDb": -50.05,
+      "silenceEvents": [],
+      "trimPolicy": "Reviewed complete sentence excerpt; source intervals and excluded ranges in speech-edits.json",
+      "sourceSha256": "05dc7504762ba740c1184a8435442e405cfd9d11e0c0942629c1d682570a4ef9",
+      "speed": 1,
+      "editNote": "Giữ trọn lời chúc ngắn của nhân sự; bỏ khoảng dừng quay cuối.",
+      "excludedRangesSeconds": [
+        [
+          0,
+          0
+        ],
+        [
+          10.85,
+          12.318708
+        ]
+      ],
+      "asrUtterances": [
+        {
+          "start": 0.0,
+          "end": 8.7,
+          "text": " Em lương chúc chị em ôc bồ 20 tháng 10 vui vẻ, sinh đẹp trẻ khỏe, sinh sắn tươi tắn và hết mình bị công ty Nga, mong chị em được số như mong muốn."
+        },
+        {
+          "start": 9.260000000000002,
+          "end": 10.42,
+          "text": " 20 tháng 10 vui vẻ hả?"
+        }
+      ],
+      "asrNote": "Automatic Vietnamese ASR is used to locate sentence boundaries; spelling and names in recognition are not authoritative. On-screen name and role come exclusively from the original filename.",
+      "orientationFilter": "",
+      "orientationNote": "Respect FFmpeg display matrix autorotation.",
+      "keptFrames": 651,
+      "voiceStartFrame": 30215,
+      "voiceEndFrame": 30866,
+      "lowerThirdStartSeconds": 0.75,
+      "lowerThirdEndSeconds": 4.5
+    },
+    {
+      "kind": "wish",
+      "id": "wish-16",
+      "durationInFrames": 921,
+      "startFrame": 30866,
+      "endFrame": 31787,
+      "stagedSrc": "generated/final/scenes/wish-16.mp4",
+      "number": 16,
+      "name": "PHẠM VĂN TÙNG",
+      "role": "PB BẮC NINH",
+      "src": "videos/wishes/16, PHẠM VĂN TÙNG - PB BẮC NINH.mp4",
+      "sha256": "f96138783002d9a0c2af262f0906d30829fe14e52bac047deef757726be9ade8",
+      "sourceSeconds": 27.648,
+      "width": 1280,
+      "height": 720,
+      "rotation": -180,
+      "displaySize": [
+        1280,
+        720
+      ],
+      "sourceFps": "24780000/825919",
+      "sampleRate": "48000",
+      "channels": 2,
+      "trimStartSeconds": 5.05,
+      "trimEndSeconds": 19.5,
+      "removedHeadSeconds": 5.05,
+      "removedTailSeconds": 8.148,
+      "keptSeconds": 14.45,
+      "loudness": {
+        "input_i": "-22.83",
+        "input_tp": "-1.96",
+        "input_lra": "3.90",
+        "input_thresh": "-32.86",
+        "output_i": "-16.54",
+        "output_tp": "-3.00",
+        "output_lra": "2.90",
+        "output_thresh": "-26.54",
+        "normalization_type": "dynamic",
+        "target_offset": "-0.46"
+      },
+      "silenceThresholdDb": -42.86,
+      "silenceEvents": [],
+      "trimPolicy": "Reviewed complete sentence excerpt; source intervals and excluded ranges in speech-edits.json",
+      "sourceSha256": "f96138783002d9a0c2af262f0906d30829fe14e52bac047deef757726be9ade8",
+      "speed": 1,
+      "editNote": "Giữ lời chúc của cả hai người xuất hiện trong video: cuộc sống, KPI, doanh số và thu nhập; bỏ chào đầu, phần bổ sung đi chơi và khẩu hiệu cuối.",
+      "excludedRangesSeconds": [
+        [
+          0,
+          5.05
+        ],
+        [
+          19.5,
+          27.648
+        ]
+      ],
+      "asrUtterances": [
+        {
+          "start": 2.4000000000000044,
+          "end": 4.52,
+          "text": " Xin chào chị em hót bồ nha"
+        },
+        {
+          "start": 5.280000000000002,
+          "end": 12.02,
+          "text": " Hôm nay là 20 tháng 10, chúc chị em hót bồ Bắc Ninh luôn sinh đẹp đạn rồi, luôn thành công trong cuộc sống"
+        },
+        {
+          "start": 12.780000000000003,
+          "end": 19.28,
+          "text": " Chúc quan đệ chị em hót bồ nhà mình luôn đặt KBI này, về số này, thu nhập cao này, thưởng cao này"
+        },
+        {
+          "start": 19.28,
+          "end": 24.36,
+          "text": " Luôn được đi Vivu đây đó khi mà thu nhập đã cao nha"
+        },
+        {
+          "start": 24.880000000000003,
+          "end": 25.9,
+          "text": " Hót bồ máy đỉnh"
+        },
+        {
+          "start": 25.9,
+          "end": 27.06,
+          "text": " Máy đỉnh luôn"
+        }
+      ],
+      "asrNote": "Automatic Vietnamese ASR is used to locate sentence boundaries; spelling and names in recognition are not authoritative. On-screen name and role come exclusively from the original filename.",
+      "orientationFilter": "",
+      "orientationNote": "Respect FFmpeg display matrix autorotation.",
+      "keptFrames": 867,
+      "voiceStartFrame": 30893,
+      "voiceEndFrame": 31760,
+      "lowerThirdStartSeconds": 0.75,
+      "lowerThirdEndSeconds": 4.5
+    },
+    {
+      "kind": "closing",
+      "id": "closing-0",
+      "durationInFrames": 282,
+      "startFrame": 31760,
+      "endFrame": 32042,
+      "stagedSrc": "generated/final/scenes/closing-0.mp4",
+      "stage": 0,
+      "baseAsset": "closing-base-0.png",
+      "newAsset": "closing-new-0.png",
+      "text": "Cảm ơn những người phụ nữ tuyệt vời của OPPO Bắc Ninh!"
+    },
+    {
+      "kind": "closing",
+      "id": "closing-1",
+      "durationInFrames": 282,
+      "startFrame": 32015,
+      "endFrame": 32297,
+      "stagedSrc": "generated/final/scenes/closing-1.mp4",
+      "stage": 1,
+      "baseAsset": "closing-base-1.png",
+      "newAsset": "closing-new-1.png",
+      "text": "Chúc các bạn luôn xinh đẹp, hạnh phúc, rạng rỡ và tràn đầy năng lượng."
+    },
+    {
+      "kind": "closing",
+      "id": "closing-2",
+      "durationInFrames": 282,
+      "startFrame": 32270,
+      "endFrame": 32552,
+      "stagedSrc": "generated/final/scenes/closing-2.mp4",
+      "stage": 2,
+      "baseAsset": "closing-base-2.png",
+      "newAsset": "closing-new-2.png",
+      "text": "Cảm ơn vì đã luôn đồng hành, nỗ lực và cùng nhau tạo nên một tập thể OPPO Bắc Ninh đoàn kết, vững mạnh."
+    },
+    {
+      "kind": "closing",
+      "id": "closing-3",
+      "durationInFrames": 282,
+      "startFrame": 32525,
+      "endFrame": 32807,
+      "stagedSrc": "generated/final/scenes/closing-3.mp4",
+      "stage": 3,
+      "baseAsset": "closing-base-3.png",
+      "newAsset": "closing-new-3.png",
+      "text": "Chúc mừng ngày Phụ nữ Việt Nam 20/10!"
+    },
+    {
+      "kind": "video",
+      "id": "outro",
+      "durationInFrames": 1200,
+      "startFrame": 32780,
+      "endFrame": 33980,
+      "stagedSrc": "generated/final/scenes/outro.mp4",
+      "src": "videos/Outro_20-10_OPPO_Bac_Ninh.mp4"
+    }
+  ],
+  "audioSrc": "generated/final/audio/final-mix.wav",
+  "instrumentalOrigin": "Original procedural warm piano/ambient composition created by project code; no external or commercial recording."
+}

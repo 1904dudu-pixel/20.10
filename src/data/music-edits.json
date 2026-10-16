@@ -1,0 +1,10 @@
+{
+  "source": "music/NHẠC 20.10.mp3",
+  "sourceSha256": "3e12b13f5c943b30651fc49b780a9b181a4930959412abe2774623ebe8ffe92e",
+  "pauseSourceSeconds": [
+    70.98,
+    138.72,
+    202.9
+  ],
+  "policy": "Reviewed complete sung-phrase boundaries using multilingual ASR utterance/word timing; source cursor continues without repeated or omitted samples. Boundary 2 is in the following instrumental breath. Fade into the original instrumental rather than extending photos."
+}

@@ -1,0 +1,723 @@
+[
+  {
+    "number": 1,
+    "sourceSha256": "d5a586ef68c4c6307193ba1dbae5766e0cf699ef4f7ad3f8d62e4c6e1c1d5f3e",
+    "trimStartSeconds": 7.18,
+    "trimEndSeconds": 25.75,
+    "speed": 1.1,
+    "editNote": "Giữ lời chúc, cảm ơn nỗ lực và lời chúc thành công; bỏ chào đầu và lời chúc mừng lặp ở cuối.",
+    "excludedRangesSeconds": [
+      [
+        0,
+        7.18
+      ],
+      [
+        25.75,
+        30.564834
+      ]
+    ],
+    "asrUtterances": [
+      {
+        "start": 0.7400000000000013,
+        "end": 6.88,
+        "text": " Xin chào tất cả các sĩ em sinh đẹp của Ủa Pô Băng Nình, Nhân Hệ Phụ Nữ Việt Nam 20 tháng 10."
+      },
+      {
+        "start": 7.38,
+        "end": 11.24,
+        "text": " Anh xin chúc các em đơn sinh đẹp, giãn rỡ, hạnh phúc và trần đài năng lợi."
+      },
+      {
+        "start": 11.98,
+        "end": 17.28,
+        "text": " Cảm cảm các em vì những nỗ lực, sự nhệt huyết và những đóng góc cho khu vực trong suốt thời gian qua."
+      },
+      {
+        "start": 18.380000000000003,
+        "end": 25.44,
+        "text": " Chúc các em luôn giữ tinh thần, tự tin trinh phục những mục tiêu mới và đặc biệt thật là thành công cùng với fight 10 series sắp tới."
+      },
+      {
+        "start": 26.48,
+        "end": 28.68,
+        "text": " Chúc mừng ngày phụ nữ Việt Nam 20 tháng 10."
+      },
+      {
+        "start": 28.68,
+        "end": 28.74,
+        "text": " Hẹn gặp lại!"
+      }
+    ],
+    "asrNote": "Automatic Vietnamese ASR is used to locate sentence boundaries; spelling and names in recognition are not authoritative. On-screen name and role come exclusively from the original filename."
+  },
+  {
+    "number": 2,
+    "sourceSha256": "16d7eb1ed271b50f3ecad6ed03fd0cad4db8c0d2951038b17b86bb9c513c82bc",
+    "trimStartSeconds": 11.25,
+    "trimEndSeconds": 24.55,
+    "speed": 1,
+    "editNote": "Giữ câu cảm ơn và lời chúc về công việc, cuộc sống; bỏ lời chào, dẫn nhập và kết lặp.",
+    "excludedRangesSeconds": [
+      [
+        0,
+        11.25
+      ],
+      [
+        24.55,
+        29.76
+      ]
+    ],
+    "asrUtterances": [
+      {
+        "start": 0.7800000000000005,
+        "end": 1.44,
+        "text": " Chào các nhà!"
+      },
+      {
+        "start": 2.34,
+        "end": 6.06,
+        "text": " Nhân ngày phút in Việt Nam, 20 tháng 10, anh xin gửi những lời chúc tốt đẹp nhất"
+      },
+      {
+        "start": 6.540000000000001,
+        "end": 8.88,
+        "text": " tới tất cả các chị em trong đại gia đình Úi Pô Vâng Ninh"
+      },
+      {
+        "start": 9.3,
+        "end": 10.94,
+        "text": " Đặc biệt là các bạn Phi Giê Thanh Yêu"
+      },
+      {
+        "start": 11.48,
+        "end": 15.66,
+        "text": " Cảmơn mọi người đã luôn nhận huyết, tận tâm và nỗ lực hết mình trong công việc"
+      },
+      {
+        "start": 16.080000000000002,
+        "end": 19.78,
+        "text": " Chúc chị em luôn xin đẹp, hạnh phúc, tự tin và tỏa sáng"
+      },
+      {
+        "start": 19.78,
+        "end": 22.04,
+        "text": " không chỉ trong công việc, mà cả trong cuộc sống"
+      },
+      {
+        "start": 22.04,
+        "end": 24.18,
+        "text": " đặc biệt từ lúc nào phải về mốc 3"
+      },
+      {
+        "start": 24.92,
+        "end": 28.98,
+        "text": " Chúc mừng ngày 10 tháng 10, mãi yêu thương và tự hào về đại gia đình Úi Pô Vâng Ninh"
+      }
+    ],
+    "asrNote": "Automatic Vietnamese ASR is used to locate sentence boundaries; spelling and names in recognition are not authoritative. On-screen name and role come exclusively from the original filename."
+  },
+  {
+    "number": 3,
+    "sourceSha256": "4e0b4f34f72078111310b427f17c8f9f54203d85e3988d0f6e4ca020cb17c931",
+    "trimStartSeconds": 0.4,
+    "trimEndSeconds": 12.3,
+    "speed": 1,
+    "editNote": "Giữ trọn lời chúc; chỉ bỏ khoảng chuẩn bị ở đầu/cuối.",
+    "excludedRangesSeconds": [
+      [
+        0,
+        0.4
+      ],
+      [
+        12.3,
+        12.821011
+      ]
+    ],
+    "asrUtterances": [
+      {
+        "start": 0.6799999999999997,
+        "end": 11.94,
+        "text": " Những ngày 20 tháng 10, anh xin chúc tất cả các bạn bí duy ôp bô, chiến binh ôp bô 1 ngày 20 tháng 10, luôn luôn sinh đẹp, vui vẻ và hạnh phúc. Chúc các em luôn giữ được nhìa thuyết trong công việc."
+      }
+    ],
+    "asrNote": "Automatic Vietnamese ASR is used to locate sentence boundaries; spelling and names in recognition are not authoritative. On-screen name and role come exclusively from the original filename."
+  },
+  {
+    "number": 4,
+    "sourceSha256": "8a6f930d5f4d53c1e2eb5500556706228f1307de10a0f2050f473f61cefb6b7d",
+    "trimStartSeconds": 5.5,
+    "trimEndSeconds": 22.95,
+    "speed": 1.05,
+    "editNote": "Giữ lời chúc nhân ngày 20/10 và các câu chúc tiếp theo; bỏ tự giới thiệu, chào và thao tác kết thúc.",
+    "excludedRangesSeconds": [
+      [
+        0,
+        5.5
+      ],
+      [
+        22.95,
+        25.204
+      ]
+    ],
+    "asrUtterances": [
+      {
+        "start": 1.7600000000000016,
+        "end": 2.7,
+        "text": " Xin chào tất cả các bạn."
+      },
+      {
+        "start": 3.06,
+        "end": 5.26,
+        "text": " Anh là Tuấn Phú Trách Kênh Yên, đi khu vực Bắc Ninh."
+      },
+      {
+        "start": 5.76,
+        "end": 6.82,
+        "text": " Nhân ngày 20 tháng 10,"
+      },
+      {
+        "start": 7.22,
+        "end": 9.96,
+        "text": " anh xin hữu những lời chúc tốt đẹp nhất để toàn thể các chị em"
+      },
+      {
+        "start": 9.96,
+        "end": 11.98,
+        "text": " đang hợp biệt tại gia đình Âu Bâu."
+      },
+      {
+        "start": 12.56,
+        "end": 14.9,
+        "text": " Chúc các chị em luôn sinh đẹp, dạng người,"
+      },
+      {
+        "start": 15.42,
+        "end": 16.68,
+        "text": " thành công trên tất cả các mọi liên vực."
+      },
+      {
+        "start": 17.04,
+        "end": 20.0,
+        "text": " Và đặc biệt, luôn yêu thương, người đàn ông"
+      },
+      {
+        "start": 20.0,
+        "end": 22.64,
+        "text": " đã đang sắp đồng hành của người mình."
+      }
+    ],
+    "asrNote": "Automatic Vietnamese ASR is used to locate sentence boundaries; spelling and names in recognition are not authoritative. On-screen name and role come exclusively from the original filename."
+  },
+  {
+    "number": 5,
+    "sourceSha256": "cf6222a8b87514baecf39f73680cace8ad97f59d3be417bdd30aee3695061ea3",
+    "trimStartSeconds": 3.95,
+    "trimEndSeconds": 19.4,
+    "speed": 1,
+    "editNote": "Giữ từ nhân dịp 20/10 đến lời chúc thành công; bỏ lời chào đầu.",
+    "excludedRangesSeconds": [
+      [
+        0,
+        3.95
+      ],
+      [
+        19.4,
+        19.806621
+      ]
+    ],
+    "asrUtterances": [
+      {
+        "start": 0.820000000000001,
+        "end": 8.42,
+        "text": " Xin chào toàn thể các bạn thuộc Ủc Mô Văn Ninh, nhân dịp ngày 20 tháng 10 cho anh xin gửi lời chúc sức khỏe"
+      },
+      {
+        "start": 8.42,
+        "end": 14.24,
+        "text": " Chúc các bạn nữ tìm vào Ủc Mô Văn Ninh luôn luôn sinh đẹp, hạnh phúc và thành công"
+      },
+      {
+        "start": 14.9,
+        "end": 19.06,
+        "text": " Chúc các bạn bởi 5.10 series thành công thực dỡ"
+      }
+    ],
+    "asrNote": "Automatic Vietnamese ASR is used to locate sentence boundaries; spelling and names in recognition are not authoritative. On-screen name and role come exclusively from the original filename."
+  },
+  {
+    "number": 6,
+    "sourceSha256": "8e808aab3ad60b45518b627beb9c0eed9c8e22280ea633b1335d3de26797a82c",
+    "trimStartSeconds": 0,
+    "trimEndSeconds": 8.65,
+    "speed": 1,
+    "editNote": "Giữ toàn bộ lời chúc ngắn; bỏ đuôi dừng quay.",
+    "excludedRangesSeconds": [
+      [
+        0,
+        0
+      ],
+      [
+        8.65,
+        8.846803
+      ]
+    ],
+    "asrUtterances": [
+      {
+        "start": 0.0,
+        "end": 5.18,
+        "text": " Nhưng ngày 20 tháng 10, chúc các bạn luôn luôn xin đẹp, dặn dỡ và tràn đợi những năng lượng tích cực."
+      },
+      {
+        "start": 5.18,
+        "end": 8.3,
+        "text": " Đặc biệt là thành công trên thị dịch 510, phát tích!"
+      }
+    ],
+    "asrNote": "Automatic Vietnamese ASR is used to locate sentence boundaries; spelling and names in recognition are not authoritative. On-screen name and role come exclusively from the original filename."
+  },
+  {
+    "number": 7,
+    "sourceSha256": "a6e111a49b317a659bf58e60c440d5dafdc3e5da0c10a295e6841ff31360f558",
+    "trimStartSeconds": 0.15,
+    "trimEndSeconds": 6.45,
+    "speed": 1,
+    "editNote": "Giữ trọn lời chúc; bỏ chuẩn bị và khoảng dừng cuối.",
+    "excludedRangesSeconds": [
+      [
+        0,
+        0.15
+      ],
+      [
+        6.45,
+        7.604
+      ]
+    ],
+    "asrUtterances": [
+      {
+        "start": 0.4000000000000006,
+        "end": 5.92,
+        "text": " Nhân dịp 20 tháng 10, chúc cho toàn thể chị em nhà mình luôn sinh đẹp, dặn rỡ, vui vẻ và cho nên lựng tích cực nha!"
+      }
+    ],
+    "asrNote": "Automatic Vietnamese ASR is used to locate sentence boundaries; spelling and names in recognition are not authoritative. On-screen name and role come exclusively from the original filename."
+  },
+  {
+    "number": 8,
+    "sourceSha256": "198d1d51b59e930b45ffcc61f242c2147756ea370834894e90c9998fd1002c5e",
+    "trimStartSeconds": 6.35,
+    "trimEndSeconds": 18.8,
+    "speed": 1,
+    "editNote": "Giữ lời chúc ngày ý nghĩa, xinh đẹp, thành công và hạnh phúc; bỏ chào dài và câu KPI cùng kết lặp.",
+    "excludedRangesSeconds": [
+      [
+        0,
+        6.35
+      ],
+      [
+        18.8,
+        27.886666
+      ]
+    ],
+    "asrUtterances": [
+      {
+        "start": 0.0,
+        "end": 4.14,
+        "text": " Lần đầu tiên cho em gửi lời chào và chúc sức khỏe đến sếp cùng toàn thể anh chị em Mốc Bồ của Bắc Linh"
+      },
+      {
+        "start": 4.14,
+        "end": 6.18,
+        "text": " Nhất ngày phố Lít Bền Lam 2080"
+      },
+      {
+        "start": 6.6000000000000005,
+        "end": 8.74,
+        "text": " Chúc toàn thể chị em Mốc Bồ của Bắc Linh"
+      },
+      {
+        "start": 9.26,
+        "end": 11.64,
+        "text": " Nói chung, chị em Mốc Bồ tiêm của Thùy Nội Dương"
+      },
+      {
+        "start": 11.64,
+        "end": 14.6,
+        "text": " Có một ngày 2080, tật sự đá y nghĩa"
+      },
+      {
+        "start": 14.6,
+        "end": 18.46,
+        "text": " Chúc chị em nôn nôn sinh nhẹp, thành công may mắn và nôn nội hạnh phúc"
+      },
+      {
+        "start": 19.1,
+        "end": 24.0,
+        "text": " Trong công việc chúc chị em nôn nôn đạt được KBI tốt nhất và hoàn thành mọi chỉ tiêu"
+      },
+      {
+        "start": 24.0,
+        "end": 25.62,
+        "text": " Cục tỳ cũng như khu vực giao"
+      },
+      {
+        "start": 25.62,
+        "end": 27.52,
+        "text": " Chúc mọi ngày 2080, vui vẻ"
+      }
+    ],
+    "asrNote": "Automatic Vietnamese ASR is used to locate sentence boundaries; spelling and names in recognition are not authoritative. On-screen name and role come exclusively from the original filename."
+  },
+  {
+    "number": 9,
+    "sourceSha256": "85c10eb37fcd95a22a5ca9a3a8b31a2a735bfe85f146df498f9a7ea3bc8fafe5",
+    "trimStartSeconds": 3.05,
+    "trimEndSeconds": 17.65,
+    "speed": 1,
+    "editNote": "Giữ lời chúc đầy đủ từ nhân dịp 20/10; bỏ lời chào hội trường.",
+    "excludedRangesSeconds": [
+      [
+        0,
+        3.05
+      ],
+      [
+        17.65,
+        18.270708
+      ]
+    ],
+    "asrUtterances": [
+      {
+        "start": 0.6199999999999997,
+        "end": 2.82,
+        "text": " Xin chào tất cả mọi người đã có mặt trong hội trường hôm nay."
+      },
+      {
+        "start": 3.28,
+        "end": 6.44,
+        "text": " Nhân dịp một ngày đặc biệt sắp tới đây, đó là ngày phụ nữ Việt Nam 20 tháng 10."
+      },
+      {
+        "start": 6.82,
+        "end": 10.74,
+        "text": " Thì cho mình xin gửi là chúc tới toàn thể các chị em phải đẹp trong tà đình Úc Pô, Băng Ninh."
+      },
+      {
+        "start": 11.28,
+        "end": 13.58,
+        "text": " Đó là luôn vui vẻ, tươi trẻ hạnh phúc vào thành công."
+      },
+      {
+        "start": 14.04,
+        "end": 17.26,
+        "text": " Chúc cho chị em một ngày 20 tháng 10 tật ý nghĩa và nhận được nhiều quà nha."
+      }
+    ],
+    "asrNote": "Automatic Vietnamese ASR is used to locate sentence boundaries; spelling and names in recognition are not authoritative. On-screen name and role come exclusively from the original filename."
+  },
+  {
+    "number": 10,
+    "sourceSha256": "2cf4c21e258d8684502ecd88cc8b6b51c2d04083d7246af1ff7042ce86b3424e",
+    "trimStartSeconds": 3.3,
+    "trimEndSeconds": 16.55,
+    "speed": 1,
+    "editNote": "Giữ lời gửi chúc, xinh đẹp, hạnh phúc, thành công và được yêu thương; bỏ chào đầu và lời mong chúc bổ sung ở cuối.",
+    "excludedRangesSeconds": [
+      [
+        0,
+        3.3
+      ],
+      [
+        16.55,
+        23.893333
+      ]
+    ],
+    "asrUtterances": [
+      {
+        "start": 0.0,
+        "end": 3.48,
+        "text": " Xin chào các chị em, thì cũng sắp tới là tới ngày 20-80"
+      },
+      {
+        "start": 3.48,
+        "end": 7.16,
+        "text": " thì tùng xin có lời chúc tới toàn thể các chị em tại Đã Đỉnh Gâu Bộ Bất Ninh"
+      },
+      {
+        "start": 7.16,
+        "end": 9.82,
+        "text": " luôn xin đẹp, dặn rỡ, hạnh phúc và trần đầy đăng lượng"
+      },
+      {
+        "start": 9.82,
+        "end": 16.32,
+        "text": " chúc các chị em không chỉ thành công cho công việc bất phá danh số mà còn luôn được yêu thương, chân trọng và gặp thật nhiều điều may mắn trong cuộc sống"
+      },
+      {
+        "start": 16.7,
+        "end": 21.76,
+        "text": " mong rằng mỗi ngày của chị em đều là một ngày vui, luôn tự tin tỏa sáng và giữ mãi lượt cười chín môi"
+      },
+      {
+        "start": 22.62,
+        "end": 23.6,
+        "text": " chúc mừng các chị em nhé"
+      }
+    ],
+    "asrNote": "Automatic Vietnamese ASR is used to locate sentence boundaries; spelling and names in recognition are not authoritative. On-screen name and role come exclusively from the original filename."
+  },
+  {
+    "number": 11,
+    "sourceSha256": "e9f2b809feb4ec152d853b8d248a78def9cb8ba81339a230f88fef8e2120c115",
+    "trimStartSeconds": 4.55,
+    "trimEndSeconds": 22.85,
+    "speed": 1.1,
+    "editNote": "Giữ lời chúc gửi Admin và PG đến hết câu chúc thành công; bỏ lời chào đầu và khoảng dừng cuối.",
+    "excludedRangesSeconds": [
+      [
+        0,
+        4.55
+      ],
+      [
+        22.85,
+        23.881292
+      ]
+    ],
+    "asrUtterances": [
+      {
+        "start": 0.5800000000000001,
+        "end": 3.92,
+        "text": " Xin chào toàn thể đại gia đình Âu Pô Bắc Ninh."
+      },
+      {
+        "start": 4.76,
+        "end": 9.02,
+        "text": " Nhân ngày 20 tháng 10, Ngày Phùng Đức Việt Nam, em xin được gửi lời chúc tốt đẹp nhất"
+      },
+      {
+        "start": 9.02,
+        "end": 13.62,
+        "text": " đến các chị Admin, cùng toàn thể các bạn Pigi tại khu vực."
+      },
+      {
+        "start": 14.22,
+        "end": 22.52,
+        "text": " Chúc cho mọi người luôn sinh đẹp, hạnh phúc, luôn được chiều chuộng, tự tin và thành công."
+      }
+    ],
+    "asrNote": "Automatic Vietnamese ASR is used to locate sentence boundaries; spelling and names in recognition are not authoritative. On-screen name and role come exclusively from the original filename."
+  },
+  {
+    "number": 12,
+    "sourceSha256": "3728327b4e847363cd682f5027a5443791f3aafa5ad4cfdac2b2128a48b872e3",
+    "trimStartSeconds": 7,
+    "trimEndSeconds": 25.35,
+    "speed": 1.1,
+    "editNote": "Giữ lời chúc cho chị em và gia đình, năng lượng và mục tiêu; bỏ dẫn nhập dài và câu chúc mừng lặp cuối.",
+    "excludedRangesSeconds": [
+      [
+        0,
+        7
+      ],
+      [
+        25.35,
+        28.0
+      ]
+    ],
+    "asrUtterances": [
+      {
+        "start": 0.8600000000000005,
+        "end": 2.98,
+        "text": " Xin chào mọi người. Mình đã ra ăn xíu bùa nguyên."
+      },
+      {
+        "start": 3.28,
+        "end": 6.86,
+        "text": " Thì hôm nay nhân buổi quốc số phải 10 ngày hôm nay, ngày mai cũng sẽ là ngày 20 tháng 10 rồi."
+      },
+      {
+        "start": 7.2,
+        "end": 12.22,
+        "text": " Mình xin gửi đòi chúc đến tất cả các chị em, Pigi của Băng Ninh, sẽ có một ngày 20 tháng 10."
+      },
+      {
+        "start": 12.32,
+        "end": 18.2,
+        "text": " Thật là vui vẻ, chẳng đầy niềm vui và có thật nhiều thời gian bên gia đình và những người yêu thương."
+      },
+      {
+        "start": 18.36,
+        "end": 21.26,
+        "text": " Chúc chị em luôn luôn xinh đẹp, chẳng đầy đăng lượng."
+      },
+      {
+        "start": 21.46,
+        "end": 25.12,
+        "text": " Núc nào cũng sẽ tươi cười và luôn luôn đạt từ target mà khu vực để ra."
+      },
+      {
+        "start": 25.52,
+        "end": 27.0,
+        "text": " Chúc cho chị em 20 tháng 10 vui vẻ nhé."
+      }
+    ],
+    "asrNote": "Automatic Vietnamese ASR is used to locate sentence boundaries; spelling and names in recognition are not authoritative. On-screen name and role come exclusively from the original filename."
+  },
+  {
+    "number": 13,
+    "sourceSha256": "ed50483b4f3298c6f457e77d256461267931c4392048068ca4739146c7d1ef6e",
+    "trimStartSeconds": 1.6,
+    "trimEndSeconds": 13.95,
+    "speed": 1,
+    "editNote": "Giữ lời chúc đại diện đội Bắc Giang, xinh đẹp, vui vẻ và thành công; bỏ phần dài về mục tiêu doanh thu, thu nhập và kết lặp.",
+    "excludedRangesSeconds": [
+      [
+        0,
+        1.6
+      ],
+      [
+        13.95,
+        33.470522
+      ]
+    ],
+    "asrUtterances": [
+      {
+        "start": 1.8400000000000007,
+        "end": 13.62,
+        "text": " Chào tất cả mọi người, nhân dịp 20 tháng 10, thay mặt tim sêu khu vực Bắc Giang, xin gửi nơi chúc tốt đẹp nhất tới tất cả chị em trong khu vực Bắc Linh, chúc chị em luôn xin đẹp, vui vẻ, thành công"
+      },
+      {
+        "start": 14.22,
+        "end": 25.46,
+        "text": " Chúc cho chị em luôn đạt được nhiều mục tiêu trong năm 2026 đạt được dành thu mốc dành thu cao nhất để được có một mức nương tốt nhất."
+      },
+      {
+        "start": 25.84,
+        "end": 29.22,
+        "text": " Chúc chị em một ngày nhiều niềm vui và vui vẻ. Xin chào."
+      }
+    ],
+    "asrNote": "Automatic Vietnamese ASR is used to locate sentence boundaries; spelling and names in recognition are not authoritative. On-screen name and role come exclusively from the original filename."
+  },
+  {
+    "number": 14,
+    "sourceSha256": "e03a09d8d27bca158ef752ae8545670c55f4eab6e9ab5697e54f697cf4c92730",
+    "trimStartSeconds": 11.8,
+    "trimEndSeconds": 25.85,
+    "speed": 1,
+    "editNote": "Giữ câu trân trọng phụ nữ và lời chúc lạc quan, thành công, hạnh phúc; bỏ chào và lời dẫn đầu.",
+    "excludedRangesSeconds": [
+      [
+        0,
+        11.8
+      ],
+      [
+        25.85,
+        26.966
+      ]
+    ],
+    "asrUtterances": [
+      {
+        "start": 0.900000000000003,
+        "end": 4.42,
+        "text": " Xin chào tất cả mọi người. Vậy là ngày 20 tháng 10 đã đến rồi."
+      },
+      {
+        "start": 5.0000000000000036,
+        "end": 11.2,
+        "text": " Mình muốn vửi lời chúc mừng nồng nhật nhất đến tất cả những người phụ nữ xinh đẹp, thông minh và mạnh mẽ."
+      },
+      {
+        "start": 12.060000000000002,
+        "end": 17.94,
+        "text": " Các bạn chính là những đó rửa rỡ, tô điểm thêm trong cuộc sống chứa phần ý nghĩa."
+      },
+      {
+        "start": 18.92,
+        "end": 25.52,
+        "text": " Chúc các bạn luôn giữ tinh thần lạc quan, gặp hái được nhiều thành công và luôn hạnh phúc trên con đường mình đã chọn."
+      }
+    ],
+    "asrNote": "Automatic Vietnamese ASR is used to locate sentence boundaries; spelling and names in recognition are not authoritative. On-screen name and role come exclusively from the original filename."
+  },
+  {
+    "number": 15,
+    "sourceSha256": "05dc7504762ba740c1184a8435442e405cfd9d11e0c0942629c1d682570a4ef9",
+    "trimStartSeconds": 0,
+    "trimEndSeconds": 10.85,
+    "speed": 1,
+    "editNote": "Giữ trọn lời chúc ngắn của nhân sự; bỏ khoảng dừng quay cuối.",
+    "excludedRangesSeconds": [
+      [
+        0,
+        0
+      ],
+      [
+        10.85,
+        12.318708
+      ]
+    ],
+    "asrUtterances": [
+      {
+        "start": 0.0,
+        "end": 8.7,
+        "text": " Em lương chúc chị em ôc bồ 20 tháng 10 vui vẻ, sinh đẹp trẻ khỏe, sinh sắn tươi tắn và hết mình bị công ty Nga, mong chị em được số như mong muốn."
+      },
+      {
+        "start": 9.260000000000002,
+        "end": 10.42,
+        "text": " 20 tháng 10 vui vẻ hả?"
+      }
+    ],
+    "asrNote": "Automatic Vietnamese ASR is used to locate sentence boundaries; spelling and names in recognition are not authoritative. On-screen name and role come exclusively from the original filename."
+  },
+  {
+    "number": 16,
+    "sourceSha256": "f96138783002d9a0c2af262f0906d30829fe14e52bac047deef757726be9ade8",
+    "trimStartSeconds": 5.05,
+    "trimEndSeconds": 19.5,
+    "speed": 1,
+    "editNote": "Giữ lời chúc của cả hai người xuất hiện trong video: cuộc sống, KPI, doanh số và thu nhập; bỏ chào đầu, phần bổ sung đi chơi và khẩu hiệu cuối.",
+    "excludedRangesSeconds": [
+      [
+        0,
+        5.05
+      ],
+      [
+        19.5,
+        27.648
+      ]
+    ],
+    "asrUtterances": [
+      {
+        "start": 2.4000000000000044,
+        "end": 4.52,
+        "text": " Xin chào chị em hót bồ nha"
+      },
+      {
+        "start": 5.280000000000002,
+        "end": 12.02,
+        "text": " Hôm nay là 20 tháng 10, chúc chị em hót bồ Bắc Ninh luôn sinh đẹp đạn rồi, luôn thành công trong cuộc sống"
+      },
+      {
+        "start": 12.780000000000003,
+        "end": 19.28,
+        "text": " Chúc quan đệ chị em hót bồ nhà mình luôn đặt KBI này, về số này, thu nhập cao này, thưởng cao này"
+      },
+      {
+        "start": 19.28,
+        "end": 24.36,
+        "text": " Luôn được đi Vivu đây đó khi mà thu nhập đã cao nha"
+      },
+      {
+        "start": 24.880000000000003,
+        "end": 25.9,
+        "text": " Hót bồ máy đỉnh"
+      },
+      {
+        "start": 25.9,
+        "end": 27.06,
+        "text": " Máy đỉnh luôn"
+      }
+    ],
+    "asrNote": "Automatic Vietnamese ASR is used to locate sentence boundaries; spelling and names in recognition are not authoritative. On-screen name and role come exclusively from the original filename."
+  }
+]
