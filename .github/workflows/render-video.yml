@@ -1,4 +1,4 @@
-name: Render OPPO Final Short 1440p60
+name: Render OPPO Final Polished 1440p60
 on:
   workflow_dispatch:
   push:
@@ -29,23 +29,29 @@ jobs:
       - name: Validate 52 photos and 16 reviewed speech edits, prepare timeline and audio
         run: npm run media:prepare
       - run: npm run check
-      - name: Render representative photo and lower-third preview
+      - name: Render and validate four edited previews before the full export
         run: npm run preview:final
-      - name: Render full short timeline, H.264 1440p60
+      - name: Render polished timeline, H.264 1440p60
         run: python3 scripts/final/render.py all
+        env:
+          FINAL_RENDER_WORKERS: 4
       - name: Verify all 68 people, encoded frames and soundtrack, decode entire output
         run: npm run verify:render
       - name: Upload final MP4 and verification reports
         uses: actions/upload-artifact@v4
         with:
-          name: OPPO-Bac-Ninh-20-10-Final-Short-1440p60
+          name: OPPO-Bac-Ninh-20-10-Final-Polished-1440p60
           path: |
-            out/oppo-bac-ninh-20-10-final-short-1440p60.mp4
+            out/oppo-bac-ninh-20-10-final-polished-1440p60.mp4
             work/final/qa-report.json
             work/final/timeline.csv
             work/final/trim-report.json
             work/final/audio-timeline.json
             work/final/render-contact.jpg
-            work/final/preview.mp4
+            work/final/previews/*.mp4
+            work/final/preview-report.json
+            work/final/preflight-report.json
+            work/final/labels-contact.jpg
           if-no-files-found: error
           retention-days: 14
+          compression-level: 0

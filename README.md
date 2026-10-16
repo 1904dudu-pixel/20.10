@@ -1,12 +1,12 @@
 # OPPO Bắc Ninh – 20/10
 
-Dự án Remotion hiện tại đã được cập nhật sang timeline rút gọn: **9 phút 26,33 giây**, đủ **52 ảnh nữ + 16 video lời chúc nam**, xuất **2560×1440 / 60 FPS / H.264 / AAC stereo**.
+Dự án Remotion hiện tại đã được cập nhật sang timeline Final Polished: **9 phút 09,33 giây**, đủ **52 ảnh nữ + 16 video lời chúc nam**, xuất **2560×1440 / 60 FPS / H.264 / AAC stereo**.
 
-Xem [bảng timeline, tên/chức vụ, thời lượng từng người và chi tiết phần lược bỏ](FINAL-SHORT.md). Ảnh hiển thị đúng 6 giây/scene, crossfade 0,45 giây. Cấu trúc 4 nhóm: 13 ảnh → 4 lời chúc; giữ Intro, lời chúc chung và Outro.
+Xem [bảng timeline, tên/chức vụ, thời lượng từng người và chi tiết phần lược bỏ](FINAL-POLISHED.md). Ảnh hiển thị đúng 6 giây/scene, crossfade 0,45 giây. Cấu trúc 4 nhóm: 13 ảnh → 4 lời chúc; giữ Intro; video 16 chuyển thẳng sang Outro gốc, đã bỏ toàn bộ closing-0 đến closing-3.
 
 ## Xuất nhanh trên GitHub
 
-Mở **Actions → Render OPPO Final Short 1440p60 → Run workflow → main**. Khi mọi bước render và QA xanh, tải artifact **OPPO-Bac-Ninh-20-10-Final-Short-1440p60**. Artifact lưu 14 ngày, gồm MP4, preview, timeline và báo cáo kiểm tra. Mỗi lần cập nhật mã dựng/media trên `main` cũng tự chạy workflow.
+Mở **Actions → Render OPPO Final Polished 1440p60 → Run workflow → main**. Khi mọi bước render và QA xanh, tải artifact **OPPO-Bac-Ninh-20-10-Final-Polished-1440p60**. Artifact lưu 14 ngày, gồm MP4, preview, timeline và báo cáo kiểm tra. Mỗi lần cập nhật mã dựng/media trên `main` cũng tự chạy workflow.
 
 ## Chạy trên máy tính
 
@@ -19,7 +19,7 @@ npm run render:fast
 npm run verify:render
 ```
 
-Video: `out/oppo-bac-ninh-20-10-final-short-1440p60.mp4`.
+Video: `out/oppo-bac-ninh-20-10-final-polished-1440p60.mp4`.
 
 Để xem bằng Remotion Studio:
 
@@ -36,9 +36,9 @@ Composition `OppoBacNinh2010` dùng cùng scene đã dựng và cùng bản ph�
 - `public/photos`: đúng 52 ảnh PNG/JPG/JPEG/WebP, sắp xếp Unicode theo tên file; bỏ qua SVG mẫu. Giữ nguyên thiết kế và nội dung bằng contain, zoom nhẹ 94–99%.
 - `public/videos/wishes`: đủ 16 video có số thứ tự 1–16; lấy tên/chức vụ trực tiếp từ tên file. Không thay tên file sau khi biên tập mà chưa cập nhật manifest.
 - Intro: `public/videos/Intro.mp4`; Outro: `public/videos/Outro_20-10_OPPO_Bac_Ninh.mp4`.
-- Nhạc ảnh: đúng `public/music/NHẠC 20.10.mp3`; nhạc intro: `public/music/abydos_music-opening-epic-logo-193120.mp3`.
+- Nhạc ảnh: đúng `public/music/NHẠC 20.10.mp3`; nhạc Outro riêng: `public/music/Nhac outro.mp3`; nhạc intro: `public/music/abydos_music-opening-epic-logo-193120.mp3`.
 - `src/data/speech-edits.json`: điểm vào/ra, tốc độ tối đa 1,10× giữ cao độ, phần lược bỏ và fingerprint nguồn. Khi nguồn đổi, bước chuẩn bị dừng để kiểm tra lại điểm cắt.
 - `scripts/final`: kiểm kê → chuẩn bị layout → âm thanh → preview → render → QA. Tất cả 16 clip sau biên tập, gồm đệm hình/chuyển cảnh, đều dưới 18 giây.
 - Nhạc nền không lời piano/ambient là bản gốc do mã dự án tạo, nối mượt và hạ nhỏ dưới tiếng nói.
 
-`public/generated`, `work`, `out`, `build` là kết quả tạo tự động, không đưa vào Git. Các script/scene 52 ảnh từ giai đoạn trước được giữ để tham chiếu; lệnh render và workflow mặc định chỉ dùng timeline rút gọn mới.
+`public/generated`, `work`, `out`, `build` là kết quả tạo tự động, không đưa vào Git. Các script/scene 52 ảnh từ giai đoạn trước được giữ để tham chiếu; lệnh render và workflow mặc định chỉ dùng timeline Final Polished mới.

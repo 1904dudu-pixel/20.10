@@ -1,12 +1,21 @@
 import json,math,os,sys,hashlib,concurrent.futures,re
 from common import *
 MOTION=json.loads((ROOT/'src/data/motion.json').read_text())
-SCRIPT=Path(__file__).read_bytes()+(Path(__file__).with_name('prepare.py')).read_bytes()
+# Changing layout/filter code invalidates its scenes; timeline/audio-only edits do not.
+ENGINE=Path(__file__).read_text().split('def scene_fingerprint(',1)[1].split('\ndef render_all(',1)[0].encode()
 TRANS=27/60
+def scene_fingerprint(s,width=2560,height=1440,fps=60):
+ keys=['kind','src','sha256','width','height','durationInFrames','photoNumber','number','orientationFilter','trimStartSeconds','trimEndSeconds','speed','lowerThirdStartSeconds','lowerThirdEndSeconds']
+ content={k:s[k] for k in keys if k in s}
+ asset_names={'photo':['shine.png'],'graphic':[s.get('asset',''),'shine.png'],'wish':[f'back-{s.get("number",0):02}.png',f'lower-{s.get("number",0):02}.png','shine.png']}.get(s['kind'],[])
+ content['assets']={name:sha(GEN/'assets'/name) for name in asset_names}
+ if s['kind']=='video':content['sourceSha256']=sha(ROOT/'public'/s['src'])
+ return hashlib.sha256(ENGINE+json.dumps(content,sort_keys=True).encode()+json.dumps(MOTION).encode()+f'{width}:{height}:{fps}'.encode()).hexdigest()
+
 def render_scene(s,width=2560,height=1440,fps=60,directory=None):
  scale=width/2560;n=round(s['durationInFrames']*fps/60);duration=n/fps
  directory=Path(directory or GEN/'scenes');directory.mkdir(parents=True,exist_ok=True);out=directory/f'{s["id"]}.mp4';stamp=out.with_suffix('.cache.json')
- signature=hashlib.sha256(SCRIPT+json.dumps(s,sort_keys=True).encode()+json.dumps(MOTION).encode()+f'{width}:{height}:{fps}:assets-v1'.encode()).hexdigest()
+ signature=scene_fingerprint(s,width,height,fps)
  if out.exists() and stamp.exists() and json.loads(stamp.read_text()).get('signature')==signature:return str(out)
  assets=GEN/'assets';input_args=[]
  def still(name):return ['-framerate',fps,'-i',assets/name]
@@ -21,9 +30,6 @@ def render_scene(s,width=2560,height=1440,fps=60,directory=None):
   orient=(s.get('orientationFilter','')+',') if s.get('orientationFilter') else ''
   end=s['lowerThirdEndSeconds'];fgw=int(2300*scale)//2*2;fgh=int(1100*scale)//2*2
   graph=f"[0:v]{orient}setpts=(PTS-STARTPTS)/{s['speed']},fps={fps},scale={fgw}:{fgh}:force_original_aspect_ratio=decrease:flags=lanczos,setsar=1,tpad=start_duration={TRANS}:stop_duration=2:start_mode=clone:stop_mode=clone,trim=end_frame={n},setpts=N/({fps}*TB)[fg];[1:v]scale={width}:{height},setsar=1[bg];[bg][fg]overlay=x=(W-w)/2:y={80*scale}+({fgh}-h)/2:shortest=1[scene];[2:v]scale={width}:{height},format=rgba,fade=t=in:st=0.75:d=0.5:alpha=1,fade=t=out:st={end-.5}:d=0.5:alpha=1[lower];[scene][lower]overlay=x=0:y='{35*scale}*(1-min(max((t-0.75)/0.65,0),1))':enable='between(t,0.75,{end})':shortest=1[named];[3:v]crop=400:160:0:0,scale={int(400*scale)}:{int(160*scale)},format=rgba[shine];[named][shine]overlay=x='-{500*scale}+{3560*scale}*min(max((t-0.75)/3.75,0),1)':y={1210*scale}:enable='between(t,0.75,{end})':shortest=1:format=auto,format=yuv420p[v]"
- elif kind=='closing':
-  input_args=[*still(s['baseAsset']),*still(s['newAsset']),*still('shine.png')]
-  graph=f"[0:v]scale={width}:{height},setsar=1[base];[1:v]scale={width}:{height},format=rgba,fade=t=in:st=0.05:d=1.2:alpha=1[new];[base][new]overlay=x=0:y='{48*scale}*pow(1-min(t/1.3,1),2)':shortest=1[text];[2:v]scale={int(400*scale)}:{height},format=rgba[shine];[text][shine]overlay=x='-{600*scale}+{3760*scale}*t/{duration}':y=0:shortest=1:format=auto,format=yuv420p[v]"
  elif kind=='graphic':
   input_args=[*still(s['asset']),*still('shine.png')]
   graph=f"[0:v]scale={width}:{height},setsar=1[base];[1:v]scale={int(400*scale)}:{height},format=rgba[shine];[base][shine]overlay=x='-{600*scale}+{3760*scale}*t/{duration}':y=0:shortest=1:format=auto,format=yuv420p[v]"
@@ -32,7 +38,7 @@ def render_scene(s,width=2560,height=1440,fps=60,directory=None):
   graph=f'[0:v]fps={fps},scale={width}:{height}:force_original_aspect_ratio=decrease:flags=lanczos,pad={width}:{height}:(ow-iw)/2:(oh-ih)/2:color=0xfaf6ed,setsar=1,format=yuv420p[v]'
  # Decode and scale each static PNG once, then cache the frame. Keep animated
  # alpha fades after the loop so the lower third still rises and fades.
- still_indices={'photo':{1},'wish':{1,2,3},'closing':{0,1,2},'graphic':{0,1}}.get(kind,set())
+ still_indices={'photo':{1},'wish':{1,2,3},'graphic':{0,1}}.get(kind,set())
  parts=graph.split(';')
  for k,part in enumerate(parts):
   match=re.match(r'\[(\d+):v\]',part)
@@ -73,4 +79,4 @@ if __name__=='__main__':
  mode=sys.argv[1] if len(sys.argv)>1 else 'all';m=load_manifest()
  if mode in ['all','stages']:render_all()
  if mode in ['all','join']:
-  target=ROOT/'out/oppo-bac-ninh-20-10-final-short-1440p60.mp4';frames=join(m['scenes'],target,audio=ROOT/'public'/m['audioSrc']);assert frames==m['totalFrames'];print(f'FINAL MP4 EXISTS: {target}, {frames} frames, {target.stat().st_size} bytes',flush=True)
+  target=ROOT/m['outputFile'];frames=join(m['scenes'],target,audio=ROOT/'public'/m['audioSrc']);assert frames==m['totalFrames'];print(f'FINAL MP4 EXISTS: {target}, {frames} frames, {target.stat().st_size} bytes',flush=True)

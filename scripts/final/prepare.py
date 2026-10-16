@@ -4,7 +4,6 @@ from PIL import Image,ImageDraw,ImageFont,ImageFilter
 from common import *
 from analyse_media import main as inspect_media
 FPS=60;TRANS=27
-PARAGRAPHS=['Cảm ơn những người phụ nữ tuyệt vời của OPPO Bắc Ninh!','Chúc các bạn luôn xinh đẹp, hạnh phúc, rạng rỡ và tràn đầy năng lượng.','Cảm ơn vì đã luôn đồng hành, nỗ lực và cùng nhau tạo nên một tập thể OPPO Bắc Ninh đoàn kết, vững mạnh.','Chúc mừng ngày Phụ nữ Việt Nam 20/10!']
 FONT=Path('/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf');BOLD=FONT.with_name('DejaVuSans-Bold.ttf')
 def font(size,bold=False):return ImageFont.truetype(str(BOLD if bold else FONT),size)
 def wrap(text,f,width):
@@ -39,7 +38,7 @@ def assets(m):
   im=background(True);d=ImageDraw.Draw(im);centered(d,f'NHỮNG LỜI CHÚC TỪ ĐỒNG ĐỘI  •  {group:02}',290,font(40),'#d6c396');centered(d,'Và còn những lời chúc đặc biệt…',520,font(84,True),'#ffffff');centered(d,'Từ những người đồng đội',750,font(65),'#ffffff');centered(d,'luôn sát cánh bên các bạn!',860,font(65),'#e5cf9e');im.save(assets/f'bridge-{group}.png')
  for r in m['wishes']:
   im=Image.new('RGBA',(2560,1440));d=ImageDraw.Draw(im);d.rounded_rectangle((150,1210,2410,1370),radius=18,fill=(3,52,39,234),outline=(192,165,109,180),width=2)
-  d.rectangle((150,1240,158,1340),fill='#dac395');d.text((208,1222),r['name'],font=font(59,True),fill='white');d.text((210,1302),r['role'],font=font(37,True),fill='#e2ca95');im.save(assets/f'lower-{r["number"]:02}.png')
+  d.rectangle((150,1240,158,1340),fill='#dac395');d.text((208,1222),r['displayName'],font=font(59,True),fill='white');d.text((210,1302),r['displayRole'],font=font(37,True),fill='#e2ca95');im.save(assets/f'lower-{r["number"]:02}.png')
   f=ROOT/'public'/r['src'];raw=assets/f'poster-{r["number"]:02}.png'
   filt=','.join([r['orientationFilter']] if r.get('orientationFilter') else [])
   filt=(filt+',' if filt else '')+'scale=640:360:force_original_aspect_ratio=increase,crop=640:360'
@@ -48,12 +47,6 @@ def assets(m):
   for which,t in [('head',r['trimStartSeconds']),('tail',max(r['trimStartSeconds'],r['trimEndSeconds']-1/60))]:
    filt=(r['orientationFilter']+',' if r.get('orientationFilter') else '')+'scale=2300:1100:force_original_aspect_ratio=decrease'
    ff(['-ss',t,'-i',f,'-frames:v','1','-vf',filt,'-threads','1',assets/f'{which}-{r["number"]:02}.png'])
- for stage in range(4):
-  base=background();d=ImageDraw.Draw(base);centered(d,'OPPO BẮC NINH  •  GỬI MỘT NỬA YÊU THƯƠNG',200,font(49,True),'#07533e')
-  new=Image.new('RGBA',base.size);nd=ImageDraw.Draw(new)
-  for k,para in enumerate(PARAGRAPHS[:stage+1]):
-   target=d if k<stage else nd;centered(target,para,[380,565,765,1120][k],font(55 if k<3 else 68,k in[0,3]),'#07533e' if k in[0,3] else '#345e4b',1980)
-  base.save(assets/f'closing-base-{stage}.png');new.save(assets/f'closing-new-{stage}.png')
  # A translucent procedural champagne beam. Original photos are unchanged.
  im=Image.new('RGBA',(400,1440));import numpy as np
  arr=np.zeros((1440,400,4),dtype=np.uint8);arr[:,:,:3]=[255,245,217];arr[:,:,3]=(16*np.exp(-((np.arange(400)-200)/80)**2))[None,:].astype('uint8');Image.fromarray(arr).save(assets/'shine.png')
@@ -74,6 +67,7 @@ def main():
   if r['number']==2:r['displaySize']=[r['height'],r['width']];r['orientationNote']='Additional counterclockwise 90 degrees; baked sideways pixels, no metadata.'
   else:r['orientationNote']='Respect FFmpeg display matrix autorotation.'
   r['keptFrames']=math.ceil(r['keptSeconds']*FPS)
+  r['displayName']='Anh. '+r['name'];r['displayRole']='GIÁM ĐỐC KINH DOANH' if r['number']==1 else r['role']
  photos=[]
  for f in sorted((ROOT/'public/photos').iterdir()):
   if f.suffix.lower() not in ['.png','.jpg','.jpeg','.webp']:continue
@@ -81,7 +75,7 @@ def main():
   photos.append({'src':str(f.relative_to(ROOT/'public')),'sha256':sha(f),'width':w,'height':h})
  assert len(photos)==52 and len({p['sha256'] for p in photos})==52
  sources={}
- for key,src in {'intro':'videos/Intro.mp4','outro':'videos/Outro_20-10_OPPO_Bac_Ninh.mp4','mainMusic':'music/NHẠC 20.10.mp3','cinematic':'music/abydos_music-opening-epic-logo-193120.mp3'}.items():
+ for key,src in {'intro':'videos/Intro.mp4','outro':'videos/Outro_20-10_OPPO_Bac_Ninh.mp4','mainMusic':'music/NHẠC 20.10.mp3','cinematic':'music/abydos_music-opening-epic-logo-193120.mp3','outroMusic':'music/Nhac outro.mp3'}.items():
   p=ROOT/'public'/src
   if not p.exists():raise FileNotFoundError(src)
   meta=probe(p);sources[key]={'src':src,'sha256':sha(p),'durationSeconds':float(meta['format']['duration'])}
@@ -100,13 +94,12 @@ def main():
   for r in wishes[group*4:(group+1)*4]:
    s=add('wish',f'wish-{r["number"]:02}',r['keptFrames']+2*TRANS,**r)
    s['voiceStartFrame']=s['startFrame']+TRANS;s['voiceEndFrame']=s['voiceStartFrame']+r['keptFrames'];s['lowerThirdStartSeconds']=.75;s['lowerThirdEndSeconds']=min(4.5,s['durationInFrames']/60-.9)
- for k in range(4):add('closing',f'closing-{k}',282,stage=k,baseAsset=f'closing-base-{k}.png',newAsset=f'closing-new-{k}.png',text=PARAGRAPHS[k])
  add('video','outro',1200,src=sources['outro']['src'])
- m={'version':'final-short-52-16-v2','title':'OPPO BẮC NINH – 20/10 | GỬI MỘT NỬA YÊU THƯƠNG','fps':FPS,'width':2560,'height':1440,'transitionFrames':TRANS,'totalFrames':scenes[-1]['endFrame'],'sources':sources,'photoCount':52,'wishCount':16,'photos':photos,'wishes':wishes,'photoGroups':groups,'scenes':scenes,'audioSrc':'generated/final/audio/final-mix.wav','instrumentalOrigin':'Original procedural warm piano/ambient composition created by project code; no external or commercial recording.'}
+ m={'version':'final-polished-52-16-v3','title':'OPPO BẮC NINH – 20/10 | GỬI MỘT NỬA YÊU THƯƠNG','fps':FPS,'width':2560,'height':1440,'transitionFrames':TRANS,'totalFrames':scenes[-1]['endFrame'],'sources':sources,'photoCount':52,'wishCount':16,'photos':photos,'wishes':wishes,'photoGroups':groups,'scenes':scenes,'audioSrc':'generated/final/audio/final-mix.wav','outputFile':'out/oppo-bac-ninh-20-10-final-polished-1440p60.mp4','removedSceneIds':['closing-0','closing-1','closing-2','closing-3'],'outroOriginalAudioMuted':True,'instrumentalOrigin':'Original procedural warm piano/ambient composition created by project code; no external or commercial recording.'}
  assets(m);dump(ROOT/'src/data/final-manifest.json',m);dump(WORK/'manifest.json',m)
  with open(WORK/'timeline.csv','w',encoding='utf-8-sig',newline='') as f:
   w=csv.writer(f);w.writerow(['id','type','source','name','role','start_seconds','end_seconds','raw_seconds','clear_reading_seconds'])
-  for s in scenes:w.writerow([s['id'],s['kind'],s.get('src',''),s.get('name',''),s.get('role',''),s['startFrame']/60,s['endFrame']/60,s['durationInFrames']/60,s.get('clearReadingSeconds','')])
+  for s in scenes:w.writerow([s['id'],s['kind'],s.get('src',''),s.get('displayName',s.get('name','')),s.get('displayRole',s.get('role','')),s['startFrame']/60,s['endFrame']/60,s['durationInFrames']/60,s.get('clearReadingSeconds','')])
  dump(WORK/'trim-report.json',wishes)
  print(f'FINAL MANIFEST: {len(photos)} photos, {len(wishes)} wishes, {len(scenes)} scenes, {m["totalFrames"]/60:.3f}s; voice content {sum(r["keptSeconds"] for r in wishes):.3f}s',flush=True)
 if __name__=='__main__':main()

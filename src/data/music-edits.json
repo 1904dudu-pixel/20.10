@@ -1,10 +1,81 @@
 {
-  "source": "music/NHẠC 20.10.mp3",
-  "sourceSha256": "3e12b13f5c943b30651fc49b780a9b181a4930959412abe2774623ebe8ffe92e",
-  "pauseSourceSeconds": [
-    70.98,
-    138.72,
-    202.9
+  "mainSource": "music/NHẠC 20.10.mp3",
+  "mainSourceSha256": "3e12b13f5c943b30651fc49b780a9b181a4930959412abe2774623ebe8ffe92e",
+  "photoTracks": [
+    {
+      "group": 1,
+      "sourceStartSeconds": 0,
+      "sourceEndSeconds": 70.98,
+      "fadeInSeconds": 0.65,
+      "fadeOutSeconds": 0.65
+    },
+    {
+      "group": 2,
+      "sourceStartSeconds": 70.98,
+      "sourceEndSeconds": 138.72,
+      "fadeInSeconds": 0.65,
+      "fadeOutSeconds": 0.65
+    },
+    {
+      "group": 3,
+      "sourceStartSeconds": 138.72,
+      "sourceEndSeconds": 211.18,
+      "fadeInSeconds": 0.65,
+      "fadeOutSeconds": 0.55
+    },
+    {
+      "group": 4,
+      "sourceStartSeconds": 202.9,
+      "sourceEndSeconds": 253.12,
+      "fadeInSeconds": 0.65,
+      "fadeOutSeconds": 0.8
+    }
   ],
-  "policy": "Reviewed complete sung-phrase boundaries using multilingual ASR utterance/word timing; source cursor continues without repeated or omitted samples. Boundary 2 is in the following instrumental breath. Fade into the original instrumental rather than extending photos."
+  "chorusRepeat": {
+    "sourceStartSeconds": 199.68,
+    "sourceEndSeconds": 223.26,
+    "timelineStartSeconds": 451.0,
+    "fadeInSeconds": 0.8,
+    "fadeOutSeconds": 0.8,
+    "selectionNote": "Final full chorus phrases, 23.58 seconds: highest sustained RMS among three homologous refrain excerpts (0.18582 vs 0.17610 and 0.17550), with lower peak than the first refrain. Full phrase entrance and complete last line, followed by a breath; no time stretching."
+  },
+  "outro": {
+    "source": "music/Nhac outro.mp3",
+    "sourceSha256": "ba7ccc0c79fb699be7baaf5e738c8ef4ee74b93bbb4527dbbb3da6f94794eaf7",
+    "sourceStartSeconds": 11.4,
+    "sourceEndSeconds": 31.6,
+    "prelapSeconds": 0.2,
+    "fadeInSeconds": 0.25,
+    "fadeOutSeconds": 0.3,
+    "gain": 0.85,
+    "sourceAttackSeconds": [
+      12.252,
+      14.132,
+      16.002,
+      29.372
+    ],
+    "selectionNote": "Keeps the complete final OPPO Bac Ninh sung phrase, the instrumental climax, final cadence and short natural reverb tail. Source 11.60s coincides with the first original Outro video frame. Strong accents land at video 0.652s, 2.532s (brand entrance), 4.402s (title reveal) and 17.772s (final cadence). No speed change."
+  },
+  "policy": "Keep the approved first two music blocks; extend block 3 through the complete next sung phrase to the end of the photos; preserve the original block 4 and repeat a full chorus over its nearly silent tail. No change to photo or speech timing. Intentional source repetitions are allowed by the final editing request.",
+  "chorusCandidates": [
+    {
+      "sourceStartSeconds": 59.84,
+      "sourceEndSeconds": 83.32,
+      "rms": 0.1761003882,
+      "peak": 0.9885932803
+    },
+    {
+      "sourceStartSeconds": 142.98,
+      "sourceEndSeconds": 166.58,
+      "rms": 0.1754987985,
+      "peak": 0.794796288
+    },
+    {
+      "sourceStartSeconds": 199.68,
+      "sourceEndSeconds": 223.26,
+      "rms": 0.1858178675,
+      "peak": 0.8267919421,
+      "selected": true
+    }
+  ]
 }
