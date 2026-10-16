@@ -1,25 +1,26 @@
-import {CanvasImage, interpolate, staticFile, useCurrentFrame, useVideoConfig} from 'remotion';
-import {palette, Rise, SceneFrame} from '../components/SceneFrame';
-import type {Photo} from '../data/content';
-import {timing} from '../timing';
+import {AbsoluteFill, CanvasImage, interpolate, staticFile, useCurrentFrame, useVideoConfig} from 'remotion';
+import {Sparkles} from '../components/SceneFrame';
+import type manifest from '../data/media-manifest.json';
+import {photoScale} from '../motion';
 
-type PhotoSceneProps = {photo: Photo; index: number; total: number};
+type Photo = (typeof manifest.photos)[number];
 
-export const PhotoScene = ({photo, index, total}: PhotoSceneProps) => {
+// Keep each complete greeting card: no crop, masks, rewritten names or captions.
+export const PhotoScene = ({photo, index}: {photo: Photo; index: number}) => {
   const frame = useCurrentFrame();
-  const {fps} = useVideoConfig();
+  const {width, height, fps} = useVideoConfig();
+  const scale = photoScale(index, frame, photo.durationInFrames);
+  const sweep = interpolate(frame, [0.6 * fps, photo.durationInFrames - 0.6 * fps], [-55, 155], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
   return (
-    <SceneFrame>
-      <div style={{position: 'absolute', left: 230, top: 245, width: 850, height: 965, borderRadius: '425px 425px 12px 12px', overflow: 'hidden', border: '12px solid #fffdf8', boxShadow: '0 30px 70px #173e2725'}}>
-        <CanvasImage src={staticFile(photo.src)} premountFor={fps} style={{width: '100%', height: '100%', objectFit: 'cover', objectPosition: photo.objectPosition ?? 'center', scale: interpolate(frame, [0, timing.photoSeconds * fps], [1.02, 1.08], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'})}} />
+    <AbsoluteFill style={{background: '#faf6ed', overflow: 'hidden'}}>
+      <AbsoluteFill style={{background: 'radial-gradient(ellipse at 15% 80%, #dce7d6, transparent 65%), radial-gradient(ellipse at 85% 20%, #ecd1cb70, transparent 60%)'}} />
+      <div style={{position: 'absolute', inset: 0, display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
+        <CanvasImage src={staticFile(photo.src)} premountFor={fps} style={{width, height, objectFit: 'contain', scale, boxShadow: '0 6px 28px #173e2718'}} />
       </div>
-      <div style={{position: 'absolute', left: 1250, top: 365, width: 1050}}>
-        <Rise style={{fontSize: 27, letterSpacing: 6, color: '#7a8b77'}}>NHỮNG ĐÓA HOA CỦA OPPO</Rise>
-        <Rise delay={0.25} style={{marginTop: 55, fontFamily: 'Georgia, "DejaVu Serif", serif', fontSize: 111, lineHeight: 1.22}}>{photo.name}</Rise>
-        <Rise delay={0.5} style={{width: 120, height: 3, background: palette.gold, marginTop: 50}}><span /></Rise>
-        <Rise delay={0.75} style={{marginTop: 47, fontSize: 45, lineHeight: 1.65, whiteSpace: 'pre-line', color: '#52725f'}}>{photo.caption}</Rise>
-        <Rise delay={1.1} style={{marginTop: 65, fontSize: 28, letterSpacing: 6, color: '#9b855b'}}>{String(index + 1).padStart(2, '0')} / {String(total).padStart(2, '0')}</Rise>
-      </div>
-    </SceneFrame>
+      <AbsoluteFill style={{opacity: 0.12, pointerEvents: 'none'}}>
+        <div style={{position: 'absolute', top: '-35%', height: '170%', width: '16%', left: `${sweep}%`, rotate: '-18deg', background: 'linear-gradient(90deg, transparent, #fff5d9 50%, transparent)'}} />
+      </AbsoluteFill>
+      <AbsoluteFill style={{opacity: 0.35, pointerEvents: 'none'}}><Sparkles /></AbsoluteFill>
+    </AbsoluteFill>
   );
 };

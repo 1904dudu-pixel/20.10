@@ -1,0 +1,447 @@
+{
+  "fps": 60,
+  "width": 2560,
+  "height": 1440,
+  "totalFrames": 15189,
+  "transitionFrames": 42,
+  "filenameOrder": "Ascending filename (Unicode), with extension; SVG excluded",
+  "music": {
+    "src": "music/NHẠC 20.10.mp3",
+    "sha256": "3e12b13f5c943b30651fc49b780a9b181a4930959412abe2774623ebe8ffe92e",
+    "durationSeconds": 253.152,
+    "volume": 0.85,
+    "fadeInSeconds": 1.5,
+    "fadeOutSeconds": 3
+  },
+  "intro": {
+    "src": "videos/Intro.mp4",
+    "sha256": "21b78005dac02b87d2f73530a5a3c99f27cf2c0f761d5a30b10f974a1b436305",
+    "durationSeconds": 8.3,
+    "durationInFrames": 498
+  },
+  "outro": {
+    "src": "videos/Outro_20-10_OPPO_Bac_Ninh.mp4",
+    "sha256": "9c09127bea68e2a2dd4d28ed7f72e61d8c077380dde1878f3cf8b4a83f00928a",
+    "durationSeconds": 20,
+    "durationInFrames": 1200,
+    "startFrame": 13989
+  },
+  "photos": [
+    {
+      "src": "photos/01_BÙI THỊ HUYỀN TRANG.png",
+      "sha256": "d1b01b596230bc8af7869db47b2cb82a017605159fd00181f89da342f8fda0f3",
+      "width": 1672,
+      "height": 941,
+      "startFrame": 456,
+      "durationInFrames": 303
+    },
+    {
+      "src": "photos/01_HOÀNG THỊ NGÁT.png",
+      "sha256": "095ce068778c0cc60c16f2ba364bcee30bfbbc649b407a801b6c8eeb24761f22",
+      "width": 1672,
+      "height": 941,
+      "startFrame": 717,
+      "durationInFrames": 303
+    },
+    {
+      "src": "photos/01_HÀ THỊ LAN HƯƠNG.png",
+      "sha256": "55735e310b2d468705753dfda9babb2d10bd1f6e07b52f830c1a7c8c1dbff870",
+      "width": 1672,
+      "height": 941,
+      "startFrame": 978,
+      "durationInFrames": 303
+    },
+    {
+      "src": "photos/01_HÀ TỐ UYÊN.png",
+      "sha256": "8fd4183534e0b90dc47874474a36f6739b311db4b60c1b5f1b3133c0827d56ec",
+      "width": 1672,
+      "height": 941,
+      "startFrame": 1239,
+      "durationInFrames": 303
+    },
+    {
+      "src": "photos/01_NGUYỄN THỊ HÀ VI.png",
+      "sha256": "0c21e73dd70066993ad09491ad00f219a5218e8e8fa331491637d08de50b1c40",
+      "width": 1672,
+      "height": 941,
+      "startFrame": 1500,
+      "durationInFrames": 303
+    },
+    {
+      "src": "photos/02_BÙI THỊ MỸ LINH.png",
+      "sha256": "3a2596202bda53307794179018a773f89e8c55fcb35a3db055b545d76b2776fb",
+      "width": 1672,
+      "height": 941,
+      "startFrame": 1761,
+      "durationInFrames": 303
+    },
+    {
+      "src": "photos/02_HOÀNG QUỲNH NHƯ.png",
+      "sha256": "4c143eda048b517e7b73b7161ea270db08789c192b2af921fcdbdada8f0eb695",
+      "width": 1672,
+      "height": 941,
+      "startFrame": 2022,
+      "durationInFrames": 303
+    },
+    {
+      "src": "photos/02_HOÀNG THỊ NGỌC ANH.png",
+      "sha256": "416a77908b08fcc22023fcf95c3bd3bfdeb8bcfa60a4d9d9b2c6a9382e2246ec",
+      "width": 1672,
+      "height": 941,
+      "startFrame": 2283,
+      "durationInFrames": 303
+    },
+    {
+      "src": "photos/02_NGUYỄN THỊ HẢI.png",
+      "sha256": "4e0e40731bfa99c6c6126235a60eed3525874fd7c1781e6078bb400a3a6d2478",
+      "width": 1672,
+      "height": 941,
+      "startFrame": 2544,
+      "durationInFrames": 303
+    },
+    {
+      "src": "photos/02_NGUYỄN THỊ YẾN LINH.png",
+      "sha256": "59d44cf7d3bf88bd6eb8427f10ba2161862455141b26f9fe7bee5d2afcfd049e",
+      "width": 1672,
+      "height": 941,
+      "startFrame": 2805,
+      "durationInFrames": 303
+    },
+    {
+      "src": "photos/03_BÙI THU THỦY.png",
+      "sha256": "96e7f5dad3b1407e00c418832b1d06a16b4b8cc6f1f591a0e21d0a323d32ed2c",
+      "width": 1672,
+      "height": 941,
+      "startFrame": 3066,
+      "durationInFrames": 303
+    },
+    {
+      "src": "photos/03_HOÀNG THỊ LIÊN.png",
+      "sha256": "340e076c040059101d41c791aa5350c803b1dd9dc50f5a0458e1a08323aa7b08",
+      "width": 1672,
+      "height": 941,
+      "startFrame": 3327,
+      "durationInFrames": 303
+    },
+    {
+      "src": "photos/03_HOÀNG THỊ THANH TUYỀN.png",
+      "sha256": "ba01ff6019ba927ba771ba3a02a6f183bbee618c60c0798284b50fd55da1f0ac",
+      "width": 1672,
+      "height": 941,
+      "startFrame": 3588,
+      "durationInFrames": 303
+    },
+    {
+      "src": "photos/03_NGUYỄN THỊ HOA.png",
+      "sha256": "04ba80c22f2cbfee337b3373515998d0c403571fc4f84d961eef584f1137bc4f",
+      "width": 1672,
+      "height": 941,
+      "startFrame": 3849,
+      "durationInFrames": 302
+    },
+    {
+      "src": "photos/03_PHẠM CHI MAI.png",
+      "sha256": "cd6f0d494af7aa56b047f4132080177b79d432f187aa6364b0465cec3aa13484",
+      "width": 1672,
+      "height": 941,
+      "startFrame": 4109,
+      "durationInFrames": 302
+    },
+    {
+      "src": "photos/04_DƯƠNG THỊ MAI.png",
+      "sha256": "95b11dee48b7ed71a301f315857ffa20bb570130c9cbb04542f9fbb6403028fa",
+      "width": 1672,
+      "height": 941,
+      "startFrame": 4369,
+      "durationInFrames": 302
+    },
+    {
+      "src": "photos/04_HOÀNG THỊ THẢO.png",
+      "sha256": "783bc9881c07fb62089f4f980d80e52a8528c248a06fda110743bf4a5fdb6c47",
+      "width": 1672,
+      "height": 941,
+      "startFrame": 4629,
+      "durationInFrames": 302
+    },
+    {
+      "src": "photos/04_NGUYỄN MINH KHÁNH.png",
+      "sha256": "6036786539fc9ea65207e337a41dc8495b25b381bb1b8fc0255f2de035bfa115",
+      "width": 1672,
+      "height": 941,
+      "startFrame": 4889,
+      "durationInFrames": 302
+    },
+    {
+      "src": "photos/04_NGUYỄN THỊ HỒNG LINH.png",
+      "sha256": "3e864bd184aa7ae03db4a38508b8917f22438fede94b20a3804285206a46fe57",
+      "width": 1672,
+      "height": 941,
+      "startFrame": 5149,
+      "durationInFrames": 302
+    },
+    {
+      "src": "photos/04_PHẠM THỊ TRANG.png",
+      "sha256": "f5376734e1eef68530d9779595505ca5d714a46ecaa79a12926b01da109dca38",
+      "width": 1672,
+      "height": 941,
+      "startFrame": 5409,
+      "durationInFrames": 302
+    },
+    {
+      "src": "photos/05_DƯƠNG THỊ QUYẾN.png",
+      "sha256": "dd9d86deaf06b9965478981e2c1a4b5d11f34a3c826da7fba75935a27cb42562",
+      "width": 1672,
+      "height": 941,
+      "startFrame": 5669,
+      "durationInFrames": 302
+    },
+    {
+      "src": "photos/05_HOÀNG THỊ TRANG.png",
+      "sha256": "8d6df6f791a09c102a7061a0a6465f3c3d84b6f7f7cba841c7b447c8221a971a",
+      "width": 1672,
+      "height": 941,
+      "startFrame": 5929,
+      "durationInFrames": 302
+    },
+    {
+      "src": "photos/05_NGUYỄN THỊ LỊCH.png",
+      "sha256": "4e0c48666969f33027bd411e64640a90781dafb6874149659e368dd71be021b3",
+      "width": 1672,
+      "height": 941,
+      "startFrame": 6189,
+      "durationInFrames": 302
+    },
+    {
+      "src": "photos/05_NGUYỄN THỊ ÁI VÂN.png",
+      "sha256": "30526baa5d71226e23b3f659e5e2ddc0e891b5114ae2002dfaa73a566a6948b5",
+      "width": 1672,
+      "height": 941,
+      "startFrame": 6449,
+      "durationInFrames": 302
+    },
+    {
+      "src": "photos/05_PHẠM THỊ XIÊM.png",
+      "sha256": "331e8f4f1249db1fa4ae7a51c2d7e1380b86e71d0f753375fd2e6d49cf1be576",
+      "width": 1672,
+      "height": 941,
+      "startFrame": 6709,
+      "durationInFrames": 302
+    },
+    {
+      "src": "photos/06_LÒ THỊ NGỌC BÍCH.png",
+      "sha256": "16efc78fc72e6554f8984c727afef9e72bb8bf69fb7ca78904eeb314c026cc51",
+      "width": 1672,
+      "height": 941,
+      "startFrame": 6969,
+      "durationInFrames": 302
+    },
+    {
+      "src": "photos/06_NGUYỄN THỊ CHIÊM.png",
+      "sha256": "2f8040691dc779bf6c1313540904ebfa8bd24b6e0b26c2dd82107f7aac818f28",
+      "width": 1672,
+      "height": 941,
+      "startFrame": 7229,
+      "durationInFrames": 302
+    },
+    {
+      "src": "photos/06_NGUYỄN THỊ NGÂN.png",
+      "sha256": "183ca4ebde3d38ea5cccc149d13be3fb43a10fdd3d299846955e8d41b6de69c3",
+      "width": 1672,
+      "height": 941,
+      "startFrame": 7489,
+      "durationInFrames": 302
+    },
+    {
+      "src": "photos/06_PHÙNG THỊ HỒNG.png",
+      "sha256": "4adea47079a8ceff1822d908ce3b39e2b0988d30e72909f0443432e3ffb4334e",
+      "width": 1672,
+      "height": 941,
+      "startFrame": 7749,
+      "durationInFrames": 302
+    },
+    {
+      "src": "photos/06_ĐÀM THỊ LỆ.png",
+      "sha256": "1012c8edd2558645abab58b46e1cb9ad15c884efc09d6514b3e38d9bc9b46e72",
+      "width": 1672,
+      "height": 941,
+      "startFrame": 8009,
+      "durationInFrames": 302
+    },
+    {
+      "src": "photos/07_LƯƠNG THỊ HƯƠNG.png",
+      "sha256": "777c8295de5b1155f9aaabb96b78482b77288ad57efe57dbde4767a7a7059471",
+      "width": 1672,
+      "height": 941,
+      "startFrame": 8269,
+      "durationInFrames": 302
+    },
+    {
+      "src": "photos/07_NGUYỄN THỊ DIỆU NINH.png",
+      "sha256": "abadf337cc0be9600336ae4db723b9cee09a8f85f94c59e12f3b6502e51f2f66",
+      "width": 1672,
+      "height": 941,
+      "startFrame": 8529,
+      "durationInFrames": 302
+    },
+    {
+      "src": "photos/07_NGUYỄN THỊ NGỌC.png",
+      "sha256": "77fa3b23fb8219d1f675f33b84325ec73fe74ec6fa2b035345e324f17a87a535",
+      "width": 1672,
+      "height": 941,
+      "startFrame": 8789,
+      "durationInFrames": 302
+    },
+    {
+      "src": "photos/07_TRẦN HƯƠNG NHI.png",
+      "sha256": "0d9e913135329e1e7b84fdd824454ec864e4a238c6e1f241481d62451eeb3f1f",
+      "width": 1672,
+      "height": 941,
+      "startFrame": 9049,
+      "durationInFrames": 302
+    },
+    {
+      "src": "photos/07_ĐÀM THỊ TÂM.png",
+      "sha256": "204e43e48332bf0d7f6fd15a85ee5577cab9d108fbc7d4b4fe49af9a4ed10f5c",
+      "width": 1672,
+      "height": 941,
+      "startFrame": 9309,
+      "durationInFrames": 302
+    },
+    {
+      "src": "photos/08_LƯƠNG THỊ TƯƠI.png",
+      "sha256": "5f94834bc5105def85b3dc1afcf2fa2bdb2dc05cf7026e955cd21a0c9850bae7",
+      "width": 1672,
+      "height": 941,
+      "startFrame": 9569,
+      "durationInFrames": 302
+    },
+    {
+      "src": "photos/08_NGUYỄN THỊ NGUYỆT.png",
+      "sha256": "6b52c4cc0f8131c67a2f6258ef8bc8a2e243524ae563661b2d7c16aea85e1259",
+      "width": 1672,
+      "height": 941,
+      "startFrame": 9829,
+      "durationInFrames": 302
+    },
+    {
+      "src": "photos/08_NGUYỄN THỊ THOA BN.png",
+      "sha256": "bf37a5318de62d0e80f00110e83b91f0a9d52a5a62cadfa81a2c9008a05b8208",
+      "width": 1672,
+      "height": 941,
+      "startFrame": 10089,
+      "durationInFrames": 302
+    },
+    {
+      "src": "photos/08_VI THU TRANG.png",
+      "sha256": "653660bc6755af5722468178578b9b6bd54cdfa60d93965239a416e7f93066cc",
+      "width": 1672,
+      "height": 941,
+      "startFrame": 10349,
+      "durationInFrames": 302
+    },
+    {
+      "src": "photos/08_ĐÀO ÁNH TUYẾT.png",
+      "sha256": "7a866a2a3b94b457d7691164431ac7e8c910c2de7431ad0b4bb5c50ed46c036d",
+      "width": 1672,
+      "height": 941,
+      "startFrame": 10609,
+      "durationInFrames": 302
+    },
+    {
+      "src": "photos/09_LƯU THỊ THÙY.png",
+      "sha256": "b920926766e5784cba85e8e0f342f70b2178db56c8f84e3611c3e446ac7c76b1",
+      "width": 1672,
+      "height": 941,
+      "startFrame": 10869,
+      "durationInFrames": 302
+    },
+    {
+      "src": "photos/09_NGUYỄN THỊ THANH HẰNG.png",
+      "sha256": "4b4a0492c2867799a1a6bb40273ca1741510750c706af0be53479dde7cefb954",
+      "width": 1672,
+      "height": 941,
+      "startFrame": 11129,
+      "durationInFrames": 302
+    },
+    {
+      "src": "photos/09_NGUYỄN THỊ THOA.png",
+      "sha256": "c5b347a1fd71ddc7fe205bc7e23e8ee1d94bcf27a6cfb458f1cbf2c3b195dfe1",
+      "width": 1672,
+      "height": 941,
+      "startFrame": 11389,
+      "durationInFrames": 302
+    },
+    {
+      "src": "photos/09_VŨ THỊ THƯƠNG.png",
+      "sha256": "dd99481cdf157861facc4f70545e4b2491904751d376027b699b5ee56aaed347",
+      "width": 1672,
+      "height": 941,
+      "startFrame": 11649,
+      "durationInFrames": 302
+    },
+    {
+      "src": "photos/09_ĐINH THỊ MINH PHƯỢNG.png",
+      "sha256": "7138fb02d4278ebfd2116af8f3cd5f7aa1ee43a9fd6542ead6d317dd7ff5d1b8",
+      "width": 1672,
+      "height": 941,
+      "startFrame": 11909,
+      "durationInFrames": 302
+    },
+    {
+      "src": "photos/10_NGUYỄN HỒNG VÂN.png",
+      "sha256": "92e2496ab8873eb30116325a50265af1a2096254b141cae88111e95b94fbb83d",
+      "width": 1672,
+      "height": 941,
+      "startFrame": 12169,
+      "durationInFrames": 302
+    },
+    {
+      "src": "photos/10_NGUYỄN THỊ THU HIẾU.png",
+      "sha256": "9d39a85c4268dad0da56a9556bbbfdf54cdf6f8f1eedc859b30eb196d326091a",
+      "width": 1672,
+      "height": 941,
+      "startFrame": 12429,
+      "durationInFrames": 302
+    },
+    {
+      "src": "photos/10_VŨ THỊ TRANG.png",
+      "sha256": "2d594198867d11a5a400113e780c6e1448b04c9de16946b877c316b5bb4c82d6",
+      "width": 1672,
+      "height": 941,
+      "startFrame": 12689,
+      "durationInFrames": 302
+    },
+    {
+      "src": "photos/10_ĐINH THỊ THU TRANG.png",
+      "sha256": "94e631616cba926edbb2bb21eceaa9f9ee8ac27ae08b1d41ab3e8fbc8bd7f468",
+      "width": 1672,
+      "height": 941,
+      "startFrame": 12949,
+      "durationInFrames": 302
+    },
+    {
+      "src": "photos/NGUYỄN THỊ VUI.webp",
+      "sha256": "b8c3ec0f559e5d28513dc5a080a0ec1e0f74a127921e51263dbb33fa70945e0b",
+      "width": 1672,
+      "height": 941,
+      "startFrame": 13209,
+      "durationInFrames": 302
+    },
+    {
+      "src": "photos/NGÔ THỊ HIỀN.png",
+      "sha256": "4b2c72e983ca99eb04649c54cb62850f5532889fa2ec88a5b23eb12f175cb725",
+      "width": 1672,
+      "height": 941,
+      "startFrame": 13469,
+      "durationInFrames": 302
+    },
+    {
+      "src": "photos/TRẦN THỊ LINH.jpg",
+      "sha256": "50dfd74e70f963d468166d69d48a5e999d28ec1f647167a266a1a13ed244b45c",
+      "width": 1672,
+      "height": 941,
+      "startFrame": 13729,
+      "durationInFrames": 302
+    }
+  ]
+}

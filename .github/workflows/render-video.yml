@@ -1,0 +1,47 @@
+name: Render OPPO 20-10 video
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'src/**'
+      - 'scripts/**'
+      - 'public/**'
+      - 'package*.json'
+      - '.github/workflows/render-video.yml'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: oppo-20-10-render-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - name: Ensure FFmpeg is available
+        run: command -v ffmpeg || (sudo apt-get update && sudo apt-get install -y ffmpeg)
+      - run: npm ci
+      - name: Render all 52 photos at 1440p60
+        run: npm run render:fast
+      - name: Verify the encoded video and soundtrack
+        run: npm run verify:render
+      - name: Upload video and verification results
+        uses: actions/upload-artifact@v4
+        with:
+          name: OPPO-Bac-Ninh-20-10-1440p60
+          path: |
+            out/oppo-bac-ninh-20-10-1440p60.mp4
+            work/qa-report.json
+            work/photo-timeline.csv
+          if-no-files-found: error
+          retention-days: 14

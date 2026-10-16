@@ -1,0 +1,5 @@
+{
+  "zoomMin": 0.94,
+  "zoomMax": 0.99,
+  "easing": "smoothstep"
+}
