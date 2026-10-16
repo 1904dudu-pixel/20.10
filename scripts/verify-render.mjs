@@ -12,7 +12,7 @@ const require = createRequire(import.meta.url);
 const cli = resolve(dirname(require.resolve('@remotion/cli/package.json')), 'remotion-cli.js');
 const run = (tool, args) => {
   const system = spawnSync(tool, ['-version'], {stdio: 'ignore'}).status === 0;
-  const result = system ? spawnSync(tool, args, {maxBuffer: 64 * 1024 * 1024}) : spawnSync(process.execPath, [cli, tool, ...args], {maxBuffer: 64 * 1024 * 1024});
+  const result = system ? spawnSync(tool, args, {maxBuffer: 128 * 1024 * 1024}) : spawnSync(process.execPath, [cli, tool, ...args], {maxBuffer: 128 * 1024 * 1024});
   if (result.status !== 0) throw new Error(`${tool} failed: ${result.stderr?.toString()}`);
   return result.stdout;
 };
@@ -65,8 +65,8 @@ const clips = [
   assert(score > 0.97, `Incorrect intro/outro: ${clip.src} (${score})`);
   return {...clip, correlation: score};
 });
-const pcm = (file) => {
-  const b = run('ffmpeg', ['-v', 'error', '-i', file, '-vn', '-ac', '1', '-ar', '8000', '-f', 'f32le', '-']);
+const pcm = (file, channels = 1, sampleRate = 8000) => {
+  const b = run('ffmpeg', ['-v', 'error', '-i', file, '-vn', '-ac', String(channels), '-ar', String(sampleRate), '-f', 'f32le', '-']);
   return new Float32Array(b.buffer.slice(b.byteOffset, b.byteOffset + b.byteLength));
 };
 const sourcePcm = pcm(resolve(root, 'public', manifest.music.src));
@@ -89,8 +89,10 @@ assert(audioChecks.every((check) => check.correlation > 0.95 && Math.abs(check.a
 const fadeIn = measure(0.3), fadeOut = measure(manifest.totalFrames / manifest.fps - 0.5);
 assert(fadeIn.amplitudeRatio < manifest.music.volume * 0.5 && fadeOut.amplitudeRatio < manifest.music.volume * 0.4, 'Missing audio fades');
 let peak = 0;
-for (const sample of actualPcm) peak = Math.max(peak, Math.abs(sample));
-assert(peak < 1, 'Clipped mono audio');
-const report = {passed: true, output, sha256: createHash('sha256').update(readFileSync(output)).digest('hex'), video: {codec: video.codec_name, width: video.width, height: video.height, fps: video.avg_frame_rate, frames: Number(video.nb_frames), durationSeconds: Number(video.duration)}, audio: {codec: audio.codec_name, channels: audio.channels, sampleRate: Number(audio.sample_rate), source: manifest.music.src, bestLagSamplesAt8k: bestLag, checks: audioChecks, fadeIn, fadeOut, monoPeak: peak}, fullDecodePassed: true, uniquePhotosVerified: photos.length, photos, clips};
+// Check the encoded stereo channels at their native sample rate. A mono
+// downmix can sum correlated channels above 1 even when neither channel clips.
+for (const sample of pcm(output, 2, Number(audio.sample_rate))) peak = Math.max(peak, Math.abs(sample));
+assert(peak < 1, 'Clipped stereo audio');
+const report = {passed: true, output, sha256: createHash('sha256').update(readFileSync(output)).digest('hex'), video: {codec: video.codec_name, width: video.width, height: video.height, fps: video.avg_frame_rate, frames: Number(video.nb_frames), durationSeconds: Number(video.duration)}, audio: {codec: audio.codec_name, channels: audio.channels, sampleRate: Number(audio.sample_rate), source: manifest.music.src, bestLagSamplesAt8k: bestLag, checks: audioChecks, fadeIn, fadeOut, stereoPeak: peak}, fullDecodePassed: true, uniquePhotosVerified: photos.length, photos, clips};
 writeFileSync(resolve(root, 'work/qa-report.json'), JSON.stringify(report, null, 2) + '\n');
 console.log('PASS: 52/52 encoded photos match their sources in order, intro/outro match, soundtrack and fades match, full MP4 decodes without errors.');

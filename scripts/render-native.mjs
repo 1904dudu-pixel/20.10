@@ -5,19 +5,19 @@ import {createHash} from 'node:crypto';
 import {readFileSync, writeFileSync, existsSync, mkdirSync} from 'node:fs';
 import {dirname, resolve} from 'node:path';
 import {fileURLToPath} from 'node:url';
-import {createRequire} from 'node:module';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
-const require = createRequire(import.meta.url);
-const cli = resolve(dirname(require.resolve('@remotion/cli/package.json')), 'remotion-cli.js');
 const system = spawnSync('ffmpeg', ['-version'], {stdio: 'ignore'}).status === 0;
+if (!system) throw new Error('render:fast requires full FFmpeg in PATH. Install FFmpeg or use npm run render (Remotion).');
 const run = (args) => {
-  const result = system ? spawnSync('ffmpeg', ['-hide_banner', '-loglevel', 'error', '-y', ...args], {encoding: 'utf8', maxBuffer: 8 * 1024 * 1024}) : spawnSync(process.execPath, [cli, 'ffmpeg', '-hide_banner', '-loglevel', 'error', '-y', ...args], {encoding: 'utf8', maxBuffer: 8 * 1024 * 1024});
+  const result = spawnSync('ffmpeg', ['-hide_banner', '-loglevel', 'error', '-y', ...args], {encoding: 'utf8', maxBuffer: 8 * 1024 * 1024});
   if (result.status !== 0) throw new Error(result.stderr || 'FFmpeg failed');
 };
 const m = JSON.parse(readFileSync(resolve(root, 'src/data/media-manifest.json')));
 const key = createHash('sha256').update(JSON.stringify(m)).update(readFileSync(fileURLToPath(import.meta.url))).digest('hex').slice(0,12);
-const work = resolve(root, 'work', `native-${key}`);
+const resumeCache = process.argv[2];
+if (resumeCache && !/^native-[a-f0-9]{12}$/.test(resumeCache)) throw new Error('Resume cache must be a native-<12 hex digits> folder name from work/');
+const work = resolve(root, 'work', resumeCache ?? `native-${key}`);
 mkdirSync(work, {recursive: true});
 mkdirSync(resolve(root, 'out'), {recursive: true});
 const shine = resolve(work, 'shine.png');
@@ -55,7 +55,7 @@ for (let i = 0; i < items.length; i++) {
   segments.push(body);
   if (i < items.length-1) {
     const transition = resolve(work, `fade-${String(i).padStart(2,'0')}.mp4`);
-    const graph = `[0:v]setpts=PTS-STARTPTS[a];[1:v]setpts=PTS-STARTPTS[b];[a][b]blend=all_expr='A*(1-T*60/${m.transitionFrames-1})+B*(T*60/${m.transitionFrames-1})':shortest=1,format=yuv420p[v]`;
+    const graph = `[0:v]setpts=PTS-STARTPTS,settb=1/60,fps=60[a];[1:v]setpts=PTS-STARTPTS,settb=1/60,fps=60[b];[a][b]xfade=transition=fade:duration=${m.transitionFrames/m.fps}:offset=0,format=yuv420p[v]`;
     run(['-threads','1','-ss', String((n-m.transitionFrames)/m.fps), '-i', full[i], '-threads','1','-i', full[i+1], '-filter_complex_threads','1','-filter_complex', graph, '-map', '[v]', ...encode(m.transitionFrames), transition]);
     segments.push(transition);
   }

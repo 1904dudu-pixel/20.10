@@ -45,7 +45,8 @@ Vào tab **Actions** → **Render OPPO 20-10 video** → chọn lượt chạy c
 Cuối trang, bấm artifact **OPPO-Bac-Ninh-20-10-1440p60**, tải ZIP và giải nén để lấy MP4.
 Cần đăng nhập GitHub để tải artifact. Artifact lưu 14 ngày; có thể bấm **Run workflow**
 để xuất lại. Workflow chỉ tải lên kết quả sau khi kiểm tra MP4 thành công.
-Workflow chạy khi cập nhật media/mã dựng trên main hoặc khi bấm Run workflow.
+Workflow chạy khi cập nhật media/mã dựng trên main hoặc khi bấm **Run workflow**.
+Khi chạy thủ công, chọn nhánh **main** để dùng mã mới nhất.
 
 ## Media và thứ tự
 
@@ -75,6 +76,11 @@ giữ trọn bốn mép và toàn bộ tên, chân dung, lời chúc. Không có
 
 ## Xuất nhanh trên máy ít CPU
 
+Đường xuất này cần **FFmpeg bản đầy đủ** trong PATH (kiểm tra bằng `ffmpeg -version`).
+Trên macOS có Homebrew: `brew install ffmpeg`; trên Windows: `winget install Gyan.FFmpeg`;
+sau khi cài, mở Terminal mới. Nếu không muốn cài FFmpeg, dùng `npm run render`
+hoặc tải artifact GitHub theo hướng dẫn phía trên.
+
 ```bash
 npm run render:fast
 ```
@@ -86,6 +92,7 @@ AAC 320 kbps, 1440p60; kết quả vẫn ở đường dẫn `out/` nêu trên.
 Remotion Studio và `npm run render` vẫn là đường xem trước/render qua trình duyệt;
 cách vẽ ánh sáng, lấp lánh và nền của hai bộ xuất có khác biệt nhẹ.
 Các clip trung gian được cache trong `work/native-*` để chạy tiếp khi bị gián đoạn.
+Phần chuyển cảnh dùng bộ lọc crossfade tích hợp thay cho biểu thức tính từng pixel để giảm thời gian ghép.
 
 ## Kiểm tra
 
