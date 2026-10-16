@@ -6,3 +6,6 @@ work/
 *.log
 .env
 .env.*
+
+public/generated/
+__pycache__/

@@ -1,47 +1,51 @@
-name: Render OPPO 20-10 video
-
+name: Render OPPO Final Short 1440p60
 on:
   workflow_dispatch:
   push:
     branches: [main]
-    paths:
-      - 'src/**'
-      - 'scripts/**'
-      - 'public/**'
-      - 'package*.json'
-      - '.github/workflows/render-video.yml'
-
+    paths: ['src/**', 'scripts/**', 'public/**', 'package*.json', '.github/workflows/render-video.yml']
 permissions:
   contents: read
-
 concurrency:
   group: oppo-20-10-render-${{ github.ref }}
   cancel-in-progress: true
-
 jobs:
   render:
     runs-on: ubuntu-latest
-    timeout-minutes: 90
+    timeout-minutes: 240
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: 22
           cache: npm
-      - name: Ensure FFmpeg is available
-        run: command -v ffmpeg || (sudo apt-get update && sudo apt-get install -y ffmpeg)
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install FFmpeg and Vietnamese-capable fonts
+        run: sudo apt-get update && sudo apt-get install -y ffmpeg fonts-dejavu-core
       - run: npm ci
-      - name: Render all 52 photos at 1440p60
-        run: npm run render:fast
-      - name: Verify the encoded video and soundtrack
+      - run: pip install -r scripts/final/requirements.txt
+      - name: Validate 52 photos and 16 reviewed speech edits, prepare timeline and audio
+        run: npm run media:prepare
+      - run: npm run check
+      - name: Render representative photo and lower-third preview
+        run: npm run preview:final
+      - name: Render full short timeline, H.264 1440p60
+        run: python3 scripts/final/render.py all
+      - name: Verify all 68 people, encoded frames and soundtrack, decode entire output
         run: npm run verify:render
-      - name: Upload video and verification results
+      - name: Upload final MP4 and verification reports
         uses: actions/upload-artifact@v4
         with:
-          name: OPPO-Bac-Ninh-20-10-1440p60
+          name: OPPO-Bac-Ninh-20-10-Final-Short-1440p60
           path: |
-            out/oppo-bac-ninh-20-10-1440p60.mp4
-            work/qa-report.json
-            work/photo-timeline.csv
+            out/oppo-bac-ninh-20-10-final-short-1440p60.mp4
+            work/final/qa-report.json
+            work/final/timeline.csv
+            work/final/trim-report.json
+            work/final/audio-timeline.json
+            work/final/render-contact.jpg
+            work/final/preview.mp4
           if-no-files-found: error
           retention-days: 14
