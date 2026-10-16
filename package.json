@@ -11,7 +11,11 @@
     "check": "npm run typecheck && npm run lint",
     "build": "remotion bundle src/index.ts",
     "compositions": "remotion compositions src/index.ts",
-    "render": "remotion render src/index.ts OppoBacNinh2010 out/oppo-bac-ninh-20-10.mp4 --codec=h264 --pixel-format=yuv420p"
+    "render": "remotion render src/index.ts OppoBacNinh2010 out/oppo-bac-ninh-20-10-1440p60.mp4 --codec=h264 --pixel-format=yuv420p --crf=16 --x264-preset=slow --audio-codec=aac --audio-bitrate=320k --image-format=png",
+    "media:prepare": "node scripts/prepare-media.mjs",
+    "prerender": "npm run media:prepare && npm run check",
+    "verify:render": "node scripts/verify-render.mjs",
+    "render:fast": "npm run media:prepare && npm run check && node scripts/render-native.mjs"
   },
   "dependencies": {
     "@remotion/cli": "4.0.535",
@@ -29,5 +33,7 @@
     "typescript": "5.9.3",
     "typescript-eslint": "8.48.1"
   },
-  "engines": { "node": ">=22.0.0" }
+  "engines": {
+    "node": ">=22.0.0"
+  }
 }

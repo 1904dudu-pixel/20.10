@@ -1,125 +1,121 @@
-# OPPO Bắc Ninh — Chúc mừng 20/10
+# OPPO Bắc Ninh — Video 20/10 (giai đoạn 2)
 
-Dự án Remotion + React + TypeScript dựng video chúc mừng Ngày Phụ nữ Việt Nam.
-Giai đoạn 1 cung cấp mã nguồn hoạt động với ba ảnh SVG minh họa tự tạo, chưa có nhạc thật và chưa xuất MP4.
+Remotion + React + TypeScript, **2560 × 1440, 60 fps, H.264 / yuv420p**.
+Dữ liệu lấy từ main tại commit `8961206`: 52 thiệp nhân sự thật, nhạc MP3 và hai clip.
 
-## Thông số và thiết kế
+## Xem trước
 
-- Ngang 16:9, **2560 × 1440**, 30 fps.
-- Bản mẫu **31,8 giây / 954 frame**: intro, ba cảnh ảnh và outro.
-- Nền kem, xanh ngọc OPPO, điểm nhấn vàng và hoa hồng phấn.
-- Lời chúc đi từ dưới lên, ảnh zoom nhẹ, ánh sáng lấp lánh và crossfade 0,8 giây.
-- Toàn bộ animation chạy theo frame; không phụ thuộc thời gian thực hay ảnh/font từ Internet.
-- Nhạc nền tùy chọn có lặp, fade-in 1,5 giây và fade-out 2 giây; mặc định tắt.
-
-## Cài đặt và xem trước
-
-Yêu cầu Node.js **22 trở lên**, npm và Git. Chạy từ thư mục gốc repository:
+Cài Node.js 22 trở lên (bản LTS), tải repository về máy và mở Terminal trong thư mục dự án:
 
 ```bash
 npm ci
 npm run studio
 ```
 
-Mở URL mà Studio in ra (thường là `http://localhost:3000`), chọn **OppoBacNinh2010**.
-Trong thư mục **Scenes** có Intro, Slideshow, Outro để xem riêng từng phần.
-Studio tự cập nhật khi lưu mã nguồn.
+Mở URL Studio in ra, thường là http://localhost:3000, chọn `OppoBacNinh2010`.
+Các composition `Intro`, `Slideshow`, `Outro` xem riêng từng phần.
 
-```bash
-npm run check         # TypeScript + ESLint
-npm run build         # Biên dịch bundle vào build/, không xuất video
-npm run compositions  # Xác thực và liệt kê composition bằng Chromium
-```
-
-Lệnh `compositions` cần trình duyệt: Remotion có thể tải Chrome ở lần chạy đầu.
-Nếu máy đã có Chromium, có thể chỉ định đường dẫn:
-
-```bash
-npm run compositions -- --browser-executable=/usr/bin/chromium
-```
-
-## Thay ảnh và lời chúc
-
-1. Chép ảnh vào `public/photos/`, ví dụ `public/photos/chi-lan.jpg`.
-2. Mở `src/data/content.ts`, sửa mảng `photos`:
-
-```ts
-export const photos: Photo[] = [
-  {
-    src: 'photos/chi-lan.jpg',
-    name: 'Chị Lan',
-    caption: 'Chúc chị luôn rạng rỡ,\nhạnh phúc và thành công!',
-    objectPosition: 'center 30%',
-  },
-  // Thêm ảnh khác tại đây.
-];
-```
-
-`src` là đường dẫn tương đối trong `public/`, không thêm tiền tố `public/` hay dấu `/` đầu.
-Ảnh dọc được hiển thị trong khung vòm theo `object-fit: cover`; dùng `objectPosition`
-để điều chỉnh vị trí khuôn mặt. Ảnh ngang cũng dùng được nhưng sẽ bị cắt hai bên.
-Nên dùng JPG/PNG/WebP đủ lớn và tên file đơn giản.
-
-Thêm/bớt ảnh sẽ tự cập nhật thời lượng. Nếu mảng rỗng, video vẫn chạy với một cảnh lời chúc.
-Để giữ bố cục thoáng, nên dùng tên/tiêu đề ngắn, lời chúc khoảng hai dòng như mẫu.
-Sửa object `content` cùng file để thay tên đơn vị, intro, outro và chữ ký.
-Ký tự `\n` tạo dòng mới trong lời chúc.
-
-## Thêm nhạc sau này
-
-Chép file nhạc vào `public/music/`, rồi sửa `music` trong `src/data/content.ts`:
-
-```ts
-export const music: {src: string | null; volume: number} = {
-  src: 'music/nhac-nen.mp3',
-  volume: 0.35,
-};
-```
-
-Giữ `src: null` để chạy không có nhạc. Âm lượng thường từ `0` đến `1`.
-Nhạc ngắn sẽ tự lặp; fade-out luôn đi theo thời lượng video hiện tại.
-
-## Chỉnh thời lượng và phong cách
-
-`src/timing.ts` điều khiển số giây intro, mỗi ảnh, outro và crossfade.
-Giữ thời gian crossfade ngắn hơn từng cảnh; với bộ cảnh hiện tại nên giữ
-`transitionSeconds` dưới nửa thời lượng cảnh ngắn nhất để các chuyển cảnh không chồng nhau.
-Thời lượng tổng = tổng thời lượng cảnh − tổng thời gian crossfade.
-
-Màu sắc và hoa/lấp lánh nằm trong `src/components/SceneFrame.tsx`.
-Font dùng Arial/Georgia hoặc font dự phòng trên máy; muốn đồng nhất tuyệt đối giữa máy
-cần bổ sung font local ở giai đoạn hoàn thiện.
-
-## Xuất MP4 ở giai đoạn sau
-
-Lệnh đã sẵn sàng, **chưa chạy trong giai đoạn 1**:
+## Xuất video chất lượng cao
 
 ```bash
 npm run render
 ```
 
-Kết quả: `out/oppo-bac-ninh-20-10.mp4`, H.264, yuv420p, 2560 × 1440.
-Nếu cần dùng Chromium đã cài:
-
-```bash
-npm run render -- --browser-executable=/usr/bin/chromium
-```
-
-## Cấu trúc mã nguồn
+Lệnh tự kiểm kê media, kiểm tra TypeScript/ESLint rồi render. Kết quả:
 
 ```text
-src/
-  index.ts                 # Entry Remotion
-  Root.tsx                 # Composition chính + từng cảnh
-  OppoVideo.tsx            # Timeline và nhạc tùy chọn
-  timing.ts                # Thời lượng và phép tính overlap
-  data/content.ts          # Nội dung, danh sách ảnh, nhạc
-  components/SceneFrame.tsx # Khung, hoa, lấp lánh, animation chữ
-  scenes/                  # Intro, Slideshow, PhotoScene, Outro
-public/
-  photos/                  # Ba SVG mẫu; thay bằng ảnh nhân sự
-  music/                   # Chỗ đặt nhạc nền
+out/oppo-bac-ninh-20-10-1440p60.mp4
 ```
 
-`package-lock.json` khóa dependencies để cài lại bằng `npm ci`.
-`node_modules/`, `build/`, `out/`, file môi trường và thư mục kiểm tra `work/` được bỏ qua trong Git.
+Nhấn chuột phải file MP4 trong thư mục `out` để sao chép/chia sẻ. Không cần cài FFmpeg riêng;
+Remotion có bộ công cụ FFmpeg đi kèm. Lần đầu Remotion có thể tải Chrome.
+Nếu máy đã cài Chromium và muốn sử dụng:
+
+```bash
+npm run render -- --browser-executable=/usr/bin/chromium --concurrency=2
+```
+
+MP4 dùng CRF 16, H.264, âm thanh AAC stereo 320 kbps. Hai clip nguồn là 30 fps;
+chúng giữ nguyên tốc độ/thời lượng, được đặt trên timeline 60 fps. Ảnh/hiệu ứng chạy ở 60 fps.
+Đầu ra lớn hơn kích thước ảnh gốc; không dùng AI để sửa khuôn mặt hoặc nội dung.
+
+## Tải MP4 từ GitHub, không cần cài trên máy
+
+Vào tab **Actions** → **Render OPPO 20-10 video** → chọn lượt chạy có dấu tích xanh.
+Cuối trang, bấm artifact **OPPO-Bac-Ninh-20-10-1440p60**, tải ZIP và giải nén để lấy MP4.
+Cần đăng nhập GitHub để tải artifact. Artifact lưu 14 ngày; có thể bấm **Run workflow**
+để xuất lại. Workflow chỉ tải lên kết quả sau khi kiểm tra MP4 thành công.
+Workflow chạy khi cập nhật media/mã dựng trên main hoặc khi bấm Run workflow.
+
+## Media và thứ tự
+
+- `public/photos/`: đúng 52 file PNG/JPG/WebP; bỏ qua 3 SVG mẫu và `.gitkeep`.
+- Sắp tăng dần **theo nguyên tên file Unicode**, bao gồm tiền tố 01–10; không dùng thứ tự tải lên hoặc số thứ tự làm khóa duy nhất.
+- Mỗi file xuất hiện đúng một lần. Các tiền tố trùng số vẫn là những ảnh riêng biệt.
+- `public/music/NHẠC 20.10.mp3`: khớp chính xác dấu tiếng Việt và dấu cách.
+- `public/videos/Intro.mp4`: 8,3 giây, giữ nguyên toàn bộ clip.
+- `public/videos/Outro_20-10_OPPO_Bac_Ninh.mp4`: 20 giây, giữ nguyên toàn bộ clip.
+- Hai ảnh `NGUYỄN THỊ VUI.webp` và `TRẦN THỊ LINH.jpg` chứa dữ liệu PNG: giữ nguyên file gốc và tên, đã kiểm tra giải mã thực tế.
+
+`npm run media:prepare` đọc các file thực tế, kiểm tra đủ 52 ảnh, SHA-256 không trùng,
+đọc thời lượng bằng FFprobe rồi tạo `src/data/media-manifest.json` và `work/photo-timeline.csv`.
+Không sửa manifest thủ công. Chương trình sẽ dừng nếu thiếu/thừa ảnh hoặc sai tên nhạc.
+
+## Trình chiếu
+
+Video dài **253,15 giây / 15.189 frame**. Nhạc chạy một lượt xuyên suốt, không lặp,
+không tăng/giảm tốc; fade-in 1,5 giây, fade-out 3 giây, âm lượng 85%.
+Hai video nguồn không có track âm thanh; cấu hình vẫn đặt `muted` để tránh trộn âm ngoài ý muốn.
+
+Mỗi thiệp dài 302 hoặc 303 frame (khoảng 5,03–5,05 giây), crossfade 42 frame (0,7 giây).
+Cân bằng số frame lẻ giúp khớp nhạc, không tích lũy sai số hoặc thêm cảnh lặp ở cuối.
+Ảnh hiển thị nguyên tấm bằng `contain`; zoom luân phiên 95%–97,5%,
+giữ trọn bốn mép và toàn bộ tên, chân dung, lời chúc. Không có chữ mới đè lên ảnh.
+Ánh sáng quét và lấp lánh nhẹ, chuyển động tính theo frame.
+
+## Xuất nhanh trên máy ít CPU
+
+```bash
+npm run render:fast
+```
+
+Đường xuất này dùng FFmpeg với cùng manifest 52 ảnh và cùng số frame, clip, nhạc,
+zoom an toàn, ánh sáng quét, lấp lánh, crossfade. H.264 CRF 16 / preset fast,
+AAC 320 kbps, 1440p60; kết quả vẫn ở đường dẫn `out/` nêu trên.
+Đây là đường xuất dùng cho MP4 được bàn giao trong môi trường cloud.
+Remotion Studio và `npm run render` vẫn là đường xem trước/render qua trình duyệt;
+cách vẽ ánh sáng, lấp lánh và nền của hai bộ xuất có khác biệt nhẹ.
+Các clip trung gian được cache trong `work/native-*` để chạy tiếp khi bị gián đoạn.
+
+## Kiểm tra
+
+```bash
+npm run check
+npm run build
+npm run verify:render
+```
+
+`build` chỉ biên dịch, không xuất MP4. `verify:render` chạy sau khi có MP4:
+kiểm tra codec/kích thước/60 fps/số frame, giải mã toàn bộ hình và âm thanh,
+đối chiếu khung hình giữa cả 52 cảnh với 52 ảnh gốc để phát hiện thiếu/lặp/sai thứ tự,
+đối chiếu intro/outro, kiểm tra tương quan nhạc và fade âm thanh.
+Báo cáo ở `work/qa-report.json`; thumbnail kiểm tra ở `work/qa/`.
+Có thể truyền đường dẫn khác: `npm run verify:render -- /duong-dan/video.mp4`.
+
+## Cấu trúc chính
+
+```text
+scripts/prepare-media.mjs     Kiểm kê nguồn, thời lượng, hash và thứ tự ảnh
+scripts/verify-render.mjs     Kiểm tra MP4 đã xuất
+scripts/render-native.mjs     Xuất FFmpeg từ cùng timeline, hỗ trợ chạy tiếp
+src/data/media-manifest.json  Dữ liệu và timeline sinh từ media thật
+src/OppoVideo.tsx             Intro → 52 ảnh → Outro, nhạc xuyên suốt
+src/scenes/PhotoScene.tsx     Nguyên thiệp, zoom an toàn, ánh sáng
+src/scenes/MediaClips.tsx     Hai clip Intro/Outro thật
+src/scenes/Slideshow.tsx      Crossfade đủ 52 ảnh
+src/Root.tsx                 Các composition 1440p60
+```
+
+Các scene chữ và cấu hình `content.ts`/`timing.ts` của giai đoạn 1 được giữ làm tham khảo;
+video giai đoạn 2 dùng `media-manifest.json`. Không cần nhập lại tên và lời chúc.
+`out/`, `build/`, `work/`, `node_modules/` không được commit. MP4 không đưa vào Git history.
