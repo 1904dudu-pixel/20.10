@@ -2,7 +2,6 @@ import json,math,csv,re,shutil,unicodedata
 from pathlib import Path
 from PIL import Image,ImageDraw,ImageFont,ImageFilter
 from common import *
-from analyse_media import main as inspect_media
 FPS=60;TRANS=27
 FONT=Path('/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf');BOLD=FONT.with_name('DejaVuSans-Bold.ttf')
 def font(size,bold=False):return ImageFont.truetype(str(BOLD if bold else FONT),size)
@@ -52,11 +51,10 @@ def assets(m):
  arr=np.zeros((1440,400,4),dtype=np.uint8);arr[:,:,:3]=[255,245,217];arr[:,:,3]=(16*np.exp(-((np.arange(400)-200)/80)**2))[None,:].astype('uint8');Image.fromarray(arr).save(assets/'shine.png')
 
 def main():
- # Reuse only when every wish fingerprint still matches; otherwise reinspect.
- analysis=WORK/'wishes-analysis.json';reuse=analysis.exists()
- if reuse:
-  wishes=json.loads(analysis.read_text());reuse=len(wishes)==16 and all(sha(ROOT/'public'/r['src'])==r['sha256'] for r in wishes)
- if not reuse:inspect_media();wishes=json.loads(analysis.read_text())
+ # This revision reuses the approved wishes verbatim; do not reanalyse/retrim.
+ baseline=json.loads((ROOT/'src/data/approved-polished-structure.json').read_text())
+ wishes=baseline['manifest']['wishes']
+ assert len(wishes)==16 and all(sha(ROOT/'public'/r['src'])==r['sha256'] for r in wishes)
  edits=json.loads((ROOT/'src/data/speech-edits.json').read_text())
  for r in wishes:
   e=next(e for e in edits if e['number']==r['number']);assert r['sha256']==e['sourceSha256'];r.update(e);r['trimPolicy']='Reviewed complete sentence excerpt; source intervals and excluded ranges in speech-edits.json';r['removedHeadSeconds']=r['trimStartSeconds'];r['removedTailSeconds']=r['sourceSeconds']-r['trimEndSeconds'];r['keptSeconds']=(r['trimEndSeconds']-r['trimStartSeconds'])/r['speed']
@@ -74,6 +72,12 @@ def main():
   with Image.open(f) as im:w,h=im.size
   photos.append({'src':str(f.relative_to(ROOT/'public')),'sha256':sha(f),'width':w,'height':h})
  assert len(photos)==52 and len({p['sha256'] for p in photos})==52
+ # Stable original indices preserve group membership, zoom direction and scene caches.
+ excluded='photos/10_ĐINH THỊ THU TRANG.png'
+ assert photos[48]['src']==excluded
+ indexed_photos=list(enumerate(photos,1))
+ photos=[p for p in photos if p['src']!=excluded]
+ assert len(photos)==51
  sources={}
  for key,src in {'intro':'videos/Intro.mp4','outro':'videos/Outro_20-10_OPPO_Bac_Ninh.mp4','mainMusic':'music/NHẠC 20.10.mp3','cinematic':'music/abydos_music-opening-epic-logo-193120.mp3','outroMusic':'music/Nhac outro.mp3'}.items():
   p=ROOT/'public'/src
@@ -88,14 +92,16 @@ def main():
  groups=[]
  for group in range(4):
   start=len(scenes)
-  for n,p in enumerate(photos[group*13:(group+1)*13],group*13+1):add('photo',f'photo-{n:02}',360,photoNumber=n,**p,clearReadingSeconds=5.1)
+  for n,p in indexed_photos[group*13:(group+1)*13]:
+   if p['src']==excluded:continue
+   add('photo',f'photo-{n:02}',360,photoNumber=n,**p,clearReadingSeconds=5.1)
   groups.append({'number':group+1,'startFrame':scenes[start]['startFrame'],'endFrame':scenes[-1]['endFrame']})
   add('graphic',f'bridge-{group+1}',150,asset=f'bridge-{group+1}.png')
   for r in wishes[group*4:(group+1)*4]:
    s=add('wish',f'wish-{r["number"]:02}',r['keptFrames']+2*TRANS,**r)
    s['voiceStartFrame']=s['startFrame']+TRANS;s['voiceEndFrame']=s['voiceStartFrame']+r['keptFrames'];s['lowerThirdStartSeconds']=.75;s['lowerThirdEndSeconds']=min(4.5,s['durationInFrames']/60-.9)
  add('video','outro',1200,src=sources['outro']['src'])
- m={'version':'final-polished-52-16-v3','title':'OPPO BẮC NINH – 20/10 | GỬI MỘT NỬA YÊU THƯƠNG','fps':FPS,'width':2560,'height':1440,'transitionFrames':TRANS,'totalFrames':scenes[-1]['endFrame'],'sources':sources,'photoCount':52,'wishCount':16,'photos':photos,'wishes':wishes,'photoGroups':groups,'scenes':scenes,'audioSrc':'generated/final/audio/final-mix.wav','outputFile':'out/oppo-bac-ninh-20-10-final-polished-1440p60.mp4','removedSceneIds':['closing-0','closing-1','closing-2','closing-3'],'outroOriginalAudioMuted':True,'instrumentalOrigin':'Original procedural warm piano/ambient composition created by project code; no external or commercial recording.'}
+ m={'version':'final-no-thu-trang-51-16-v1','title':'OPPO BẮC NINH – 20/10 | GỬI MỘT NỬA YÊU THƯƠNG','fps':FPS,'width':2560,'height':1440,'transitionFrames':TRANS,'totalFrames':scenes[-1]['endFrame'],'sources':sources,'photoCount':51,'wishCount':16,'photos':photos,'wishes':wishes,'photoGroups':groups,'scenes':scenes,'audioSrc':'generated/final/audio/final-mix.wav','outputFile':'out/oppo-bac-ninh-20-10-final-no-thu-trang-1440p60.mp4','removedSceneIds':['closing-0','closing-1','closing-2','closing-3'],'excludedPhotos':[excluded],'approvedBaseCommit':'5bb41c1dd9c66fffbc16b197a12d7e0d16c1765b','outroOriginalAudioMuted':True,'instrumentalOrigin':'Original procedural warm piano/ambient composition created by project code; no external or commercial recording.'}
  assets(m);dump(ROOT/'src/data/final-manifest.json',m);dump(WORK/'manifest.json',m)
  with open(WORK/'timeline.csv','w',encoding='utf-8-sig',newline='') as f:
   w=csv.writer(f);w.writerow(['id','type','source','name','role','start_seconds','end_seconds','raw_seconds','clear_reading_seconds'])

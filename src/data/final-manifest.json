@@ -1,11 +1,11 @@
 {
-  "version": "final-polished-52-16-v3",
+  "version": "final-no-thu-trang-51-16-v1",
   "title": "OPPO BẮC NINH – 20/10 | GỬI MỘT NỬA YÊU THƯƠNG",
   "fps": 60,
   "width": 2560,
   "height": 1440,
   "transitionFrames": 27,
-  "totalFrames": 32960,
+  "totalFrames": 32627,
   "sources": {
     "intro": {
       "src": "videos/Intro.mp4",
@@ -33,7 +33,7 @@
       "durationSeconds": 33.456
     }
   },
-  "photoCount": 52,
+  "photoCount": 51,
   "wishCount": 16,
   "photos": [
     {
@@ -321,12 +321,6 @@
     {
       "src": "photos/10_VŨ THỊ TRANG.png",
       "sha256": "2d594198867d11a5a400113e780c6e1448b04c9de16946b877c316b5bb4c82d6",
-      "width": 1672,
-      "height": 941
-    },
-    {
-      "src": "photos/10_ĐINH THỊ THU TRANG.png",
-      "sha256": "94e631616cba926edbb2bb21eceaa9f9ee8ac27ae08b1d41ab3e8fbc8bd7f468",
       "width": 1672,
       "height": 941
     },
@@ -1791,7 +1785,7 @@
     {
       "number": 4,
       "startFrame": 24098,
-      "endFrame": 28454
+      "endFrame": 28121
     }
   ],
   "scenes": [
@@ -3744,24 +3738,10 @@
     },
     {
       "kind": "photo",
-      "id": "photo-49",
+      "id": "photo-50",
       "durationInFrames": 360,
       "startFrame": 27095,
       "endFrame": 27455,
-      "stagedSrc": "generated/final/scenes/photo-49.mp4",
-      "photoNumber": 49,
-      "src": "photos/10_ĐINH THỊ THU TRANG.png",
-      "sha256": "94e631616cba926edbb2bb21eceaa9f9ee8ac27ae08b1d41ab3e8fbc8bd7f468",
-      "width": 1672,
-      "height": 941,
-      "clearReadingSeconds": 5.1
-    },
-    {
-      "kind": "photo",
-      "id": "photo-50",
-      "durationInFrames": 360,
-      "startFrame": 27428,
-      "endFrame": 27788,
       "stagedSrc": "generated/final/scenes/photo-50.mp4",
       "photoNumber": 50,
       "src": "photos/NGUYỄN THỊ VUI.webp",
@@ -3774,8 +3754,8 @@
       "kind": "photo",
       "id": "photo-51",
       "durationInFrames": 360,
-      "startFrame": 27761,
-      "endFrame": 28121,
+      "startFrame": 27428,
+      "endFrame": 27788,
       "stagedSrc": "generated/final/scenes/photo-51.mp4",
       "photoNumber": 51,
       "src": "photos/NGÔ THỊ HIỀN.png",
@@ -3788,8 +3768,8 @@
       "kind": "photo",
       "id": "photo-52",
       "durationInFrames": 360,
-      "startFrame": 28094,
-      "endFrame": 28454,
+      "startFrame": 27761,
+      "endFrame": 28121,
       "stagedSrc": "generated/final/scenes/photo-52.mp4",
       "photoNumber": 52,
       "src": "photos/TRẦN THỊ LINH.jpg",
@@ -3802,8 +3782,8 @@
       "kind": "graphic",
       "id": "bridge-4",
       "durationInFrames": 150,
-      "startFrame": 28427,
-      "endFrame": 28577,
+      "startFrame": 28094,
+      "endFrame": 28244,
       "stagedSrc": "generated/final/scenes/bridge-4.mp4",
       "asset": "bridge-4.png"
     },
@@ -3811,8 +3791,8 @@
       "kind": "wish",
       "id": "wish-13",
       "durationInFrames": 795,
-      "startFrame": 28550,
-      "endFrame": 29345,
+      "startFrame": 28217,
+      "endFrame": 29012,
       "stagedSrc": "generated/final/scenes/wish-13.mp4",
       "number": 13,
       "name": "TRIỆU VIẾT HƯỚNG",
@@ -3886,8 +3866,8 @@
       "keptFrames": 741,
       "displayName": "Anh. TRIỆU VIẾT HƯỚNG",
       "displayRole": "SALE BẮC GIANG",
-      "voiceStartFrame": 28577,
-      "voiceEndFrame": 29318,
+      "voiceStartFrame": 28244,
+      "voiceEndFrame": 28985,
       "lowerThirdStartSeconds": 0.75,
       "lowerThirdEndSeconds": 4.5
     },
@@ -3895,8 +3875,8 @@
       "kind": "wish",
       "id": "wish-14",
       "durationInFrames": 897,
-      "startFrame": 29318,
-      "endFrame": 30215,
+      "startFrame": 28985,
+      "endFrame": 29882,
       "stagedSrc": "generated/final/scenes/wish-14.mp4",
       "number": 14,
       "name": "VŨ THẾ DUY",
@@ -3975,8 +3955,8 @@
       "keptFrames": 843,
       "displayName": "Anh. VŨ THẾ DUY",
       "displayRole": "SALE LẠNG SƠN",
-      "voiceStartFrame": 29345,
-      "voiceEndFrame": 30188,
+      "voiceStartFrame": 29012,
+      "voiceEndFrame": 29855,
       "lowerThirdStartSeconds": 0.75,
       "lowerThirdEndSeconds": 4.5
     },
@@ -3984,8 +3964,8 @@
       "kind": "wish",
       "id": "wish-15",
       "durationInFrames": 705,
-      "startFrame": 30188,
-      "endFrame": 30893,
+      "startFrame": 29855,
+      "endFrame": 30560,
       "stagedSrc": "generated/final/scenes/wish-15.mp4",
       "number": 15,
       "name": "NGUYỄN VĂN LƯƠNG",
@@ -4054,8 +4034,8 @@
       "keptFrames": 651,
       "displayName": "Anh. NGUYỄN VĂN LƯƠNG",
       "displayRole": "PB BẮC NINH",
-      "voiceStartFrame": 30215,
-      "voiceEndFrame": 30866,
+      "voiceStartFrame": 29882,
+      "voiceEndFrame": 30533,
       "lowerThirdStartSeconds": 0.75,
       "lowerThirdEndSeconds": 4.5
     },
@@ -4063,8 +4043,8 @@
       "kind": "wish",
       "id": "wish-16",
       "durationInFrames": 921,
-      "startFrame": 30866,
-      "endFrame": 31787,
+      "startFrame": 30533,
+      "endFrame": 31454,
       "stagedSrc": "generated/final/scenes/wish-16.mp4",
       "number": 16,
       "name": "PHẠM VĂN TÙNG",
@@ -4153,8 +4133,8 @@
       "keptFrames": 867,
       "displayName": "Anh. PHẠM VĂN TÙNG",
       "displayRole": "PB BẮC NINH",
-      "voiceStartFrame": 30893,
-      "voiceEndFrame": 31760,
+      "voiceStartFrame": 30560,
+      "voiceEndFrame": 31427,
       "lowerThirdStartSeconds": 0.75,
       "lowerThirdEndSeconds": 4.5
     },
@@ -4162,20 +4142,24 @@
       "kind": "video",
       "id": "outro",
       "durationInFrames": 1200,
-      "startFrame": 31760,
-      "endFrame": 32960,
+      "startFrame": 31427,
+      "endFrame": 32627,
       "stagedSrc": "generated/final/scenes/outro.mp4",
       "src": "videos/Outro_20-10_OPPO_Bac_Ninh.mp4"
     }
   ],
   "audioSrc": "generated/final/audio/final-mix.wav",
-  "outputFile": "out/oppo-bac-ninh-20-10-final-polished-1440p60.mp4",
+  "outputFile": "out/oppo-bac-ninh-20-10-final-no-thu-trang-1440p60.mp4",
   "removedSceneIds": [
     "closing-0",
     "closing-1",
     "closing-2",
     "closing-3"
   ],
+  "excludedPhotos": [
+    "photos/10_ĐINH THỊ THU TRANG.png"
+  ],
+  "approvedBaseCommit": "5bb41c1dd9c66fffbc16b197a12d7e0d16c1765b",
   "outroOriginalAudioMuted": true,
   "instrumentalOrigin": "Original procedural warm piano/ambient composition created by project code; no external or commercial recording."
 }

@@ -1,4 +1,4 @@
-name: Render OPPO Final Polished 1440p60
+name: Render OPPO Final No Thu Trang 1440p60
 on:
   workflow_dispatch:
   push:
@@ -6,6 +6,7 @@ on:
     paths: ['src/**', 'scripts/**', 'public/**', 'package*.json', '.github/workflows/render-video.yml']
 permissions:
   contents: read
+  actions: read
 concurrency:
   group: oppo-20-10-render-${{ github.ref }}
   cancel-in-progress: true
@@ -13,8 +14,17 @@ jobs:
   render:
     runs-on: ubuntu-latest
     timeout-minutes: 240
+    env:
+      APPROVED_POLISHED_MP4: ${{ github.workspace }}/work/approved-polished/out/oppo-bac-ninh-20-10-final-polished-1440p60.mp4
     steps:
       - uses: actions/checkout@v4
+      - name: Download the successful approved Final Polished as immutable reference
+        uses: actions/download-artifact@v4
+        with:
+          name: OPPO-Bac-Ninh-20-10-Final-Polished-1440p60
+          run-id: 38909593711
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          path: work/approved-polished
       - uses: actions/setup-node@v4
         with:
           node-version: 22
@@ -26,23 +36,23 @@ jobs:
         run: sudo apt-get update && sudo apt-get install -y ffmpeg fonts-dejavu-core
       - run: npm ci
       - run: pip install -r scripts/final/requirements.txt
-      - name: Validate 52 photos and 16 reviewed speech edits, prepare timeline and audio
+      - name: Validate 51 photos and 16 unchanged wishes, splice only approved soundtrack
         run: npm run media:prepare
       - run: npm run check
-      - name: Render and validate four edited previews before the full export
+      - name: Render and validate the photo-removal and chorus preview before full export
         run: npm run preview:final
-      - name: Render polished timeline, H.264 1440p60
+      - name: Render the same approved pipeline with only photo-49 excluded, H.264 1440p60
         run: python3 scripts/final/render.py all
         env:
           FINAL_RENDER_WORKERS: 4
-      - name: Verify all 68 people, encoded frames and soundtrack, decode entire output
+      - name: Verify all 67 people against Final Polished and decode entire output
         run: npm run verify:render
       - name: Upload final MP4 and verification reports
         uses: actions/upload-artifact@v4
         with:
-          name: OPPO-Bac-Ninh-20-10-Final-Polished-1440p60
+          name: OPPO-Bac-Ninh-20-10-Final-No-Thu-Trang-1440p60
           path: |
-            out/oppo-bac-ninh-20-10-final-polished-1440p60.mp4
+            out/oppo-bac-ninh-20-10-final-no-thu-trang-1440p60.mp4
             work/final/qa-report.json
             work/final/timeline.csv
             work/final/trim-report.json
@@ -51,6 +61,22 @@ jobs:
             work/final/previews/*.mp4
             work/final/preview-report.json
             work/final/preflight-report.json
+            work/final/labels-contact.jpg
+          if-no-files-found: error
+          retention-days: 14
+          compression-level: 0
+      - name: Upload a small separately downloadable QA and preview bundle
+        uses: actions/upload-artifact@v4
+        with:
+          name: OPPO-Bac-Ninh-20-10-Final-No-Thu-Trang-1440p60-QA
+          path: |
+            work/final/qa-report.json
+            work/final/preflight-report.json
+            work/final/audio-timeline.json
+            work/final/timeline.csv
+            work/final/preview-report.json
+            work/final/previews/*.mp4
+            work/final/render-contact.jpg
             work/final/labels-contact.jpg
           if-no-files-found: error
           retention-days: 14

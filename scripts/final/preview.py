@@ -5,10 +5,10 @@ from preflight import main as preflight
 from PIL import Image,ImageDraw
 import numpy as np
 
-m=load_manifest();preflight();dest=WORK/'previews';dest.mkdir(exist_ok=True);path=WORK/'preview-scenes';fps=60;catalog=[]
-# All coordinates refer to the approved short film until the removal point.
-first=next(s for s in m['scenes'] if s['id']=='wish-01');last=next(s for s in m['scenes'] if s['id']=='wish-16')
-ranges=[('01-labels',first['startFrame'],first['endFrame']),('02-music-transition',325*60,342*60),('03-chorus-reprise',449*60,478*60),('04-direct-outro',last['startFrame'],m['totalFrames'])]
+m=load_manifest();preflight();dest=WORK/'previews';dest.mkdir(exist_ok=True);[p.unlink() for p in dest.glob('*.mp4')];path=WORK/'preview-scenes';fps=60;catalog=[]
+# Only the requested edit area, 07:20 through the beginning of male group 4.
+next_group=next(s for s in m['scenes'] if s['id']=='wish-13')
+ranges=[('01-photo-removal-and-chorus',440*60,next_group['voiceStartFrame']+3*60)]
 for id,start,end in ranges:
  scenes=[s for s in m['scenes'] if s['startFrame']<end and s['endFrame']>start]
  for s in scenes:render_scene(s,960,540,fps,path)
@@ -27,4 +27,4 @@ sheet=Image.new('RGB',(1280,16*110),'#faf6ed')
 for i,s in enumerate(m['wishes']):
  im=Image.open(GEN/'assets'/f'lower-{s["number"]:02}.png').crop((130,1190,2430,1390)).convert('RGBA').resize((1265,110));bg=Image.new('RGBA',im.size,'#4d6256');bg.alpha_composite(im);sheet.paste(bg.convert('RGB'),(8,i*110))
 sheet.save(WORK/'labels-contact.jpg',quality=95)
-dump(WORK/'preview-report.json',{'passed':True,'preflightPassed':True,'previews':catalog,'labelsContact':'work/final/labels-contact.jpg'});print('ALL FOUR POLISHED PREVIEWS EXIST AND HAVE VERIFIED VIDEO/AUDIO STREAMS',flush=True)
+dump(WORK/'preview-report.json',{'passed':True,'preflightPassed':True,'previews':catalog,'labelsContact':'work/final/labels-contact.jpg'});print('REQUESTED EDIT PREVIEW EXISTS AND HAS VERIFIED VIDEO/AUDIO STREAMS',flush=True)
