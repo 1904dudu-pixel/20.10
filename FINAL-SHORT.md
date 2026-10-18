@@ -1,3 +1,5 @@
+> Báo cáo lịch sử của bản 09:26.333. Bản mới nhất và các chỉnh sửa đã xác nhận ở [FINAL-POLISHED.md](FINAL-POLISHED.md).
+
 # OPPO Bắc Ninh 20/10 — bản rút gọn
 
 Timeline: **09:26.333**, 2560×1440, 60 FPS; H.264 CRF 17, AAC stereo 48 kHz 320 kb/s.

@@ -66,16 +66,20 @@ def main():
   a=pcm(out);a=apply_fade(a,.012,.025);start=s['voiceStartFrame']/60;add(voice,a,start)
   tracks.append({'kind':'voice','number':s['number'],'name':s['name'],'source':s['src'],'sourceStartSeconds':s['trimStartSeconds'],'sourceEndSeconds':s['trimEndSeconds'],'startSeconds':start,'endSeconds':start+len(a)/RATE,'processedSrc':str(out.relative_to(ROOT/'public')),'targetLufs':-17,'targetTruePeakDb':-3})
   print(f'Normalized voice {s["number"]:02}: {len(a)/RATE:.3f}s',flush=True)
- # Use reviewed sung-phrase boundaries, never an arbitrary time or RMS minimum.
- edits=json.loads((ROOT/'src/data/music-edits.json').read_text());assert edits['sourceSha256']==m['sources']['mainMusic']['sha256']
- for group in m['photoGroups']:
-  if cursor>=len(main_audio):break
-  start=group['startFrame']/60+.25;available=(group['endFrame']-group['startFrame'])/60-.75;max_end=min(len(main_audio),cursor+int(available*RATE))
-  end=round(edits['pauseSourceSeconds'][group['number']-1]*RATE) if group['number']<4 else len(main_audio)
-  assert cursor<end<=max_end,('Phrase does not fit fixed photo duration',group,end,max_end)
-  a=apply_fade(main_audio[cursor:end]*.70,.65,.65);add(song,a,start)
-  tracks.append({'kind':'main-song','source':m['sources']['mainMusic']['src'],'group':group['number'],'sourceStartSeconds':cursor/RATE,'sourceEndSeconds':end/RATE,'startSeconds':start,'endSeconds':start+len(a)/RATE,'fadeSeconds':.65,'boundaryPolicy':'Continuous source cursor, no repeated or omitted samples; pause/resume at reviewed complete sung-phrase boundary, crossfade to original instrumental.'})
-  cursor=end
+ # Authored phrase edits preserve approved timing and explicitly permit the
+ # requested chorus reprise. The first two blocks remain sample-for-sample.
+ edits=json.loads((ROOT/'src/data/music-edits.json').read_text());assert edits['mainSourceSha256']==m['sources']['mainMusic']['sha256']
+ for edit in edits['photoTracks']:
+  group=next(g for g in m['photoGroups'] if g['number']==edit['group']);start=group['startFrame']/60+.25
+  lo=round(edit['sourceStartSeconds']*RATE);hi=round(edit['sourceEndSeconds']*RATE)
+  assert 0<=lo<hi<=len(main_audio)
+  data=apply_fade(main_audio[lo:hi]*.70,edit['fadeInSeconds'],edit['fadeOutSeconds']);add(song,data,start)
+  next_voice=min(s['voiceStartFrame']/60 for s in m['scenes'] if s['kind']=='wish' and s['number']==4*(group['number']-1)+1)
+  assert start+len(data)/RATE<=next_voice-.8
+  tracks.append({'kind':'main-song','source':m['sources']['mainMusic']['src'],'group':group['number'],'sourceStartSeconds':lo/RATE,'sourceEndSeconds':hi/RATE,'startSeconds':start,'endSeconds':start+len(data)/RATE,'fadeInSeconds':edit['fadeInSeconds'],'fadeOutSeconds':edit['fadeOutSeconds'],'boundaryPolicy':'Authored complete sung phrases; block 3 extends to the photo/bridge boundary, with intentional source overlap into the unchanged fourth block.'})
+ chorus=edits['chorusRepeat'];lo=round(chorus['sourceStartSeconds']*RATE);hi=round(chorus['sourceEndSeconds']*RATE)
+ data=apply_fade(main_audio[lo:hi]*.70,chorus['fadeInSeconds'],chorus['fadeOutSeconds']);add(song,data,chorus['timelineStartSeconds'])
+ tracks.append({'kind':'chorus-repeat','source':m['sources']['mainMusic']['src'],**chorus,'startSeconds':chorus['timelineStartSeconds'],'endSeconds':chorus['timelineStartSeconds']+len(data)/RATE,'durationSeconds':len(data)/RATE,'speed':1})
  # Continuous ambient: louder between tracks; duck under voice and the sung track.
  step=960;count=(n+step-1)//step
  vr=np.zeros(count);sr=np.zeros(count)
@@ -86,14 +90,22 @@ def main():
  # Incremental interpolation avoids allocating multiple full-length envelope arrays.
  for start in range(0,n,10*RATE):
   end=min(n,start+10*RATE);gain=np.interp(np.arange(start,end),np.arange(count)*step,envelope).astype(np.float32);bed[start:end]*=gain[:,None]
- # Cinematic keeps all decoded samples, with natural crossfade into the first photo block.
+ # The speech bed is fully silent from the first original Outro frame.
+ outro_scene=next(s for s in m['scenes'] if s['id']=='outro');outro_start=outro_scene['startFrame']/60
+ stop=round(outro_start*RATE);fade=round(.45*RATE);bed[stop-fade:stop]*=np.linspace(1,0,fade)[:,None];bed[stop:]=0
+ # A short instrumental prelap completes the audio crossfade before the Outro.
+ oe=edits['outro'];assert oe['sourceSha256']==m['sources']['outroMusic']['sha256'];outro_audio=pcm(ROOT/'public'/oe['source'])
+ lo=round(oe['sourceStartSeconds']*RATE);hi=round(oe['sourceEndSeconds']*RATE);assert 0<=lo<hi<=len(outro_audio)
+ data=apply_fade(outro_audio[lo:hi]*oe['gain'],oe['fadeInSeconds'],oe['fadeOutSeconds']);music_start=outro_start-oe['prelapSeconds'];assert abs(music_start+len(data)/RATE-m['totalFrames']/60)<1/RATE
+ add(song,data,music_start)
+ tracks.append({'kind':'outro-music',**oe,'startSeconds':music_start,'endSeconds':music_start+len(data)/RATE,'videoStartSeconds':outro_start,'originalVideoAudioMuted':True,'speed':1})
+ # Cinematic keeps all decoded samples, exactly as in the approved short version.
  add(song,apply_fade(intro*.80,.1,.8),0)
- mix=voice+song+bed;fade=int(3*RATE);mix[-fade:]*=np.linspace(1,0,fade)[:,None]
+ mix=voice+song+bed
  peak=float(np.max(np.abs(mix)));master=min(1,.92/max(peak,1e-9));mix*=master;wav(dest/'final-mix.wav',mix)
  tracks.append({'kind':'cinematic','source':m['sources']['cinematic']['src'],'startSeconds':0,'endSeconds':len(intro)/RATE,'fadeOutSeconds':.8})
- tracks.append({'kind':'original-instrumental','source':'Project procedural piano/ambient, original composition','startSeconds':0,'endSeconds':n/RATE,'keyPitchClass':int(key),'mode':mode,'duckAttackSeconds':.06,'duckReleaseSeconds':.45,'voiceDuckGain':.18,'mainSongDuckGain':.22,'silenceBetweenSections':False})
- report={'sampleRate':RATE,'channels':2,'totalSeconds':n/RATE,'originalInstrumental':True,'mainSongSourceConsumedSeconds':cursor/RATE,'mainSongSourceDecodedSeconds':len(main_audio)/RATE,'allMainSongSamplesUsedOnce':cursor==len(main_audio),'masterGain':master,'stereoSamplePeak':float(np.max(np.abs(mix))),'tracks':tracks}
- assert cursor==len(main_audio),'Main song not fully consumed'
+ tracks.append({'kind':'original-instrumental','source':'Project procedural piano/ambient, original composition','startSeconds':0,'endSeconds':outro_start,'keyPitchClass':int(key),'mode':mode,'duckAttackSeconds':.06,'duckReleaseSeconds':.45,'voiceDuckGain':.18,'mainSongDuckGain':.22,'silenceBetweenSections':False,'fadeOutSeconds':.45,'fullyMutedFromSeconds':outro_start})
+ report={'sampleRate':RATE,'channels':2,'totalSeconds':n/RATE,'originalInstrumental':True,'mainSongSourceDecodedSeconds':len(main_audio)/RATE,'intentionalChorusRepeat':True,'outroMusicSource':oe['source'],'outroOriginalAudioMuted':True,'masterGain':master,'stereoSamplePeak':float(np.max(np.abs(mix))),'tracks':tracks}
  dump(WORK/'audio-timeline.json',report);dump(GEN/'audio/audio-timeline.json',report)
- print(f'AUDIO: {n/RATE:.3f}s, stereo peak {report["stereoSamplePeak"]:.4f}, {len(tracks)} tracks, entire main song used once',flush=True)
+ print(f'AUDIO: {n/RATE:.3f}s, stereo peak {report["stereoSamplePeak"]:.4f}, {len(tracks)} tracks, requested phrase extension, chorus reprise and dedicated Outro',flush=True)
 if __name__=='__main__':main()

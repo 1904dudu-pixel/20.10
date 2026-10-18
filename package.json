@@ -11,13 +11,14 @@
     "check": "npm run typecheck && npm run lint",
     "build": "remotion bundle src/index.ts",
     "compositions": "remotion compositions src/index.ts",
-    "render": "npm run media:stage && remotion render src/index.ts OppoBacNinh2010 out/oppo-bac-ninh-20-10-final-short-1440p60.mp4 --codec=h264 --crf=17 --audio-codec=aac --audio-bitrate=320k",
-    "media:prepare": "python3 scripts/final/prepare.py && python3 scripts/final/audio.py",
-    "prerender": "npm run media:prepare && npm run check",
+    "render": "python3 scripts/final/render_minimal.py",
+    "media:prepare": "python3 scripts/final/prepare.py && python3 scripts/final/audio_sync.py",
+    "prerender": "npm run media:prepare && npm run check && npm run preview:final",
     "verify:render": "python3 scripts/final/verify.py",
-    "render:fast": "npm run media:prepare && npm run check && python3 scripts/final/render.py all",
+    "render:fast": "npm run media:prepare && npm run check && npm run preview:final && python3 scripts/final/render_minimal.py",
     "media:stage": "python3 scripts/final/render.py stages",
-    "preview:final": "python3 scripts/final/preview.py"
+    "preview:final": "python3 scripts/final/preview.py",
+    "preflight": "python3 scripts/final/preflight.py"
   },
   "dependencies": {
     "@remotion/cli": "4.0.535",
