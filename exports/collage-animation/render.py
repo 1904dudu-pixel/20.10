@@ -10,7 +10,7 @@ spec=json.loads((HERE/'spec.json').read_text())
 W,H,FPS,N=spec['width'],spec['height'],spec['fps'],spec['durationFrames']
 parser=argparse.ArgumentParser()
 parser.add_argument('--poster',type=Path,default=HERE.parent/spec['posterFile'])
-parser.add_argument('--out',type=Path,default=HERE/'out/OPPO-Bac-Ninh-32-Chan-Dung-Sparkles-1440p60.mp4')
+parser.add_argument('--out',type=Path,default=HERE/'out/OPPO-Bac-Ninh-32-Chan-Dung-Sparkles-Thoa-BN-1440p60.mp4')
 parser.add_argument('--preview-only',action='store_true')
 args=parser.parse_args()
 assert hashlib.sha256(args.poster.read_bytes()).hexdigest()==spec['posterSha256']

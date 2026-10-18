@@ -1,0 +1,46 @@
+{
+  "photoCount": 32,
+  "replacedPhotoCount": 1,
+  "replacedOrder": 8,
+  "removedFromThisCollage": "public/photos/09_NGUYỄN THỊ THOA.png",
+  "replacement": "public/photos/08_NGUYỄN THỊ THOA BN.png",
+  "sourceSha256": "bf37a5318de62d0e80f00110e83b91f0a9d52a5a62cadfa81a2c9008a05b8208",
+  "sourceGitBlobSha": "009ba07d263b065e58081c9f4d0eaf3f23ae0cd1",
+  "sourceCrop": [
+    0,
+    0,
+    790,
+    790
+  ],
+  "destinationPhotoRect": [
+    3306,
+    346,
+    3694,
+    734
+  ],
+  "frameRadius": 85,
+  "generativeAIUsed": false,
+  "fullOpacityPortraitPixelsMatchOriginalCrop": true,
+  "pixelsOutsideReplacedPortraitExactlyUnchanged": true,
+  "changedPixels": 144922,
+  "basePosterSha256": "11c1cb6f5b04628426a7339696bda625a20fda362d5d03a05137a446438c4f12",
+  "outputPosterSha256": "a4b0106eb477740f426596a0191d12f13fb5a92eb8b1a0df43b09c59690ce10a",
+  "originalApprovedAnimationFrameComparisons": [
+    {
+      "frame": 0,
+      "pixelsOutsideReplacementRegionExactlyUnchanged": true,
+      "changedPixels": 65577
+    },
+    {
+      "frame": 90,
+      "pixelsOutsideReplacementRegionExactlyUnchanged": true,
+      "changedPixels": 65577
+    },
+    {
+      "frame": 300,
+      "pixelsOutsideReplacementRegionExactlyUnchanged": true,
+      "changedPixels": 65577
+    }
+  ],
+  "all32PortraitInteriorsMatchOriginalSourceCrops": true
+}

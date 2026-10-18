@@ -1,0 +1,724 @@
+{
+  "width": 3840,
+  "height": 2160,
+  "photoCount": 32,
+  "individualNameLabels": false,
+  "title": "OPPO Bắc Ninh chúc mừng 20/10",
+  "sourcePortraitPixelsVerified": true,
+  "method": "Original photo crops with uniform resizing and rounded alpha edges; no AI generation, retouch, recolour, distortion or face changes",
+  "background": {
+    "path": "public/photos/ẢNH NỀN.png",
+    "sha256": "602116209d81e85460405910fb1098a161333296ea29742b723f9ef26b83b15b",
+    "originalSize": [
+      961,
+      515
+    ],
+    "fit": "Uniform aspect-preserving resize and centred crop to 3840x2160"
+  },
+  "portraits": [
+    {
+      "order": 1,
+      "name": "HÀ TỐ UYÊN",
+      "source": "public/photos/01_HÀ TỐ UYÊN.png",
+      "sha256": "8fd4183534e0b90dc47874474a36f6739b311db4b60c1b5f1b3133c0827d56ec",
+      "githubBlobSha": "376bc378ee9e2e2994de9c97aa9fa88023bdfcc0",
+      "sourceCrop": [
+        0,
+        0,
+        850,
+        850
+      ],
+      "destinationPhotoRect": [
+        55,
+        415,
+        445,
+        805
+      ],
+      "frameRadius": 86,
+      "rotation": 0,
+      "individualNameLabel": false
+    },
+    {
+      "order": 2,
+      "name": "LÒ THỊ NGỌC BÍCH",
+      "source": "public/photos/06_LÒ THỊ NGỌC BÍCH.png",
+      "sha256": "16efc78fc72e6554f8984c727afef9e72bb8bf69fb7ca78904eeb314c026cc51",
+      "githubBlobSha": "831033a4d1d35870a2a87ee359987f721ea5f799",
+      "sourceCrop": [
+        175,
+        20,
+        775,
+        620
+      ],
+      "destinationPhotoRect": [
+        537,
+        367,
+        903,
+        733
+      ],
+      "frameRadius": 81,
+      "rotation": 0,
+      "individualNameLabel": false
+    },
+    {
+      "order": 3,
+      "name": "NGUYỄN THỊ THANH HẰNG",
+      "source": "public/photos/09_NGUYỄN THỊ THANH HẰNG.png",
+      "sha256": "4b4a0492c2867799a1a6bb40273ca1741510750c706af0be53479dde7cefb954",
+      "githubBlobSha": "bd7988d36b1cfddd89ba0e2c7d1fdf9ad6e9414b",
+      "sourceCrop": [
+        90,
+        0,
+        790,
+        700
+      ],
+      "destinationPhotoRect": [
+        966,
+        411,
+        1374,
+        819
+      ],
+      "frameRadius": 90,
+      "rotation": 0,
+      "individualNameLabel": false
+    },
+    {
+      "order": 4,
+      "name": "NGUYỄN THỊ LỊCH",
+      "source": "public/photos/05_NGUYỄN THỊ LỊCH.png",
+      "sha256": "4e0c48666969f33027bd411e64640a90781dafb6874149659e368dd71be021b3",
+      "githubBlobSha": "519792c1006712427acba06da7dd5fff36ae0d82",
+      "sourceCrop": [
+        30,
+        0,
+        780,
+        750
+      ],
+      "destinationPhotoRect": [
+        1452,
+        342,
+        1828,
+        718
+      ],
+      "frameRadius": 83,
+      "rotation": 0,
+      "individualNameLabel": false
+    },
+    {
+      "order": 5,
+      "name": "HOÀNG THỊ THANH TUYỀN",
+      "source": "public/photos/03_HOÀNG THỊ THANH TUYỀN.png",
+      "sha256": "ba01ff6019ba927ba771ba3a02a6f183bbee618c60c0798284b50fd55da1f0ac",
+      "githubBlobSha": "7218a4aaab4b72f5c663d3ed437ad5a238bb2eb4",
+      "sourceCrop": [
+        0,
+        15,
+        730,
+        745
+      ],
+      "destinationPhotoRect": [
+        1897,
+        397,
+        2303,
+        803
+      ],
+      "frameRadius": 89,
+      "rotation": 0,
+      "individualNameLabel": false
+    },
+    {
+      "order": 6,
+      "name": "NGÔ THỊ HIỀN",
+      "source": "public/photos/NGÔ THỊ HIỀN.png",
+      "sha256": "4b2c72e983ca99eb04649c54cb62850f5532889fa2ec88a5b23eb12f175cb725",
+      "githubBlobSha": "6f154d6cd0e3f34a2371a93dbc224ff6b28fa299",
+      "sourceCrop": [
+        100,
+        0,
+        760,
+        660
+      ],
+      "destinationPhotoRect": [
+        2375,
+        350,
+        2745,
+        720
+      ],
+      "frameRadius": 81,
+      "rotation": 0,
+      "individualNameLabel": false
+    },
+    {
+      "order": 7,
+      "name": "LƯƠNG THỊ HƯƠNG",
+      "source": "public/photos/07_LƯƠNG THỊ HƯƠNG.png",
+      "sha256": "777c8295de5b1155f9aaabb96b78482b77288ad57efe57dbde4767a7a7059471",
+      "githubBlobSha": "12c019da93f5e256a5ae8376902d82e0d027eb14",
+      "sourceCrop": [
+        0,
+        0,
+        790,
+        790
+      ],
+      "destinationPhotoRect": [
+        2815,
+        400,
+        3225,
+        810
+      ],
+      "frameRadius": 90,
+      "rotation": 0,
+      "individualNameLabel": false
+    },
+    {
+      "order": 8,
+      "name": "NGUYỄN THỊ THOA",
+      "source": "public/photos/08_NGUYỄN THỊ THOA BN.png",
+      "sha256": "bf37a5318de62d0e80f00110e83b91f0a9d52a5a62cadfa81a2c9008a05b8208",
+      "githubBlobSha": "009ba07d263b065e58081c9f4d0eaf3f23ae0cd1",
+      "sourceCrop": [
+        0,
+        0,
+        790,
+        790
+      ],
+      "destinationPhotoRect": [
+        3306,
+        346,
+        3694,
+        734
+      ],
+      "frameRadius": 85,
+      "rotation": 0,
+      "individualNameLabel": false
+    },
+    {
+      "order": 9,
+      "name": "BÙI THU THỦY",
+      "source": "public/photos/03_BÙI THU THỦY.png",
+      "sha256": "96e7f5dad3b1407e00c418832b1d06a16b4b8cc6f1f591a0e21d0a323d32ed2c",
+      "githubBlobSha": "b81281174707dce27174bfbc577c9de86a7e8cc5",
+      "sourceCrop": [
+        10,
+        0,
+        790,
+        780
+      ],
+      "destinationPhotoRect": [
+        99,
+        859,
+        471,
+        1231
+      ],
+      "frameRadius": 82,
+      "rotation": 0,
+      "individualNameLabel": false
+    },
+    {
+      "order": 10,
+      "name": "NGUYỄN THỊ HOA",
+      "source": "public/photos/03_NGUYỄN THỊ HOA.png",
+      "sha256": "04ba80c22f2cbfee337b3373515998d0c403571fc4f84d961eef584f1137bc4f",
+      "githubBlobSha": "d485180336ce06c27cefcf263d3d785355dd9e83",
+      "sourceCrop": [
+        225,
+        0,
+        785,
+        560
+      ],
+      "destinationPhotoRect": [
+        530,
+        790,
+        940,
+        1200
+      ],
+      "frameRadius": 90,
+      "rotation": 0,
+      "individualNameLabel": false
+    },
+    {
+      "order": 11,
+      "name": "NGUYỄN THỊ NGUYỆT",
+      "source": "public/photos/08_NGUYỄN THỊ NGUYỆT.png",
+      "sha256": "6b52c4cc0f8131c67a2f6258ef8bc8a2e243524ae563661b2d7c16aea85e1259",
+      "githubBlobSha": "180d2229ebc1e9dd6899fe68c69fb5e08e24e93f",
+      "sourceCrop": [
+        0,
+        0,
+        810,
+        810
+      ],
+      "destinationPhotoRect": [
+        1020,
+        900,
+        1400,
+        1280
+      ],
+      "frameRadius": 84,
+      "rotation": 0,
+      "individualNameLabel": false
+    },
+    {
+      "order": 12,
+      "name": "NGUYỄN THỊ HỒNG LINH",
+      "source": "public/photos/04_NGUYỄN THỊ HỒNG LINH.png",
+      "sha256": "3e864bd184aa7ae03db4a38508b8917f22438fede94b20a3804285206a46fe57",
+      "githubBlobSha": "f4288c516db10813539af6e0ae65c54738e1cbe5",
+      "sourceCrop": [
+        210,
+        10,
+        810,
+        610
+      ],
+      "destinationPhotoRect": [
+        1464,
+        779,
+        1866,
+        1181
+      ],
+      "frameRadius": 88,
+      "rotation": 0,
+      "individualNameLabel": false
+    },
+    {
+      "order": 13,
+      "name": "BÙI THỊ MỸ LINH",
+      "source": "public/photos/02_BÙI THỊ MỸ LINH.png",
+      "sha256": "3a2596202bda53307794179018a773f89e8c55fcb35a3db055b545d76b2776fb",
+      "githubBlobSha": "cdd9b4d59d0bea988057ea73eb18d3a5263f9b6f",
+      "sourceCrop": [
+        10,
+        0,
+        810,
+        800
+      ],
+      "destinationPhotoRect": [
+        1966,
+        871,
+        2334,
+        1239
+      ],
+      "frameRadius": 81,
+      "rotation": 0,
+      "individualNameLabel": false
+    },
+    {
+      "order": 14,
+      "name": "NGUYỄN THỊ DIỆU NINH",
+      "source": "public/photos/07_NGUYỄN THỊ DIỆU NINH.png",
+      "sha256": "abadf337cc0be9600336ae4db723b9cee09a8f85f94c59e12f3b6502e51f2f66",
+      "githubBlobSha": "acf2247cdeebd3ba865f7d85fe2765ac33db547c",
+      "sourceCrop": [
+        150,
+        0,
+        730,
+        580
+      ],
+      "destinationPhotoRect": [
+        2374,
+        794,
+        2786,
+        1206
+      ],
+      "frameRadius": 91,
+      "rotation": 0,
+      "individualNameLabel": false
+    },
+    {
+      "order": 15,
+      "name": "NGUYỄN THỊ NGÂN",
+      "source": "public/photos/06_NGUYỄN THỊ NGÂN.png",
+      "sha256": "183ca4ebde3d38ea5cccc149d13be3fb43a10fdd3d299846955e8d41b6de69c3",
+      "githubBlobSha": "18a2d8452f1046fdd2a589e72085a4ed1c373c87",
+      "sourceCrop": [
+        200,
+        20,
+        740,
+        560
+      ],
+      "destinationPhotoRect": [
+        2883,
+        888,
+        3257,
+        1262
+      ],
+      "frameRadius": 82,
+      "rotation": 0,
+      "individualNameLabel": false
+    },
+    {
+      "order": 16,
+      "name": "NGUYỄN THỊ YẾN LINH",
+      "source": "public/photos/02_NGUYỄN THỊ YẾN LINH.png",
+      "sha256": "59d44cf7d3bf88bd6eb8427f10ba2161862455141b26f9fe7bee5d2afcfd049e",
+      "githubBlobSha": "45b919c08f1daabde21bbe95b5e073ae7cdeaf12",
+      "sourceCrop": [
+        0,
+        0,
+        840,
+        840
+      ],
+      "destinationPhotoRect": [
+        3330,
+        770,
+        3730,
+        1170
+      ],
+      "frameRadius": 88,
+      "rotation": 0,
+      "individualNameLabel": false
+    },
+    {
+      "order": 17,
+      "name": "ĐINH THỊ MINH PHƯỢNG",
+      "source": "public/photos/09_ĐINH THỊ MINH PHƯỢNG.png",
+      "sha256": "7138fb02d4278ebfd2116af8f3cd5f7aa1ee43a9fd6542ead6d317dd7ff5d1b8",
+      "githubBlobSha": "47d488ea19a4b14913f197daf7dc6fee0d6040b0",
+      "sourceCrop": [
+        80,
+        0,
+        800,
+        720
+      ],
+      "destinationPhotoRect": [
+        53,
+        1308,
+        457,
+        1712
+      ],
+      "frameRadius": 89,
+      "rotation": 0,
+      "individualNameLabel": false
+    },
+    {
+      "order": 18,
+      "name": "NGUYỄN THỊ THU HIẾU",
+      "source": "public/photos/10_NGUYỄN THỊ THU HIẾU.png",
+      "sha256": "9d39a85c4268dad0da56a9556bbbfdf54cdf6f8f1eedc859b30eb196d326091a",
+      "githubBlobSha": "a0b581aa3383fd2d9a27f3e0f1228c79b831799c",
+      "sourceCrop": [
+        90,
+        0,
+        810,
+        720
+      ],
+      "destinationPhotoRect": [
+        523,
+        1253,
+        897,
+        1627
+      ],
+      "frameRadius": 82,
+      "rotation": 0,
+      "individualNameLabel": false
+    },
+    {
+      "order": 19,
+      "name": "ĐÀM THỊ TÂM",
+      "source": "public/photos/07_ĐÀM THỊ TÂM.png",
+      "sha256": "204e43e48332bf0d7f6fd15a85ee5577cab9d108fbc7d4b4fe49af9a4ed10f5c",
+      "githubBlobSha": "00b8bd1462d9d664261c74631f2a723c4ff4cd80",
+      "sourceCrop": [
+        0,
+        0,
+        820,
+        820
+      ],
+      "destinationPhotoRect": [
+        971,
+        1316,
+        1369,
+        1714
+      ],
+      "frameRadius": 88,
+      "rotation": 0,
+      "individualNameLabel": false
+    },
+    {
+      "order": 20,
+      "name": "HOÀNG THỊ NGỌC ANH",
+      "source": "public/photos/02_HOÀNG THỊ NGỌC ANH.png",
+      "sha256": "416a77908b08fcc22023fcf95c3bd3bfdeb8bcfa60a4d9d9b2c6a9382e2246ec",
+      "githubBlobSha": "a0c255e20122aa780098a834de9da4b56790cdbc",
+      "sourceCrop": [
+        140,
+        0,
+        740,
+        600
+      ],
+      "destinationPhotoRect": [
+        1452,
+        1247,
+        1818,
+        1613
+      ],
+      "frameRadius": 81,
+      "rotation": 0,
+      "individualNameLabel": false
+    },
+    {
+      "order": 21,
+      "name": "PHẠM CHI MAI",
+      "source": "public/photos/03_PHẠM CHI MAI.png",
+      "sha256": "cd6f0d494af7aa56b047f4132080177b79d432f187aa6364b0465cec3aa13484",
+      "githubBlobSha": "128b76b66e511d3862bbd0a1c803365ea85e05ba",
+      "sourceCrop": [
+        0,
+        0,
+        820,
+        820
+      ],
+      "destinationPhotoRect": [
+        1909,
+        1309,
+        2311,
+        1711
+      ],
+      "frameRadius": 88,
+      "rotation": 0,
+      "individualNameLabel": false
+    },
+    {
+      "order": 22,
+      "name": "PHÙNG THỊ HỒNG",
+      "source": "public/photos/06_PHÙNG THỊ HỒNG.png",
+      "sha256": "4adea47079a8ceff1822d908ce3b39e2b0988d30e72909f0443432e3ffb4334e",
+      "githubBlobSha": "ab0198f6395c6fdca85d8ee671f5f0f23d18582b",
+      "sourceCrop": [
+        20,
+        0,
+        820,
+        800
+      ],
+      "destinationPhotoRect": [
+        2381,
+        1261,
+        2759,
+        1639
+      ],
+      "frameRadius": 83,
+      "rotation": 0,
+      "individualNameLabel": false
+    },
+    {
+      "order": 23,
+      "name": "ĐÀM THỊ LỆ",
+      "source": "public/photos/06_ĐÀM THỊ LỆ.png",
+      "sha256": "1012c8edd2558645abab58b46e1cb9ad15c884efc09d6514b3e38d9bc9b46e72",
+      "githubBlobSha": "2989f5a56a442554a7df749d18228ca721691832",
+      "sourceCrop": [
+        0,
+        0,
+        820,
+        820
+      ],
+      "destinationPhotoRect": [
+        2836,
+        1321,
+        3244,
+        1729
+      ],
+      "frameRadius": 90,
+      "rotation": 0,
+      "individualNameLabel": false
+    },
+    {
+      "order": 24,
+      "name": "HOÀNG THỊ THẢO",
+      "source": "public/photos/04_HOÀNG THỊ THẢO.png",
+      "sha256": "783bc9881c07fb62089f4f980d80e52a8528c248a06fda110743bf4a5fdb6c47",
+      "githubBlobSha": "9a8aaca4d5ec99f0c38d3e3764abb7913199c4a6",
+      "sourceCrop": [
+        10,
+        0,
+        775,
+        765
+      ],
+      "destinationPhotoRect": [
+        3310,
+        1240,
+        3680,
+        1610
+      ],
+      "frameRadius": 81,
+      "rotation": 0,
+      "individualNameLabel": false
+    },
+    {
+      "order": 25,
+      "name": "NGUYỄN HỒNG VÂN",
+      "source": "public/photos/10_NGUYỄN HỒNG VÂN.png",
+      "sha256": "92e2496ab8873eb30116325a50265af1a2096254b141cae88111e95b94fbb83d",
+      "githubBlobSha": "4e273f7918f469c29aa403e9107a0a55b3c7c9de",
+      "sourceCrop": [
+        0,
+        0,
+        800,
+        800
+      ],
+      "destinationPhotoRect": [
+        109,
+        1754,
+        481,
+        2126
+      ],
+      "frameRadius": 82,
+      "rotation": 0,
+      "individualNameLabel": false
+    },
+    {
+      "order": 26,
+      "name": "DƯƠNG THỊ MAI",
+      "source": "public/photos/04_DƯƠNG THỊ MAI.png",
+      "sha256": "95b11dee48b7ed71a301f315857ffa20bb570130c9cbb04542f9fbb6403028fa",
+      "githubBlobSha": "291c912cf7048381d89c418a406bc23991507914",
+      "sourceCrop": [
+        0,
+        0,
+        780,
+        780
+      ],
+      "destinationPhotoRect": [
+        540,
+        1680,
+        940,
+        2080
+      ],
+      "frameRadius": 88,
+      "rotation": 0,
+      "individualNameLabel": false
+    },
+    {
+      "order": 27,
+      "name": "VI THU TRANG",
+      "source": "public/photos/08_VI THU TRANG.png",
+      "sha256": "653660bc6755af5722468178578b9b6bd54cdfa60d93965239a416e7f93066cc",
+      "githubBlobSha": "dab5b35613a47d3e17ee670e70b4ec5a1222353e",
+      "sourceCrop": [
+        70,
+        0,
+        830,
+        760
+      ],
+      "destinationPhotoRect": [
+        1045,
+        1760,
+        1415,
+        2130
+      ],
+      "frameRadius": 81,
+      "rotation": 0,
+      "individualNameLabel": false
+    },
+    {
+      "order": 28,
+      "name": "LƯƠNG THỊ TƯƠI",
+      "source": "public/photos/08_LƯƠNG THỊ TƯƠI.png",
+      "sha256": "5f94834bc5105def85b3dc1afcf2fa2bdb2dc05cf7026e955cd21a0c9850bae7",
+      "githubBlobSha": "5619bca0d1e673dea3acc456694cf0f62a67f80b",
+      "sourceCrop": [
+        30,
+        0,
+        810,
+        780
+      ],
+      "destinationPhotoRect": [
+        1466,
+        1656,
+        1874,
+        2064
+      ],
+      "frameRadius": 90,
+      "rotation": 0,
+      "individualNameLabel": false
+    },
+    {
+      "order": 29,
+      "name": "HOÀNG QUỲNH NHƯ",
+      "source": "public/photos/02_HOÀNG QUỲNH NHƯ.png",
+      "sha256": "4c143eda048b517e7b73b7161ea270db08789c192b2af921fcdbdada8f0eb695",
+      "githubBlobSha": "01e047105b2fb62f690aa3b128780fac97473ccb",
+      "sourceCrop": [
+        140,
+        0,
+        740,
+        600
+      ],
+      "destinationPhotoRect": [
+        1976,
+        1766,
+        2344,
+        2134
+      ],
+      "frameRadius": 81,
+      "rotation": 0,
+      "individualNameLabel": false
+    },
+    {
+      "order": 30,
+      "name": "DƯƠNG THỊ QUYẾN",
+      "source": "public/photos/05_DƯƠNG THỊ QUYẾN.png",
+      "sha256": "dd9d86deaf06b9965478981e2c1a4b5d11f34a3c826da7fba75935a27cb42562",
+      "githubBlobSha": "9327232313b0baf6245a15323d7d7a574cb6b33e",
+      "sourceCrop": [
+        0,
+        0,
+        820,
+        820
+      ],
+      "destinationPhotoRect": [
+        2397,
+        1667,
+        2803,
+        2073
+      ],
+      "frameRadius": 89,
+      "rotation": 0,
+      "individualNameLabel": false
+    },
+    {
+      "order": 31,
+      "name": "HÀ THỊ LAN HƯƠNG",
+      "source": "public/photos/01_HÀ THỊ LAN HƯƠNG.png",
+      "sha256": "55735e310b2d468705753dfda9babb2d10bd1f6e07b52f830c1a7c8c1dbff870",
+      "githubBlobSha": "c0cc7e81c56e1decced3a2c2fe842de9d540c2a2",
+      "sourceCrop": [
+        25,
+        0,
+        795,
+        770
+      ],
+      "destinationPhotoRect": [
+        2904,
+        1754,
+        3276,
+        2126
+      ],
+      "frameRadius": 82,
+      "rotation": 0,
+      "individualNameLabel": false
+    },
+    {
+      "order": 32,
+      "name": "TRẦN THỊ LINH",
+      "source": "public/photos/TRẦN THỊ LINH.jpg",
+      "sha256": "50dfd74e70f963d468166d69d48a5e999d28ec1f647167a266a1a13ed244b45c",
+      "githubBlobSha": "32dcd169c5c9b8f833962985e23a1043b18811b9",
+      "sourceCrop": [
+        0,
+        0,
+        820,
+        820
+      ],
+      "destinationPhotoRect": [
+        3330,
+        1665,
+        3730,
+        2065
+      ],
+      "frameRadius": 88,
+      "rotation": 0,
+      "individualNameLabel": false
+    }
+  ]
+}

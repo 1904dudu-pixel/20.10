@@ -1,0 +1,27 @@
+{
+  "photoCount": 32,
+  "replacedPhotoCount": 1,
+  "durationSeconds": 30,
+  "width": 2560,
+  "height": 1440,
+  "fps": 60,
+  "noAudio": true,
+  "generativeAIUsed": false,
+  "files": [
+    {
+      "path": "exports/OPPO-Bac-Ninh-32-Chan-Dung-Sparkles-Thoa-BN-1440p60.mp4",
+      "bytes": 15641145,
+      "sha256": "d87e49eef3f981b0dd32764c407345d87303f30e5f8b96802dd856acb0be9594"
+    },
+    {
+      "path": "exports/OPPO-Bac-Ninh-32-Chan-Dung-Thoa-BN-4K.png",
+      "bytes": 9454284,
+      "sha256": "a4b0106eb477740f426596a0191d12f13fb5a92eb8b1a0df43b09c59690ce10a"
+    },
+    {
+      "path": "exports/OPPO-Bac-Ninh-32-Chan-Dung-Thoa-BN-4K.jpg",
+      "bytes": 4510091,
+      "sha256": "3f8752ee1a5e4855c0e549afea54077d915c5c4b5f6f5a5c1d3e98c83de6d59b"
+    }
+  ]
+}
