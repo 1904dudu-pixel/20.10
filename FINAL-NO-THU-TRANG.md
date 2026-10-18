@@ -16,11 +16,11 @@ Toàn bộ điệp khúc đã duyệt **199,68–223,26 giây của NHẠC 20.10
 
 ## Kiểm tra và xuất
 
-`preflight.py` đối chiếu toàn bộ dữ liệu từng cảnh với snapshot Final Polished: chỉ thiếu `photo-49`, chỉ thay mốc tuyệt đối của cảnh phía sau; giữ nguyên toàn bộ nguồn, tên/chức vụ, điểm cắt, tốc độ, hướng hình, layout và hiệu ứng. Giữ nguyên `render.py`, `motion.json`, mã React và các file ảnh/video/nhạc nguồn.
+`preflight.py` đối chiếu toàn bộ dữ liệu từng cảnh với snapshot Final Polished: chỉ thiếu `photo-49`, chỉ thay mốc tuyệt đối của cảnh phía sau; giữ nguyên toàn bộ nguồn, tên/chức vụ, điểm cắt, tốc độ, hướng hình, layout và hiệu ứng. Giữ nguyên `render.py`, `motion.json`, mã React và các file ảnh/video/nhạc nguồn. `render_minimal.py` dùng chính renderer/crossfade đã duyệt cho duy nhất cặp ảnh 48–50; sao chép trực tiếp luồng H.264 gốc ở mọi phần khác. Không mã hóa lại các phần không được yêu cầu chỉnh sửa.
 
 Preview `01-photo-removal-and-chorus.mp4` phủ **07:20.000–07:53.733** của timeline mới. Render toàn bộ chỉ chạy sau khi preview giải mã được và khớp âm thanh. QA kiểm tra 51 ảnh, 16 video, frame thực tế của đủ 74 cảnh so với scene và MP4 Final Polished, âm thanh từng người, true peak, khoảng lặng, blackdetect và giải mã toàn bộ MP4. Đồng thời so sánh payload SHA-256 của toàn bộ 32600 frame H.264 ngoài chuyển cảnh mới (27 frame), yêu cầu khớp bản gốc sau khi bù 333 frame đã bỏ. Kết quả thực tế nằm trong `qa-report.json` của artifact, không coi việc tạo manifest là render thành công.
 
-Xuất đúng pipeline hiện có: **H.264, 2560×1440, 60 FPS, CRF 17, preset veryfast; AAC stereo 48 kHz, 320 kb/s**. Không thay thiết lập nén video. File `out/oppo-bac-ninh-20-10-final-no-thu-trang-1440p60.mp4`.
+Xuất đúng pipeline hiện có: **H.264, 2560×1440, 60 FPS, CRF 17, preset veryfast; AAC stereo 48 kHz, 320 kb/s**. Không thay thiết lập nén video. Do mã hóa lại toàn bộ có thể tạo payload H.264 khác giữa các runner dù cùng CRF và hình ảnh khớp, bản xuất tối thiểu sao chép nguyên 32600 frame gốc và chỉ tạo 27 frame của crossfade mới; QA bắt buộc khớp toàn bộ payload gốc. File `out/oppo-bac-ninh-20-10-final-no-thu-trang-1440p60.mp4`.
 
 Artifact: **OPPO-Bac-Ninh-20-10-Final-No-Thu-Trang-1440p60**, lưu 14 ngày, chỉ upload sau khi QA thành công. Có thêm bundle `…-QA` nhỏ để tải preview và báo cáo riêng.
 

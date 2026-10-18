@@ -29,7 +29,7 @@ npm run media:stage
 npm run studio
 ```
 
-Composition `OppoBacNinh2010` dùng cùng scene đã dựng và cùng bản phối như đường FFmpeg, giữ nguyên hiệu ứng và bảng tên. `npm run render` cũng xuất cùng timeline qua Remotion. `npm run check` kiểm tra TypeScript/lint; `npm run build` tạo bundle.
+Composition `OppoBacNinh2010` dùng cùng scene đã dựng và cùng bản phối như đường FFmpeg, giữ nguyên hiệu ứng và bảng tên. `npm run render` và `npm run render:fast` xuất bằng renderer hiện có cho duy nhất crossfade mới, sao chép nguyên mọi frame khác từ MP4 Final Polished để giữ chất lượng gốc. `npm run check` kiểm tra TypeScript/lint; `npm run build` tạo bundle.
 
 ## Media và biên tập
 

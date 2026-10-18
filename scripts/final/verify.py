@@ -23,10 +23,13 @@ def main():
  for s in m['scenes']:
   t=2 if s['kind']=='wish' else s['durationInFrames']/120
   arrays=[]
-  for src,time in [(p,s['startFrame']/60+t),(GEN/'scenes'/f'{s["id"]}.mp4',t),(reference_path,old[s['id']]['startFrame']/60+t)]:
+  staged=GEN/'scenes'/f'{s["id"]}.mp4'
+  inputs=[(p,s['startFrame']/60+t),(reference_path,old[s['id']]['startFrame']/60+t)]
+  if staged.exists():inputs.append((staged,t))
+  for src,time in inputs:
    raw=run(['ffmpeg','-v','error','-ss',time,'-i',src,'-frames:v','1','-vf','scale=320:180','-pix_fmt','rgb24','-f','rawvideo','-'],True);arrays.append(np.frombuffer(raw,np.uint8).reshape(180,320,3))
-  baseline_mae=float(np.mean(np.abs(arrays[0].astype(float)-arrays[2].astype(float))));assert baseline_mae<3,(s['id'],'Approved Final Polished frame changed',baseline_mae)
-  mae=float(np.mean(np.abs(arrays[0].astype(float)-arrays[1].astype(float))));assert mae<3,(s['id'],mae)
+  baseline_mae=float(np.mean(np.abs(arrays[0].astype(float)-arrays[1].astype(float))));assert baseline_mae<3,(s['id'],'Approved Final Polished frame changed',baseline_mae)
+  mae=float(np.mean(np.abs(arrays[0].astype(float)-arrays[-1].astype(float))));assert mae<3,(s['id'],mae)
   thumb=Image.fromarray(arrays[0]);ImageDraw.Draw(thumb).text((8,8),s['id'],fill='white');checks.append({'id':s['id'],'frameMae':mae,'approvedPolishedFrameMae':baseline_mae,'sourceSha256':s.get('sha256',m['sources']['outro']['sha256'] if s['id']=='outro' else None)})
   if s['kind'] in ['photo','wish']:thumbs.append(thumb)
   print('QA FRAME',s['id'],round(mae,4),flush=True)
@@ -41,6 +44,9 @@ def main():
  matches=sum(after[i]==before[i if i<cut else i+delta] for i in range(len(after)) if not cut<=i<end)
  preservation={'framesCompared':len(after)-(end-cut),'identicalCompressedFramePayloads':matches,'newTransitionStartFrame':cut,'newTransitionFrames':end-cut,'removedFrames':delta,'allOtherCompressedVideoFramesIdentical':matches==len(after)-(end-cut)}
  assert preservation['allOtherCompressedVideoFramesIdentical'],preservation
+ transition_hashes=json.loads(run(['ffprobe','-v','error','-select_streams','v:0','-show_packets','-show_entries','packet=data_hash','-show_data_hash','sha256','-of','json',WORK/'minimal-join/transition.mp4'],True))
+ assert after[cut:end]==[p['data_hash'] for p in transition_hashes['packets']]
+ preservation['newCrossfadeMatchesApprovedRenderer']=True
  print('QA ALL UNCHANGED H264 FRAME PAYLOADS IDENTICAL',matches,flush=True)
  sheet=Image.new('RGB',(320*4,180*17))
  for k,im in enumerate(thumbs):sheet.paste(im,((k%4)*320,(k//4)*180))

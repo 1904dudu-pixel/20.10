@@ -41,10 +41,8 @@ jobs:
       - run: npm run check
       - name: Render and validate the photo-removal and chorus preview before full export
         run: npm run preview:final
-      - name: Render the same approved pipeline with only photo-49 excluded, H.264 1440p60
-        run: python3 scripts/final/render.py all
-        env:
-          FINAL_RENDER_WORKERS: 4
+      - name: Copy approved video unchanged and render only the new 27-frame crossfade
+        run: python3 scripts/final/render_minimal.py
       - name: Verify all 67 people against Final Polished and decode entire output
         run: npm run verify:render
       - name: Upload final MP4 and verification reports
@@ -54,6 +52,7 @@ jobs:
           path: |
             out/oppo-bac-ninh-20-10-final-no-thu-trang-1440p60.mp4
             work/final/qa-report.json
+            work/final/minimal-render-report.json
             work/final/timeline.csv
             work/final/trim-report.json
             work/final/audio-timeline.json
@@ -71,6 +70,7 @@ jobs:
           name: OPPO-Bac-Ninh-20-10-Final-No-Thu-Trang-1440p60-QA
           path: |
             work/final/qa-report.json
+            work/final/minimal-render-report.json
             work/final/preflight-report.json
             work/final/audio-timeline.json
             work/final/timeline.csv
