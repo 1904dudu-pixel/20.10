@@ -1,0 +1,383 @@
+[
+  {
+    "order": 1,
+    "name": "HOÀNG THỊ LIÊN",
+    "path": "public/photos/03_HOÀNG THỊ LIÊN.png",
+    "width": 1672,
+    "height": 941,
+    "githubBlobSha": "a537bf5d752298e7bc63d587c4fdef0f03293ca2",
+    "sha256": "340e076c040059101d41c791aa5350c803b1dd9dc50f5a0458e1a08323aa7b08",
+    "sourceCrop": [
+      30,
+      0,
+      790,
+      760
+    ],
+    "center": [
+      500,
+      675
+    ],
+    "size": 500
+  },
+  {
+    "order": 2,
+    "name": "NGUYỄN THỊ ÁI VÂN",
+    "path": "public/photos/05_NGUYỄN THỊ ÁI VÂN.png",
+    "width": 1672,
+    "height": 941,
+    "githubBlobSha": "2d6e24572254d161ba3a14cf8677a13d9ca26b3a",
+    "sha256": "30526baa5d71226e23b3f659e5e2ddc0e891b5114ae2002dfaa73a566a6948b5",
+    "sourceCrop": [
+      0,
+      0,
+      790,
+      790
+    ],
+    "center": [
+      1070,
+      605
+    ],
+    "size": 480
+  },
+  {
+    "order": 3,
+    "name": "LƯU THỊ THÙY",
+    "path": "public/photos/09_LƯU THỊ THÙY.png",
+    "width": 1672,
+    "height": 941,
+    "githubBlobSha": "b81271019d1d64e1daf0fc64795725698018bcc4",
+    "sha256": "b920926766e5784cba85e8e0f342f70b2178db56c8f84e3611c3e446ac7c76b1",
+    "sourceCrop": [
+      0,
+      0,
+      760,
+      760
+    ],
+    "center": [
+      1645,
+      690
+    ],
+    "size": 510
+  },
+  {
+    "order": 4,
+    "name": "NGUYỄN THỊ NGỌC",
+    "path": "public/photos/07_NGUYỄN THỊ NGỌC.png",
+    "width": 1672,
+    "height": 941,
+    "githubBlobSha": "26fe7bbf44cf6bc2193d94c70742d0a8725a023a",
+    "sha256": "77fa3b23fb8219d1f675f33b84325ec73fe74ec6fa2b035345e324f17a87a535",
+    "sourceCrop": [
+      20,
+      0,
+      760,
+      740
+    ],
+    "center": [
+      2225,
+      600
+    ],
+    "size": 490
+  },
+  {
+    "order": 5,
+    "name": "TRẦN HƯƠNG NHI",
+    "path": "public/photos/07_TRẦN HƯƠNG NHI.png",
+    "width": 1672,
+    "height": 941,
+    "githubBlobSha": "6a4e826befaf2547f06eaa2c7b4b289332edcd3b",
+    "sha256": "0d9e913135329e1e7b84fdd824454ec864e4a238c6e1f241481d62451eeb3f1f",
+    "sourceCrop": [
+      0,
+      0,
+      730,
+      730
+    ],
+    "center": [
+      2800,
+      675
+    ],
+    "size": 510
+  },
+  {
+    "order": 6,
+    "name": "NGUYỄN THỊ CHIÊM",
+    "path": "public/photos/06_NGUYỄN THỊ CHIÊM.png",
+    "width": 1672,
+    "height": 941,
+    "githubBlobSha": "001612bc8ada52769575cc58eba9eede88421af5",
+    "sha256": "2f8040691dc779bf6c1313540904ebfa8bd24b6e0b26c2dd82107f7aac818f28",
+    "sourceCrop": [
+      0,
+      0,
+      790,
+      790
+    ],
+    "center": [
+      3360,
+      610
+    ],
+    "size": 480
+  },
+  {
+    "order": 7,
+    "name": "HOÀNG THỊ NGÁT",
+    "path": "public/photos/01_HOÀNG THỊ NGÁT.png",
+    "width": 1672,
+    "height": 941,
+    "githubBlobSha": "82ea68b7ba34bbe10eb90637be7e4d1547d4e8a4",
+    "sha256": "095ce068778c0cc60c16f2ba364bcee30bfbbc649b407a801b6c8eeb24761f22",
+    "sourceCrop": [
+      0,
+      0,
+      780,
+      780
+    ],
+    "center": [
+      275,
+      1245
+    ],
+    "size": 450
+  },
+  {
+    "order": 8,
+    "name": "NGUYỄN THỊ VUI",
+    "path": "public/photos/NGUYỄN THỊ VUI.webp",
+    "width": 1672,
+    "height": 941,
+    "githubBlobSha": "201dc92d35501ba4e5919ddd64e3a87b5141b5e7",
+    "sha256": "b8c3ec0f559e5d28513dc5a080a0ec1e0f74a127921e51263dbb33fa70945e0b",
+    "sourceCrop": [
+      0,
+      0,
+      760,
+      760
+    ],
+    "center": [
+      800,
+      1185
+    ],
+    "size": 465
+  },
+  {
+    "order": 9,
+    "name": "NGUYỄN THỊ THOA",
+    "path": "public/photos/09_NGUYỄN THỊ THOA.png",
+    "width": 1672,
+    "height": 941,
+    "githubBlobSha": "09695c2e469e8691e03d9f49c49c079a0d3bdb6a",
+    "sha256": "c5b347a1fd71ddc7fe205bc7e23e8ee1d94bcf27a6cfb458f1cbf2c3b195dfe1",
+    "userConfirmedSource": true,
+    "sourceCrop": [
+      70,
+      0,
+      770,
+      700
+    ],
+    "center": [
+      1350,
+      1260
+    ],
+    "size": 460
+  },
+  {
+    "order": 10,
+    "name": "PHẠM THỊ TRANG",
+    "path": "public/photos/04_PHẠM THỊ TRANG.png",
+    "width": 1672,
+    "height": 941,
+    "githubBlobSha": "791e196feb27e55eb55a20f09bcc15941a2b7663",
+    "sha256": "f5376734e1eef68530d9779595505ca5d714a46ecaa79a12926b01da109dca38",
+    "sourceCrop": [
+      0,
+      0,
+      740,
+      740
+    ],
+    "center": [
+      1900,
+      1205
+    ],
+    "size": 470
+  },
+  {
+    "order": 11,
+    "name": "PHẠM THỊ XIÊM",
+    "path": "public/photos/05_PHẠM THỊ XIÊM.png",
+    "width": 1672,
+    "height": 941,
+    "githubBlobSha": "972f5a1f2cfc011003f1aa978b2145ea5da05907",
+    "sha256": "331e8f4f1249db1fa4ae7a51c2d7e1380b86e71d0f753375fd2e6d49cf1be576",
+    "sourceCrop": [
+      20,
+      0,
+      760,
+      740
+    ],
+    "center": [
+      2450,
+      1260
+    ],
+    "size": 460
+  },
+  {
+    "order": 12,
+    "name": "NGUYỄN THỊ HẢI",
+    "path": "public/photos/02_NGUYỄN THỊ HẢI.png",
+    "width": 1672,
+    "height": 941,
+    "githubBlobSha": "b9c8c1d15882934e69f191766d8f856b40c493cf",
+    "sha256": "4e0e40731bfa99c6c6126235a60eed3525874fd7c1781e6078bb400a3a6d2478",
+    "sourceCrop": [
+      130,
+      0,
+      770,
+      640
+    ],
+    "center": [
+      3000,
+      1195
+    ],
+    "size": 465
+  },
+  {
+    "order": 13,
+    "name": "NGUYỄN THỊ HÀ VI",
+    "path": "public/photos/01_NGUYỄN THỊ HÀ VI.png",
+    "width": 1672,
+    "height": 941,
+    "githubBlobSha": "728d0db2116a24c92465e58eaf4db3a0fea562c4",
+    "sha256": "0c21e73dd70066993ad09491ad00f219a5218e8e8fa331491637d08de50b1c40",
+    "sourceCrop": [
+      0,
+      0,
+      750,
+      750
+    ],
+    "center": [
+      3550,
+      1240
+    ],
+    "size": 460
+  },
+  {
+    "order": 14,
+    "name": "HOÀNG THỊ TRANG",
+    "path": "public/photos/05_HOÀNG THỊ TRANG.png",
+    "width": 1672,
+    "height": 941,
+    "githubBlobSha": "e6615d0326d97780b45317b505a8e45c969394ed",
+    "sha256": "8d6df6f791a09c102a7061a0a6465f3c3d84b6f7f7cba841c7b447c8221a971a",
+    "sourceCrop": [
+      0,
+      0,
+      780,
+      780
+    ],
+    "center": [
+      495,
+      1875
+    ],
+    "size": 510
+  },
+  {
+    "order": 15,
+    "name": "NGUYỄN MINH KHÁNH",
+    "path": "public/photos/04_NGUYỄN MINH KHÁNH.png",
+    "width": 1672,
+    "height": 941,
+    "githubBlobSha": "83ad82bf8a36c369a2840dc1a9f22c405eb9d5e4",
+    "sha256": "6036786539fc9ea65207e337a41dc8495b25b381bb1b8fc0255f2de035bfa115",
+    "sourceCrop": [
+      30,
+      0,
+      750,
+      720
+    ],
+    "center": [
+      1065,
+      1795
+    ],
+    "size": 485
+  },
+  {
+    "order": 16,
+    "name": "VŨ THỊ TRANG",
+    "path": "public/photos/10_VŨ THỊ TRANG.png",
+    "width": 1672,
+    "height": 941,
+    "githubBlobSha": "2ed8dd3edfea120ea8a86296f69d3a18d6fa0724",
+    "sha256": "2d594198867d11a5a400113e780c6e1448b04c9de16946b877c316b5bb4c82d6",
+    "sourceCrop": [
+      0,
+      0,
+      780,
+      780
+    ],
+    "center": [
+      1645,
+      1885
+    ],
+    "size": 510
+  },
+  {
+    "order": 17,
+    "name": "ĐÀO ÁNH TUYẾT",
+    "path": "public/photos/08_ĐÀO ÁNH TUYẾT.png",
+    "width": 1672,
+    "height": 941,
+    "githubBlobSha": "1b64acbce91affe8b6aa6831bdaac1c0340e96bf",
+    "sha256": "7a866a2a3b94b457d7691164431ac7e8c910c2de7431ad0b4bb5c50ed46c036d",
+    "sourceCrop": [
+      50,
+      0,
+      880,
+      830
+    ],
+    "center": [
+      2220,
+      1795
+    ],
+    "size": 485
+  },
+  {
+    "order": 18,
+    "name": "BÙI THỊ HUYỀN TRANG",
+    "path": "public/photos/01_BÙI THỊ HUYỀN TRANG.png",
+    "width": 1672,
+    "height": 941,
+    "githubBlobSha": "a067edd1a1b273836bab266e1fe9266dbab83a3f",
+    "sha256": "d1b01b596230bc8af7869db47b2cb82a017605159fd00181f89da342f8fda0f3",
+    "sourceCrop": [
+      40,
+      0,
+      780,
+      740
+    ],
+    "center": [
+      2800,
+      1880
+    ],
+    "size": 510
+  },
+  {
+    "order": 19,
+    "name": "VŨ THỊ THƯƠNG",
+    "path": "public/photos/09_VŨ THỊ THƯƠNG.png",
+    "width": 1672,
+    "height": 941,
+    "githubBlobSha": "7ebed0a65fe99837524b09e6da23fcd52a7259f8",
+    "sha256": "dd99481cdf157861facc4f70545e4b2491904751d376027b699b5ee56aaed347",
+    "sourceCrop": [
+      80,
+      0,
+      760,
+      680
+    ],
+    "center": [
+      3360,
+      1790
+    ],
+    "size": 485
+  }
+]

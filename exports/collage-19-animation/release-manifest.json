@@ -1,0 +1,26 @@
+{
+  "photoCount": 19,
+  "generativeAIUsed": false,
+  "width": 2560,
+  "height": 1440,
+  "fps": 60,
+  "durationSeconds": 30,
+  "noAudio": true,
+  "files": [
+    {
+      "path": "exports/OPPO-Bac-Ninh-19-Chan-Dung-Tieu-De-Mem-Mai-4K.png",
+      "bytes": 8553398,
+      "sha256": "84d7e210aa9b084dcb79270f13360ad15af702a48e413f6e53407ef53776d1b8"
+    },
+    {
+      "path": "exports/OPPO-Bac-Ninh-19-Chan-Dung-Tieu-De-Mem-Mai-4K.jpg",
+      "bytes": 3955368,
+      "sha256": "0bbb71f5770a058cf94c21d906a3765c2237d790a39a591461ecc31198334d02"
+    },
+    {
+      "path": "exports/OPPO-Bac-Ninh-19-Chan-Dung-Sparkles-1440p60.mp4",
+      "bytes": 14132392,
+      "sha256": "1d0e236313070f15dcbfbf4503d479644a412936cdb7773c5d9f46429f0eb8e4"
+    }
+  ]
+}
